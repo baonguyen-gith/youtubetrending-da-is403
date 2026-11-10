@@ -1,0 +1,3 @@
+series,n_points,order,mae_last5,note
+N1,5,-,-,không chạy: chỉ 5 điểm hợp lệ (< 10); chạy lại trên data_final
+N2,9,-,-,không chạy: chỉ 9 điểm hợp lệ (< 10); chạy lại trên data_final

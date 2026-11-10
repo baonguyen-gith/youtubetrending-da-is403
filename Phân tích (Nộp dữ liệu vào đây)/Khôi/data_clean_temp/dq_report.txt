@@ -1,0 +1,36 @@
+=== 1. ĐỌC DỮ LIỆU THÔ ===
+- Đọc trending_snapshots.csv: 1,967 dòng
+- Đọc video_tracking.csv: 118,787 dòng
+- Đọc channel_history.csv: 96,099 dòng
+- Đọc channels_info.csv: 2,140 dòng
+  trending: 10 lượt chạy, 9 ngày: 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-31, 2026-11-03
+  tracking: 12 lượt chạy, 10 ngày: 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-31, 2026-11-03
+  history: 7 lượt chạy, 3 ngày: 2026-10-22, 2026-10-23, 2026-11-03
+
+=== 2. SỬA video_id BỊ HỎNG (#NAME?) ===
+- trending: 7 dòng video_id hỏng, khôi phục 7 dòng qua (channel_id, published_at); không khôi phục được 0 dòng -> loại
+
+=== 3. SỬA TIÊU ĐỀ / TÊN KÊNH MẤT DẤU (? ở chỗ chữ có dấu) ===
+- trending: thay tiêu đề bằng bản đúng từ video_tracking/channel_history cho 1,967/1,967 dòng (trước đó 430 dòng nghi hỏng); 0 dòng không có bản đối chiếu (giữ nguyên)
+
+=== 4. GỘP BẢNG LẦN ĐO ===
+- likes > views: 167 dòng; comments > views: 13 dòng -> đặt NaN (nhiễu API/video mới)
+- views = 0: 552 dòng (video mới/bị hạn chế) -> giữ, nhưng loại khỏi phân tích log/tỷ lệ
+- views = NaN: 11 dòng -> loại
+- views GIẢM giữa 2 lần đo liên tiếp: 2,696/120,508 cặp (1.24% - do YouTube lọc view ảo) -> dùng cummax để chuỗi đơn điệu
+- measurements.csv: 216,842 lần đo / 96,334 video
+
+=== 5. BẢNG KÊNH ===
+- channels_latest.csv: 466 kênh (từ 2,140 dòng lịch sử)
+
+=== 6. TRENDING ===
+- 1,967 dòng / 636 video; 9 ngày có dữ liệu; NGÀY THIẾU: 2026-10-25, 2026-10-30, 2026-11-01, 2026-11-02
+
+=== 7. BẢNG VIDEO (MASTER) ===
+- videos_master.csv: 96,334 video; thiếu thông tin kênh: 0
+
+=== 8. TÓM TẮT CHẤT LƯỢNG ===
+- Video: 96,334 | trong history: 96,099 | từng Trending: 636
+- Video có >=2 lần đo: 19,356 | >=5 lần đo: 10,110
+- Ẩn lượt thích: 2.8% | tắt bình luận: 2.1%
+- Video đăng trong 14 ngày gần nhất có >=2 lần đo: 8,601
