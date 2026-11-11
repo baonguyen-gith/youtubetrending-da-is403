@@ -1,0 +1,30 @@
+﻿column,vif
+log10(age_days_last),1.246058236969882
+log_subs,1.3782412738399368
+log10(duration_sec),2.4170872533770953
+tags_count,1.329062987242359
+title_len,1.3256617884145607
+title_upper_ratio,1.191912779466433
+title_has_question,1.0738319630904782
+title_has_exclaim,1.1164651327044859
+title_has_digit,1.1411212588323902
+title_has_emoji,1.1104673375246117
+pub_is_weekend,1.004509765497652
+is_short_60,2.119145783602432
+pub_slot=Khuya 0-5h,1.153595933069282
+pub_slot=Sáng 6-11h,1.3165878328530343
+pub_slot=Chiều 12-17h,1.3168846100371034
+pub_slot=Đêm 22-23h,1.1215678576755903
+category=Autos & Vehicles,1.0649913535885143
+category=Comedy,1.0626059241622015
+category=Education,1.2384327952812701
+category=Entertainment,1.216659271299381
+category=Film & Animation,1.1716773484226743
+category=Howto & Style,1.12693065097498
+category=Music,1.5193676248997567
+category=News & Politics,1.3680380715500247
+category=People & Blogs,1.745902415583369
+category=Pets & Animals,1.0871743213597855
+category=Science & Tech,1.1067981907103677
+category=Sports,1.2570359240992592
+category=Travel & Events,1.0853308380931475
