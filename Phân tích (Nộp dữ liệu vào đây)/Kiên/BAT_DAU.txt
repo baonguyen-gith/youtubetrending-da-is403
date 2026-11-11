@@ -1,0 +1,5 @@
+NGUYỄN TRUNG KIÊN • IS403.R13 • BỘ PHÂN TÍCH PYTHON VÀ R
+Mở 05_Code_Output/README_Kien.md để xem lệnh chạy và kết quả tạm.
+Đối chiếu Python/R: 05_Code_Output/outputs_temp/note_python_vs_R.md.
+Kiểm tra trực tiếp từ dữ liệu: 05_Code_Output/outputs_temp/kiem_tra_tu_master.txt.
+Dữ liệu đầu vào: data_clean_temp/videos_master.csv.
