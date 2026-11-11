@@ -1,0 +1,8 @@
+readr
+dplyr
+ggplot2
+car
+effectsize
+rstatix
+sandwich
+lmtest

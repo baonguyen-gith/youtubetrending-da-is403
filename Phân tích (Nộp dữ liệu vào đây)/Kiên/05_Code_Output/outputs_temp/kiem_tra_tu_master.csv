@@ -1,0 +1,762 @@
+﻿phan,chi_so,tinh_lai,tham_chieu,dat
+prep,R/n_H,95319.0,95319.0,True
+prep,R/so_kenh_trong_H,328.0,328.0,True
+prep,R/n_nhom_tuoi_7_10,1594.0,1594.0,True
+prep,R/tong_viral_A,9542.0,9542.0,True
+prep,R/trung_vi_lv_adj,0.0905,0.0905,True
+prep,R/n_ever_trending_trong_H,399.0,399.0,True
+prep,python/n_H,95319.0,95319.0,True
+prep,python/so_kenh_trong_H,328.0,328.0,True
+prep,python/n_nhom_tuoi_7_10,1594.0,1594.0,True
+prep,python/tong_viral_A,9542.0,9542.0,True
+prep,python/trung_vi_lv_adj,0.0905,0.0905,True
+prep,python/n_ever_trending_trong_H,399.0,399.0,True
+q2a,H_toan_bo/welch_t,4.513942926550174,4.513942926550166,True
+q2a,H_toan_bo/welch_df,53165.78880367639,53165.7888036764,True
+q2a,H_toan_bo/welch_p,6.376966729871496e-06,6.376966729871716e-06,True
+q2a,H_toan_bo/ci_low,0.019736218330712305,0.0197362183307122,True
+q2a,H_toan_bo/ci_high,0.05002921174071874,0.0500292117407186,True
+q2a,H_toan_bo/cohen_d,0.031839456469757436,0.0318394564697573,True
+q2a,H_toan_bo/levene_F,13.16720795990464,13.167207959920963,True
+q2a,H_toan_bo/mw_U,958170278.5,958170278.5,True
+q2b,H_toan_bo/pub_slot/welch_F,61.15616506524192,61.15616506524188,True
+q2b,H_toan_bo/pub_slot/welch_df1,4.0,4.0,True
+q2b,H_toan_bo/pub_slot/welch_df2,17055.802734489604,17055.802734489607,True
+q2b,H_toan_bo/pub_slot/welch_p,2.201076611149225e-51,2.2010766111493272e-51,True
+q2b,H_toan_bo/pub_slot/eta2,0.002621928320367752,0.0026219283203658,True
+q2b,H_toan_bo/pub_slot/kw_H,163.08143215960678,163.08143215960678,True
+q2b,H_toan_bo/pub_slot/levene_F,49.641446513758645,49.64144651375215,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Sáng 6-11h/diff,0.20849454439233003,0.2084945443923301,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Sáng 6-11h/p_adj,0.0,5.2e-12,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Sáng 6-11h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Chiều 12-17h/diff,0.12121053933335327,0.1212105393333533,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Chiều 12-17h/p_adj,1.0676348694005355e-11,9.22e-12,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Chiều 12-17h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Tối 18-21h/diff,0.08310440951603566,0.0831044095160357,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Tối 18-21h/p_adj,5.006805569474082e-06,5.01e-06,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Tối 18-21h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Đêm 22-23h/diff,0.07247874579114402,0.072478745791144,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Đêm 22-23h/p_adj,0.014919128171646534,0.015,True
+q2b,H_toan_bo/pub_slot/Khuya 0-5h vs Đêm 22-23h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Chiều 12-17h/diff,-0.08728400505897677,-0.0872840050589767,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Chiều 12-17h/p_adj,0.0,4.23e-14,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Chiều 12-17h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Tối 18-21h/diff,-0.12539013487629436,-0.1253901348762943,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Tối 18-21h/p_adj,0.0,0.0,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Tối 18-21h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Đêm 22-23h/diff,-0.136015798601186,-0.136015798601186,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Đêm 22-23h/p_adj,2.303934820702125e-12,1.25e-12,True
+q2b,H_toan_bo/pub_slot/Sáng 6-11h vs Đêm 22-23h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Chiều 12-17h vs Tối 18-21h/diff,-0.038106129817317605,-0.0381061298173176,True
+q2b,H_toan_bo/pub_slot/Chiều 12-17h vs Tối 18-21h/p_adj,9.65610793193239e-05,9.64e-05,True
+q2b,H_toan_bo/pub_slot/Chiều 12-17h vs Tối 18-21h/significant,1.0,1.0,True
+q2b,H_toan_bo/pub_slot/Chiều 12-17h vs Đêm 22-23h/diff,-0.048731793542209245,-0.0487317935422092,True
+q2b,H_toan_bo/pub_slot/Chiều 12-17h vs Đêm 22-23h/p_adj,0.0605871171619522,0.061,True
+q2b,H_toan_bo/pub_slot/Chiều 12-17h vs Đêm 22-23h/significant,0.0,0.0,True
+q2b,H_toan_bo/pub_slot/Tối 18-21h vs Đêm 22-23h/diff,-0.01062566372489164,-0.0106256637248916,True
+q2b,H_toan_bo/pub_slot/Tối 18-21h vs Đêm 22-23h/p_adj,0.9765368281787296,0.977,True
+q2b,H_toan_bo/pub_slot/Tối 18-21h vs Đêm 22-23h/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/welch_F,2053.552476294776,2053.5524762947725,True
+q2b,H_toan_bo/category_name/welch_df1,13.0,13.0,True
+q2b,H_toan_bo/category_name/welch_df2,12009.657654359593,12009.657654359591,True
+q2b,H_toan_bo/category_name/welch_p,0.0,0.0,True
+q2b,H_toan_bo/category_name/eta2,0.20733624776776466,0.2073362477676163,True
+q2b,H_toan_bo/category_name/kw_H,19284.290324579943,19284.290324579943,True
+q2b,H_toan_bo/category_name/levene_F,435.1705645298749,435.1705645297554,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Comedy/diff,-0.17039145218728907,-0.170391452187289,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Comedy/p_adj,3.915534341203397e-09,3.94e-09,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Comedy/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Education/diff,0.8446575964184726,0.8446575964184728,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Education/p_adj,2.1428414598290146e-12,4.36e-08,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Education/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Entertainment/diff,-0.28777388410708205,-0.287773884107082,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Entertainment/p_adj,1.7050805212193154e-12,4.36e-08,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Entertainment/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Film & Animation/diff,-0.44493889806443165,-0.4449388980644316,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Film & Animation/p_adj,0.0,3.67e-08,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Film & Animation/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Gaming/diff,-0.8495318029581103,-0.84953180295811,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Gaming/p_adj,3.481659405224491e-13,3.29e-11,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Gaming/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Howto & Style/diff,0.26724976787480675,0.2672497678748068,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Howto & Style/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Howto & Style/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Music/diff,-0.4929886730809271,-0.4929886730809271,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Music/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Music/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs News & Politics/diff,0.4852564986161781,0.4852564986161778,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs News & Politics/p_adj,4.530820163495264e-13,7.77e-13,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs People & Blogs/diff,0.11433890033018146,0.1143389003301814,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs People & Blogs/p_adj,6.59910792677465e-10,0.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Pets & Animals/diff,0.4885002009632908,0.4885002009632911,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Pets & Animals/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Science & Tech/diff,-0.4466349511396849,-0.4466349511396847,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Science & Tech/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Sports/diff,-0.2470598800199449,-0.2470598800199449,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Sports/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Travel & Events/diff,-0.05237723489167834,-0.0523772348916782,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Travel & Events/p_adj,0.9404840043042149,0.94,True
+q2b,H_toan_bo/category_name/Autos & Vehicles vs Travel & Events/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/Comedy vs Education/diff,1.0150490486057615,1.015049048605762,True
+q2b,H_toan_bo/category_name/Comedy vs Education/p_adj,0.0,3.58e-11,True
+q2b,H_toan_bo/category_name/Comedy vs Education/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Entertainment/diff,-0.11738243191979297,-0.1173824319197929,True
+q2b,H_toan_bo/category_name/Comedy vs Entertainment/p_adj,0.0002627096125589201,0.000263,True
+q2b,H_toan_bo/category_name/Comedy vs Entertainment/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Film & Animation/diff,-0.2745474458771425,-0.2745474458771426,True
+q2b,H_toan_bo/category_name/Comedy vs Film & Animation/p_adj,9.016121182980896e-13,3.49e-11,True
+q2b,H_toan_bo/category_name/Comedy vs Film & Animation/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Gaming/diff,-0.6791403507708211,-0.679140350770821,True
+q2b,H_toan_bo/category_name/Comedy vs Gaming/p_adj,0.0,1.04e-12,True
+q2b,H_toan_bo/category_name/Comedy vs Gaming/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Howto & Style/diff,0.4376412200620958,0.4376412200620959,True
+q2b,H_toan_bo/category_name/Comedy vs Howto & Style/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Comedy vs Howto & Style/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Music/diff,-0.32259722089363807,-0.3225972208936379,True
+q2b,H_toan_bo/category_name/Comedy vs Music/p_adj,1.0403899963762342e-12,0.0,True
+q2b,H_toan_bo/category_name/Comedy vs Music/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs News & Politics/diff,0.6556479508034672,0.6556479508034669,True
+q2b,H_toan_bo/category_name/Comedy vs News & Politics/p_adj,2.8677060726067793e-13,4.4e-11,True
+q2b,H_toan_bo/category_name/Comedy vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs People & Blogs/diff,0.28473035251747053,0.2847303525174705,True
+q2b,H_toan_bo/category_name/Comedy vs People & Blogs/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Comedy vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Pets & Animals/diff,0.6588916531505798,0.6588916531505802,True
+q2b,H_toan_bo/category_name/Comedy vs Pets & Animals/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Comedy vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Science & Tech/diff,-0.27624349895239575,-0.2762434989523957,True
+q2b,H_toan_bo/category_name/Comedy vs Science & Tech/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Comedy vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Comedy vs Sports/diff,-0.07666842783265583,-0.0766684278326558,True
+q2b,H_toan_bo/category_name/Comedy vs Sports/p_adj,0.07691989912440866,0.077,True
+q2b,H_toan_bo/category_name/Comedy vs Sports/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/Comedy vs Travel & Events/diff,0.11801421729561073,0.1180142172956108,True
+q2b,H_toan_bo/category_name/Comedy vs Travel & Events/p_adj,0.07054053371648905,0.071,True
+q2b,H_toan_bo/category_name/Comedy vs Travel & Events/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/Education vs Entertainment/diff,-1.1324314805255546,-1.1324314805255549,True
+q2b,H_toan_bo/category_name/Education vs Entertainment/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Education vs Entertainment/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Film & Animation/diff,-1.2895964944829041,-1.2895964944829044,True
+q2b,H_toan_bo/category_name/Education vs Film & Animation/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Education vs Film & Animation/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Gaming/diff,-1.6941893993765826,-1.6941893993765829,True
+q2b,H_toan_bo/category_name/Education vs Gaming/p_adj,0.0,8.71e-12,True
+q2b,H_toan_bo/category_name/Education vs Gaming/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Howto & Style/diff,-0.5774078285436658,-0.5774078285436659,True
+q2b,H_toan_bo/category_name/Education vs Howto & Style/p_adj,1.1861622795095172e-12,5.32e-11,True
+q2b,H_toan_bo/category_name/Education vs Howto & Style/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Music/diff,-1.3376462694993996,-1.3376462694993998,True
+q2b,H_toan_bo/category_name/Education vs Music/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Education vs Music/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs News & Politics/diff,-0.35940109780229446,-0.3594010978022949,True
+q2b,H_toan_bo/category_name/Education vs News & Politics/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Education vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs People & Blogs/diff,-0.730318696088291,-0.7303186960882913,True
+q2b,H_toan_bo/category_name/Education vs People & Blogs/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Education vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Pets & Animals/diff,-0.35615739545518177,-0.3561573954551816,True
+q2b,H_toan_bo/category_name/Education vs Pets & Animals/p_adj,1.14545027907198e-08,1.15e-08,True
+q2b,H_toan_bo/category_name/Education vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Science & Tech/diff,-1.2912925475581574,-1.2912925475581576,True
+q2b,H_toan_bo/category_name/Education vs Science & Tech/p_adj,1.322830733840874e-12,0.0,True
+q2b,H_toan_bo/category_name/Education vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Sports/diff,-1.0917174764384174,-1.0917174764384177,True
+q2b,H_toan_bo/category_name/Education vs Sports/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Education vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Education vs Travel & Events/diff,-0.8970348313101508,-0.8970348313101509,True
+q2b,H_toan_bo/category_name/Education vs Travel & Events/p_adj,9.381384558082573e-13,2.08e-11,True
+q2b,H_toan_bo/category_name/Education vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Film & Animation/diff,-0.15716501395734958,-0.1571650139573496,True
+q2b,H_toan_bo/category_name/Entertainment vs Film & Animation/p_adj,2.6080249071469552e-12,0.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Film & Animation/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Gaming/diff,-0.5617579188510282,-0.5617579188510281,True
+q2b,H_toan_bo/category_name/Entertainment vs Gaming/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Gaming/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Howto & Style/diff,0.5550236519818887,0.5550236519818889,True
+q2b,H_toan_bo/category_name/Entertainment vs Howto & Style/p_adj,9.013900736931646e-13,0.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Howto & Style/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Music/diff,-0.20521478897384507,-0.205214788973845,True
+q2b,H_toan_bo/category_name/Entertainment vs Music/p_adj,3.253064484454171e-12,2.25e-09,True
+q2b,H_toan_bo/category_name/Entertainment vs Music/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs News & Politics/diff,0.7730303827232601,0.7730303827232599,True
+q2b,H_toan_bo/category_name/Entertainment vs News & Politics/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Entertainment vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs People & Blogs/diff,0.4021127844372635,0.4021127844372634,True
+q2b,H_toan_bo/category_name/Entertainment vs People & Blogs/p_adj,6.490696868866053e-12,1.32e-08,True
+q2b,H_toan_bo/category_name/Entertainment vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Pets & Animals/diff,0.7762740850703728,0.7762740850703731,True
+q2b,H_toan_bo/category_name/Entertainment vs Pets & Animals/p_adj,5.715428130770306e-13,0.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Science & Tech/diff,-0.1588610670326028,-0.1588610670326027,True
+q2b,H_toan_bo/category_name/Entertainment vs Science & Tech/p_adj,6.215167935863519e-09,4.25e-09,True
+q2b,H_toan_bo/category_name/Entertainment vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Sports/diff,0.04071400408713714,0.040714004087137,True
+q2b,H_toan_bo/category_name/Entertainment vs Sports/p_adj,0.3777010183913273,0.378,True
+q2b,H_toan_bo/category_name/Entertainment vs Sports/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/Entertainment vs Travel & Events/diff,0.2353966492154037,0.2353966492154038,True
+q2b,H_toan_bo/category_name/Entertainment vs Travel & Events/p_adj,1.875499755499277e-11,3.35e-11,True
+q2b,H_toan_bo/category_name/Entertainment vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Gaming/diff,-0.4045929048936786,-0.4045929048936784,True
+q2b,H_toan_bo/category_name/Film & Animation vs Gaming/p_adj,0.0,2.92e-12,True
+q2b,H_toan_bo/category_name/Film & Animation vs Gaming/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Howto & Style/diff,0.7121886659392384,0.7121886659392386,True
+q2b,H_toan_bo/category_name/Film & Animation vs Howto & Style/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Howto & Style/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Music/diff,-0.04804977501649549,-0.0480497750164953,True
+q2b,H_toan_bo/category_name/Film & Animation vs Music/p_adj,0.10971410610437238,0.11,True
+q2b,H_toan_bo/category_name/Film & Animation vs Music/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs News & Politics/diff,0.9301953966806097,0.9301953966806096,True
+q2b,H_toan_bo/category_name/Film & Animation vs News & Politics/p_adj,2.1183055309847987e-13,1.84e-11,True
+q2b,H_toan_bo/category_name/Film & Animation vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs People & Blogs/diff,0.5592777983946131,0.5592777983946131,True
+q2b,H_toan_bo/category_name/Film & Animation vs People & Blogs/p_adj,9.12048214729566e-13,8.16e-12,True
+q2b,H_toan_bo/category_name/Film & Animation vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Pets & Animals/diff,0.9334390990277224,0.9334390990277228,True
+q2b,H_toan_bo/category_name/Film & Animation vs Pets & Animals/p_adj,0.0,1.9e-13,True
+q2b,H_toan_bo/category_name/Film & Animation vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Science & Tech/diff,-0.0016960530752532232,-0.001696053075253,True
+q2b,H_toan_bo/category_name/Film & Animation vs Science & Tech/p_adj,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Science & Tech/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Sports/diff,0.1978790180444867,0.1978790180444867,True
+q2b,H_toan_bo/category_name/Film & Animation vs Sports/p_adj,0.0,2.87e-11,True
+q2b,H_toan_bo/category_name/Film & Animation vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Film & Animation vs Travel & Events/diff,0.3925616631727533,0.3925616631727535,True
+q2b,H_toan_bo/category_name/Film & Animation vs Travel & Events/p_adj,0.0,2.13e-11,True
+q2b,H_toan_bo/category_name/Film & Animation vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs Howto & Style/diff,1.116781570832917,1.116781570832917,True
+q2b,H_toan_bo/category_name/Gaming vs Howto & Style/p_adj,0.0,4.4e-11,True
+q2b,H_toan_bo/category_name/Gaming vs Howto & Style/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs Music/diff,0.35654312987718306,0.356543129877183,True
+q2b,H_toan_bo/category_name/Gaming vs Music/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Gaming vs Music/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs News & Politics/diff,1.3347883015742883,1.3347883015742878,True
+q2b,H_toan_bo/category_name/Gaming vs News & Politics/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Gaming vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs People & Blogs/diff,0.9638707032882916,0.9638707032882916,True
+q2b,H_toan_bo/category_name/Gaming vs People & Blogs/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Gaming vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs Pets & Animals/diff,1.338032003921401,1.338032003921401,True
+q2b,H_toan_bo/category_name/Gaming vs Pets & Animals/p_adj,3.0753177782116836e-14,2.3e-13,True
+q2b,H_toan_bo/category_name/Gaming vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs Science & Tech/diff,0.4028968518184254,0.4028968518184253,True
+q2b,H_toan_bo/category_name/Gaming vs Science & Tech/p_adj,0.0,2.92e-11,True
+q2b,H_toan_bo/category_name/Gaming vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs Sports/diff,0.6024719229381653,0.6024719229381651,True
+q2b,H_toan_bo/category_name/Gaming vs Sports/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Gaming vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Gaming vs Travel & Events/diff,0.7971545680664318,0.7971545680664319,True
+q2b,H_toan_bo/category_name/Gaming vs Travel & Events/p_adj,5.314637618880624e-13,0.0,True
+q2b,H_toan_bo/category_name/Gaming vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Music/diff,-0.7602384409557339,-0.7602384409557339,True
+q2b,H_toan_bo/category_name/Howto & Style vs Music/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Music/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs News & Politics/diff,0.21800673074137134,0.218006730741371,True
+q2b,H_toan_bo/category_name/Howto & Style vs News & Politics/p_adj,4.342082249308987e-12,1.4e-08,True
+q2b,H_toan_bo/category_name/Howto & Style vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs People & Blogs/diff,-0.1529108675446253,-0.1529108675446254,True
+q2b,H_toan_bo/category_name/Howto & Style vs People & Blogs/p_adj,3.397812646799281e-07,3.39e-07,True
+q2b,H_toan_bo/category_name/Howto & Style vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Pets & Animals/diff,0.22125043308848402,0.2212504330884842,True
+q2b,H_toan_bo/category_name/Howto & Style vs Pets & Animals/p_adj,0.011645219995695677,0.012,True
+q2b,H_toan_bo/category_name/Howto & Style vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Science & Tech/diff,-0.7138847190144916,-0.7138847190144917,True
+q2b,H_toan_bo/category_name/Howto & Style vs Science & Tech/p_adj,8.54760706658908e-13,1.45e-08,True
+q2b,H_toan_bo/category_name/Howto & Style vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Sports/diff,-0.5143096478947516,-0.5143096478947519,True
+q2b,H_toan_bo/category_name/Howto & Style vs Sports/p_adj,3.82804898890754e-13,0.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Travel & Events/diff,-0.3196270027664851,-0.319627002766485,True
+q2b,H_toan_bo/category_name/Howto & Style vs Travel & Events/p_adj,2.9508617771512036e-12,0.0,True
+q2b,H_toan_bo/category_name/Howto & Style vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Music vs News & Politics/diff,0.9782451716971052,0.9782451716971048,True
+q2b,H_toan_bo/category_name/Music vs News & Politics/p_adj,2.8780311467357933e-12,2.35e-11,True
+q2b,H_toan_bo/category_name/Music vs News & Politics/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Music vs People & Blogs/diff,0.6073275734111085,0.6073275734111085,True
+q2b,H_toan_bo/category_name/Music vs People & Blogs/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Music vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Music vs Pets & Animals/diff,0.9814888740442179,0.981488874044218,True
+q2b,H_toan_bo/category_name/Music vs Pets & Animals/p_adj,8.881784197001252e-16,4.91e-13,True
+q2b,H_toan_bo/category_name/Music vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Music vs Science & Tech/diff,0.046353721941242265,0.0463537219412422,True
+q2b,H_toan_bo/category_name/Music vs Science & Tech/p_adj,0.7246648288140318,0.725,True
+q2b,H_toan_bo/category_name/Music vs Science & Tech/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/Music vs Sports/diff,0.2459287930609822,0.2459287930609821,True
+q2b,H_toan_bo/category_name/Music vs Sports/p_adj,1.0796030736059947e-11,1.94e-08,True
+q2b,H_toan_bo/category_name/Music vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Music vs Travel & Events/diff,0.44061143818924875,0.4406114381892488,True
+q2b,H_toan_bo/category_name/Music vs Travel & Events/p_adj,8.670841822322473e-13,0.0,True
+q2b,H_toan_bo/category_name/Music vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/News & Politics vs People & Blogs/diff,-0.37091759828599663,-0.3709175982859964,True
+q2b,H_toan_bo/category_name/News & Politics vs People & Blogs/p_adj,1.3724577030416185e-12,2.19e-11,True
+q2b,H_toan_bo/category_name/News & Politics vs People & Blogs/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/News & Politics vs Pets & Animals/diff,0.003243702347112687,0.0032437023471132,True
+q2b,H_toan_bo/category_name/News & Politics vs Pets & Animals/p_adj,1.0,1.0,True
+q2b,H_toan_bo/category_name/News & Politics vs Pets & Animals/significant,0.0,0.0,True
+q2b,H_toan_bo/category_name/News & Politics vs Science & Tech/diff,-0.9318914497558629,-0.9318914497558626,True
+q2b,H_toan_bo/category_name/News & Politics vs Science & Tech/p_adj,1.6091572518917019e-12,7.71e-09,True
+q2b,H_toan_bo/category_name/News & Politics vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/News & Politics vs Sports/diff,-0.732316378636123,-0.7323163786361229,True
+q2b,H_toan_bo/category_name/News & Politics vs Sports/p_adj,0.0,1.48e-11,True
+q2b,H_toan_bo/category_name/News & Politics vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/News & Politics vs Travel & Events/diff,-0.5376337335078565,-0.537633733507856,True
+q2b,H_toan_bo/category_name/News & Politics vs Travel & Events/p_adj,6.827871601444713e-14,5.73e-11,True
+q2b,H_toan_bo/category_name/News & Politics vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/People & Blogs vs Pets & Animals/diff,0.3741613006331093,0.3741613006331096,True
+q2b,H_toan_bo/category_name/People & Blogs vs Pets & Animals/p_adj,7.437934712584138e-10,7.44e-10,True
+q2b,H_toan_bo/category_name/People & Blogs vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/People & Blogs vs Science & Tech/diff,-0.5609738514698663,-0.5609738514698662,True
+q2b,H_toan_bo/category_name/People & Blogs vs Science & Tech/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/People & Blogs vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/People & Blogs vs Sports/diff,-0.36139878035012635,-0.3613987803501264,True
+q2b,H_toan_bo/category_name/People & Blogs vs Sports/p_adj,5.551226145428245e-12,3.38e-08,True
+q2b,H_toan_bo/category_name/People & Blogs vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/People & Blogs vs Travel & Events/diff,-0.1667161352218598,-0.1667161352218596,True
+q2b,H_toan_bo/category_name/People & Blogs vs Travel & Events/p_adj,5.545381390859028e-06,5.55e-06,True
+q2b,H_toan_bo/category_name/People & Blogs vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Science & Tech/diff,-0.9351351521029756,-0.9351351521029758,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Science & Tech/p_adj,0.0,4.03e-13,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Science & Tech/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Sports/diff,-0.7355600809832357,-0.7355600809832361,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Sports/p_adj,8.426592756904938e-14,0.0,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Travel & Events/diff,-0.5408774358549691,-0.5408774358549693,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Travel & Events/p_adj,0.0,9.2e-14,True
+q2b,H_toan_bo/category_name/Pets & Animals vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Science & Tech vs Sports/diff,0.19957507111973993,0.1995750711197398,True
+q2b,H_toan_bo/category_name/Science & Tech vs Sports/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Science & Tech vs Sports/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Science & Tech vs Travel & Events/diff,0.39425771624800654,0.3942577162480065,True
+q2b,H_toan_bo/category_name/Science & Tech vs Travel & Events/p_adj,0.0,0.0,True
+q2b,H_toan_bo/category_name/Science & Tech vs Travel & Events/significant,1.0,1.0,True
+q2b,H_toan_bo/category_name/Sports vs Travel & Events/diff,0.19468264512826655,0.1946826451282667,True
+q2b,H_toan_bo/category_name/Sports vs Travel & Events/p_adj,3.176958807138419e-08,3.18e-08,True
+q2b,H_toan_bo/category_name/Sports vs Travel & Events/significant,1.0,1.0,True
+q2a,H_bo_video_ngan/welch_t,5.126984427720418,5.1269844277204175,True
+q2a,H_bo_video_ngan/welch_df,42248.41121753163,42248.41121753164,True
+q2a,H_bo_video_ngan/welch_p,2.9571620948777093e-07,2.957162094877729e-07,True
+q2a,H_bo_video_ngan/ci_low,0.02646428113038478,0.0264642811303847,True
+q2a,H_bo_video_ngan/ci_high,0.059221533281532054,0.059221533281532,True
+q2a,H_bo_video_ngan/cohen_d,0.04066273395214934,0.0406627339521493,True
+q2a,H_bo_video_ngan/levene_F,2.834735418446215,2.8347354184504856,True
+q2a,H_bo_video_ngan/mw_U,605329819.5,605329819.5,True
+q2b,H_bo_video_ngan/pub_slot/welch_F,79.07373240411428,79.07373240411414,True
+q2b,H_bo_video_ngan/pub_slot/welch_df1,4.0,4.0,True
+q2b,H_bo_video_ngan/pub_slot/welch_df2,14562.323080915616,14562.32308091562,True
+q2b,H_bo_video_ngan/pub_slot/welch_p,1.7588298114663456e-66,1.7588298114667813e-66,True
+q2b,H_bo_video_ngan/pub_slot/eta2,0.004132158490346372,0.0041321584903491,True
+q2b,H_bo_video_ngan/pub_slot/kw_H,247.60914015959273,247.60914015962183,True
+q2b,H_bo_video_ngan/pub_slot/levene_F,29.932631546140986,29.932631546170278,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Sáng 6-11h/diff,0.1730775024791577,0.1730775024791578,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Sáng 6-11h/p_adj,0.0,8.32e-12,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Sáng 6-11h/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Chiều 12-17h/diff,0.14938127807770574,0.1493812780777058,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Chiều 12-17h/p_adj,6.621370118864434e-13,8.31e-13,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Chiều 12-17h/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Tối 18-21h/diff,0.03822412594505033,0.0382241259450504,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Tối 18-21h/p_adj,0.15646235758905336,0.156,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Tối 18-21h/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Đêm 22-23h/diff,-0.021373457047903763,-0.0213734570479036,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Đêm 22-23h/p_adj,0.8901771953895542,0.89,True
+q2b,H_bo_video_ngan/pub_slot/Khuya 0-5h vs Đêm 22-23h/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Chiều 12-17h/diff,-0.023696224401451988,-0.0236962244014519,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Chiều 12-17h/p_adj,0.1896532880469619,0.19,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Chiều 12-17h/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Tối 18-21h/diff,-0.1348533765341074,-0.1348533765341073,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Tối 18-21h/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Tối 18-21h/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Đêm 22-23h/diff,-0.19445095952706148,-0.1944509595270614,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Đêm 22-23h/p_adj,2.8199664825478976e-13,0.0,True
+q2b,H_bo_video_ngan/pub_slot/Sáng 6-11h vs Đêm 22-23h/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/pub_slot/Chiều 12-17h vs Tối 18-21h/diff,-0.1111571521326554,-0.1111571521326554,True
+q2b,H_bo_video_ngan/pub_slot/Chiều 12-17h vs Tối 18-21h/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/pub_slot/Chiều 12-17h vs Tối 18-21h/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/pub_slot/Chiều 12-17h vs Đêm 22-23h/diff,-0.17075473512560949,-0.1707547351256094,True
+q2b,H_bo_video_ngan/pub_slot/Chiều 12-17h vs Đêm 22-23h/p_adj,3.1566971259167076e-12,3.7e-08,True
+q2b,H_bo_video_ngan/pub_slot/Chiều 12-17h vs Đêm 22-23h/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/pub_slot/Tối 18-21h vs Đêm 22-23h/diff,-0.05959758299295409,-0.059597582992954,True
+q2b,H_bo_video_ngan/pub_slot/Tối 18-21h vs Đêm 22-23h/p_adj,0.009604256434571412,0.01,True
+q2b,H_bo_video_ngan/pub_slot/Tối 18-21h vs Đêm 22-23h/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/welch_F,1475.7984174032804,1475.7984174032797,True
+q2b,H_bo_video_ngan/category_name/welch_df1,13.0,13.0,True
+q2b,H_bo_video_ngan/category_name/welch_df2,8805.481605773984,8805.481605773984,True
+q2b,H_bo_video_ngan/category_name/welch_p,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/eta2,0.20220901032823937,0.2022090103282519,True
+q2b,H_bo_video_ngan/category_name/kw_H,14414.920803625992,14414.920803625992,True
+q2b,H_bo_video_ngan/category_name/levene_F,264.74812289414433,264.74812289423363,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Comedy/diff,-0.2069916837071203,-0.2069916837071203,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Comedy/p_adj,2.566835632933362e-12,5.21e-12,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Comedy/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Education/diff,0.8880123715545225,0.8880123715545227,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Education/p_adj,0.0,3.85e-08,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Education/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Entertainment/diff,-0.33875967163451537,-0.3387596716345153,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Entertainment/p_adj,1.1791678744543788e-12,4.09e-08,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Entertainment/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Film & Animation/diff,-0.40538089579125247,-0.4053808957912524,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Film & Animation/p_adj,1.6435741656550817e-12,2.1e-08,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Film & Animation/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Gaming/diff,-0.7982347667734857,-0.7982347667734857,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Gaming/p_adj,0.0,1.53e-11,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Gaming/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Howto & Style/diff,0.3373678635405675,0.3373678635405676,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Howto & Style/p_adj,2.4358293160275934e-13,1.01e-11,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Howto & Style/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Music/diff,-0.4417004379606886,-0.4417004379606886,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Music/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Music/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs News & Politics/diff,0.503523157586246,0.5035231575862458,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs News & Politics/p_adj,0.0,3.86e-08,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs People & Blogs/diff,0.008246999870210103,0.0082469998702101,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs People & Blogs/p_adj,0.9999999006918663,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs People & Blogs/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Pets & Animals/diff,0.15336756603214563,0.1533675660321458,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Pets & Animals/p_adj,0.7314821257931776,0.731,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Pets & Animals/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Science & Tech/diff,-0.5291872983285358,-0.5291872983285357,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Science & Tech/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Sports/diff,-0.24903661286826803,-0.2490366128682681,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Sports/p_adj,2.484568106808638e-12,3.87e-09,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Travel & Events/diff,-0.3495456672557191,-0.3495456672557189,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Travel & Events/p_adj,2.657873920952625e-13,0.0,True
+q2b,H_bo_video_ngan/category_name/Autos & Vehicles vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Education/diff,1.095004055261643,1.0950040552616431,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Education/p_adj,4.908295991867817e-13,4.5e-11,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Education/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Entertainment/diff,-0.1317679879273951,-0.131767987927395,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Entertainment/p_adj,0.00010939014585731321,0.000109,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Entertainment/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Film & Animation/diff,-0.19838921208413215,-0.1983892120841322,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Film & Animation/p_adj,1.2151279982219876e-11,1.81e-11,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Film & Animation/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Gaming/diff,-0.5912430830663655,-0.5912430830663654,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Gaming/p_adj,2.6212365611399946e-13,0.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Gaming/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Howto & Style/diff,0.5443595472476878,0.5443595472476879,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Howto & Style/p_adj,3.396172232328354e-13,6.45e-11,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Howto & Style/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Music/diff,-0.2347087542535683,-0.2347087542535682,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Music/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Music/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs News & Politics/diff,0.7105148412933662,0.7105148412933661,True
+q2b,H_bo_video_ngan/category_name/Comedy vs News & Politics/p_adj,6.267208974009009e-13,4.93e-11,True
+q2b,H_bo_video_ngan/category_name/Comedy vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs People & Blogs/diff,0.2152386835773304,0.2152386835773304,True
+q2b,H_bo_video_ngan/category_name/Comedy vs People & Blogs/p_adj,2.159716849803317e-12,2.08e-13,True
+q2b,H_bo_video_ngan/category_name/Comedy vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Pets & Animals/diff,0.3603592497392659,0.3603592497392661,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Pets & Animals/p_adj,0.00028039647372057885,0.00028,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Science & Tech/diff,-0.32219561462141555,-0.3221956146214155,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Science & Tech/p_adj,7.993605777301127e-15,4.99e-11,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Sports/diff,-0.04204492916114776,-0.0420449291611478,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Sports/p_adj,0.9359732878397389,0.936,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Sports/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Travel & Events/diff,-0.14255398354859883,-0.1425539835485986,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Travel & Events/p_adj,0.009704219932413216,0.01,True
+q2b,H_bo_video_ngan/category_name/Comedy vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Entertainment/diff,-1.2267720431890379,-1.226772043189038,True
+q2b,H_bo_video_ngan/category_name/Education vs Entertainment/p_adj,7.143619029648107e-12,0.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Entertainment/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Film & Animation/diff,-1.293393267345775,-1.2933932673457753,True
+q2b,H_bo_video_ngan/category_name/Education vs Film & Animation/p_adj,1.0154099783221682e-12,2.67e-11,True
+q2b,H_bo_video_ngan/category_name/Education vs Film & Animation/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Gaming/diff,-1.6862471383280084,-1.6862471383280084,True
+q2b,H_bo_video_ngan/category_name/Education vs Gaming/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Gaming/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Howto & Style/diff,-0.550644508013955,-0.5506445080139551,True
+q2b,H_bo_video_ngan/category_name/Education vs Howto & Style/p_adj,0.0,3.9e-11,True
+q2b,H_bo_video_ngan/category_name/Education vs Howto & Style/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Music/diff,-1.329712809515211,-1.329712809515211,True
+q2b,H_bo_video_ngan/category_name/Education vs Music/p_adj,2.0896617769494696e-12,1.74e-11,True
+q2b,H_bo_video_ngan/category_name/Education vs Music/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs News & Politics/diff,-0.3844892139682766,-0.3844892139682769,True
+q2b,H_bo_video_ngan/category_name/Education vs News & Politics/p_adj,1.5815126985785355e-12,4.2e-12,True
+q2b,H_bo_video_ngan/category_name/Education vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs People & Blogs/diff,-0.8797653716843125,-0.8797653716843127,True
+q2b,H_bo_video_ngan/category_name/Education vs People & Blogs/p_adj,9.845457782375888e-13,3.12e-11,True
+q2b,H_bo_video_ngan/category_name/Education vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Pets & Animals/diff,-0.7346448055223769,-0.7346448055223769,True
+q2b,H_bo_video_ngan/category_name/Education vs Pets & Animals/p_adj,2.5979218776228663e-13,1.45e-10,True
+q2b,H_bo_video_ngan/category_name/Education vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Science & Tech/diff,-1.4171996698830585,-1.4171996698830585,True
+q2b,H_bo_video_ngan/category_name/Education vs Science & Tech/p_adj,1.1332046412348973e-12,0.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Sports/diff,-1.1370489844227907,-1.137048984422791,True
+q2b,H_bo_video_ngan/category_name/Education vs Sports/p_adj,2.4026336475913013e-12,2.33e-11,True
+q2b,H_bo_video_ngan/category_name/Education vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Travel & Events/diff,-1.2375580388102416,-1.2375580388102416,True
+q2b,H_bo_video_ngan/category_name/Education vs Travel & Events/p_adj,5.573319583618286e-14,0.0,True
+q2b,H_bo_video_ngan/category_name/Education vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Film & Animation/diff,-0.06662122415673705,-0.0666212241567371,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Film & Animation/p_adj,0.059605935597371706,0.06,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Film & Animation/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Gaming/diff,-0.45947509513897034,-0.4594750951389703,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Gaming/p_adj,3.3674174559905623e-12,1.38e-12,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Gaming/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Howto & Style/diff,0.676127535175083,0.6761275351750831,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Howto & Style/p_adj,1.645350522494482e-13,2.49e-11,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Howto & Style/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Music/diff,-0.10294076632617319,-0.1029407663261731,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Music/p_adj,2.572222101981936e-07,2.57e-07,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Music/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs News & Politics/diff,0.8422828292207614,0.8422828292207611,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs News & Politics/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs People & Blogs/diff,0.34700667150472553,0.3470066715047255,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs People & Blogs/p_adj,3.3392177911650833e-12,0.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Pets & Animals/diff,0.492127237666661,0.4921272376666612,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Pets & Animals/p_adj,1.0203804357011848e-08,1.03e-08,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Science & Tech/diff,-0.19042762669402044,-0.1904276266940204,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Science & Tech/p_adj,1.8390733380613256e-11,0.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Sports/diff,0.08972305876624737,0.0897230587662472,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Sports/p_adj,0.00019396345826971917,0.000194,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Travel & Events/diff,-0.010785995621203706,-0.0107859956212035,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Travel & Events/p_adj,0.9999999990107897,1.0,True
+q2b,H_bo_video_ngan/category_name/Entertainment vs Travel & Events/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Gaming/diff,-0.39285387098223334,-0.3928538709822331,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Gaming/p_adj,0.0,3.24e-08,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Gaming/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Howto & Style/diff,0.7427487593318199,0.7427487593318202,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Howto & Style/p_adj,7.105427357601002e-15,1e-11,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Howto & Style/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Music/diff,-0.03631954216943614,-0.036319542169436,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Music/p_adj,0.6314923340875978,0.631,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Music/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs News & Politics/diff,0.9089040533774984,0.9089040533774984,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs News & Politics/p_adj,9.962697333776305e-12,1.72e-11,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs People & Blogs/diff,0.4136278956614625,0.4136278956614626,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs People & Blogs/p_adj,0.0,1.89e-11,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Pets & Animals/diff,0.5587484618233981,0.5587484618233983,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Pets & Animals/p_adj,2.732247761372264e-11,1.3e-10,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Science & Tech/diff,-0.1238064025372834,-0.1238064025372832,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Science & Tech/p_adj,8.621097148320267e-05,8.62e-05,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Sports/diff,0.1563442829229844,0.1563442829229844,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Sports/p_adj,0.0,1.68e-11,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Travel & Events/diff,0.05583522853553334,0.0558352285355336,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Travel & Events/p_adj,0.9097753704110219,0.91,True
+q2b,H_bo_video_ngan/category_name/Film & Animation vs Travel & Events/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Howto & Style/diff,1.1356026303140534,1.1356026303140534,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Howto & Style/p_adj,2.779998453661392e-13,3.91e-13,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Howto & Style/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Music/diff,0.3565343288127972,0.3565343288127971,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Music/p_adj,9.26914101029297e-12,1.76e-08,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Music/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs News & Politics/diff,1.3017579243597317,1.3017579243597317,True
+q2b,H_bo_video_ngan/category_name/Gaming vs News & Politics/p_adj,0.0,3.69e-12,True
+q2b,H_bo_video_ngan/category_name/Gaming vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs People & Blogs/diff,0.8064817666436959,0.8064817666436958,True
+q2b,H_bo_video_ngan/category_name/Gaming vs People & Blogs/p_adj,8.81195116875233e-12,0.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Pets & Animals/diff,0.9516023328056313,0.9516023328056316,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Pets & Animals/p_adj,0.0,1.04e-11,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Science & Tech/diff,0.2690474684449499,0.2690474684449498,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Science & Tech/p_adj,8.570921750106208e-14,4.32e-13,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Sports/diff,0.5491981539052178,0.5491981539052175,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Sports/p_adj,1.7815748876159887e-12,8.47e-13,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Travel & Events/diff,0.44868909951776664,0.4486890995177667,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Travel & Events/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Gaming vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Music/diff,-0.779068301501256,-0.7790683015012562,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Music/p_adj,4.403144515663371e-13,0.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Music/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs News & Politics/diff,0.16615529404567841,0.1661552940456782,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs News & Politics/p_adj,2.283821741511094e-05,2.28e-05,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs People & Blogs/diff,-0.3291208636703574,-0.3291208636703575,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs People & Blogs/p_adj,4.3953729544909947e-13,0.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Pets & Animals/diff,-0.1840002975084219,-0.1840002975084217,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Pets & Animals/p_adj,0.5202393292331986,0.52,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Pets & Animals/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Science & Tech/diff,-0.8665551618691034,-0.8665551618691034,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Science & Tech/p_adj,0.0,1.98e-11,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Sports/diff,-0.5864044764088355,-0.5864044764088358,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Sports/p_adj,1.773026170326375e-13,5.58e-13,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Travel & Events/diff,-0.6869135307962866,-0.6869135307962866,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Travel & Events/p_adj,0.0,6.43e-11,True
+q2b,H_bo_video_ngan/category_name/Howto & Style vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Music vs News & Politics/diff,0.9452235955469346,0.9452235955469344,True
+q2b,H_bo_video_ngan/category_name/Music vs News & Politics/p_adj,1.7212897773788427e-12,9.02e-12,True
+q2b,H_bo_video_ngan/category_name/Music vs News & Politics/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Music vs People & Blogs/diff,0.4499474378308987,0.4499474378308986,True
+q2b,H_bo_video_ngan/category_name/Music vs People & Blogs/p_adj,2.0091039942826683e-11,0.0,True
+q2b,H_bo_video_ngan/category_name/Music vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Music vs Pets & Animals/diff,0.5950680039928342,0.5950680039928344,True
+q2b,H_bo_video_ngan/category_name/Music vs Pets & Animals/p_adj,4.304334666471732e-13,3.49e-11,True
+q2b,H_bo_video_ngan/category_name/Music vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Music vs Science & Tech/diff,-0.08748686036784725,-0.0874868603678472,True
+q2b,H_bo_video_ngan/category_name/Music vs Science & Tech/p_adj,0.010757967937413793,0.011,True
+q2b,H_bo_video_ngan/category_name/Music vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Music vs Sports/diff,0.19266382509242055,0.1926638250924204,True
+q2b,H_bo_video_ngan/category_name/Music vs Sports/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Music vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Music vs Travel & Events/diff,0.09215477070496948,0.0921547707049696,True
+q2b,H_bo_video_ngan/category_name/Music vs Travel & Events/p_adj,0.14208691933817885,0.142,True
+q2b,H_bo_video_ngan/category_name/Music vs Travel & Events/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs People & Blogs/diff,-0.49527615771603584,-0.4952761577160357,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs People & Blogs/p_adj,0.0,1.87e-11,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs People & Blogs/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Pets & Animals/diff,-0.3501555915541003,-0.3501555915541,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Pets & Animals/p_adj,0.000321248211052394,0.000321,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Pets & Animals/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Science & Tech/diff,-1.0327104559147817,-1.0327104559147815,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Science & Tech/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Sports/diff,-0.7525597704545139,-0.7525597704545139,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Sports/p_adj,0.0,2.27e-11,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Travel & Events/diff,-0.853068824841965,-0.8530688248419647,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Travel & Events/p_adj,1.354250045437766e-12,8.87e-13,True
+q2b,H_bo_video_ngan/category_name/News & Politics vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Pets & Animals/diff,0.14512056616193553,0.1451205661619357,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Pets & Animals/p_adj,0.7888378826917988,0.789,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Pets & Animals/significant,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Science & Tech/diff,-0.5374342981987459,-0.5374342981987459,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Science & Tech/p_adj,5.067057884389214e-13,6.54e-11,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Sports/diff,-0.25728361273847816,-0.2572836127384782,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Sports/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Travel & Events/diff,-0.3577926671259292,-0.357792667125929,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Travel & Events/p_adj,9.57900425646585e-13,7.69e-13,True
+q2b,H_bo_video_ngan/category_name/People & Blogs vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Science & Tech/diff,-0.6825548643606815,-0.6825548643606816,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Science & Tech/p_adj,2.8332891588433995e-13,3.52e-10,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Science & Tech/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Sports/diff,-0.4024041789004137,-0.4024041789004139,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Sports/p_adj,8.170848077471149e-06,8.17e-06,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Travel & Events/diff,-0.5029132332878647,-0.5029132332878647,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Travel & Events/p_adj,3.288473027218686e-08,3.32e-08,True
+q2b,H_bo_video_ngan/category_name/Pets & Animals vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Science & Tech vs Sports/diff,0.2801506854602678,0.2801506854602676,True
+q2b,H_bo_video_ngan/category_name/Science & Tech vs Sports/p_adj,0.0,0.0,True
+q2b,H_bo_video_ngan/category_name/Science & Tech vs Sports/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Science & Tech vs Travel & Events/diff,0.17964163107281672,0.1796416310728169,True
+q2b,H_bo_video_ngan/category_name/Science & Tech vs Travel & Events/p_adj,6.731724766539937e-05,6.73e-05,True
+q2b,H_bo_video_ngan/category_name/Science & Tech vs Travel & Events/significant,1.0,1.0,True
+q2b,H_bo_video_ngan/category_name/Sports vs Travel & Events/diff,-0.10050905438745107,-0.1005090543874508,True
+q2b,H_bo_video_ngan/category_name/Sports vs Travel & Events/p_adj,0.08894542304710895,0.089,True
+q2b,H_bo_video_ngan/category_name/Sports vs Travel & Events/significant,0.0,0.0,True
+q3a,n,95318.0,95318.0,True
+q3a,k_tham_so,30.0,30.0,True
+q3a,n_clusters,328.0,328.0,True
+q3a,r2,0.48467347163866337,0.4846734716386671,True
+q3a,adj_r2,0.4845166368921845,0.4845166368921884,True
+q3a,rmse,0.8046651057614801,0.8046651057614772,True
+q3a,Intercept/coef,0.7122364231794341,0.7122364231789351,True
+q3a,Intercept/se_cluster,0.3109572913521745,0.3109572913522465,True
+q3a,log10(age_days_last)/coef,0.21022437301918,0.2102243730191764,True
+q3a,log10(age_days_last)/se_cluster,0.0414447283322845,0.0414447283322831,True
+q3a,log_subs/coef,0.6079038021381997,0.607903802138193,True
+q3a,log_subs/se_cluster,0.04229986488032222,0.0422998648803151,True
+q3a,log10(duration_sec)/coef,0.12970595084010644,0.129705950840108,True
+q3a,log10(duration_sec)/se_cluster,0.046317355808580325,0.0463173558085836,True
+q3a,tags_count/coef,-0.0005789640490778057,-0.0005789640490763079,True
+q3a,tags_count/se_cluster,0.00239032639738877,0.0023903263973886,True
+q3a,title_len/coef,-0.0010121607436136444,-0.0010121607436133,True
+q3a,title_len/se_cluster,0.0011786995911259519,0.0011786995911264,True
+q3a,title_upper_ratio/coef,-0.05591259759334498,-0.0559125975933503,True
+q3a,title_upper_ratio/se_cluster,0.07792994242325056,0.0779299424232496,True
+q3a,title_has_question/coef,0.13372874427010895,0.1337287442700883,True
+q3a,title_has_question/se_cluster,0.05523849389048727,0.0552384938904872,True
+q3a,title_has_exclaim/coef,0.0009109001154647056,0.0009109001154686648,True
+q3a,title_has_exclaim/se_cluster,0.06814084106126828,0.0681408410612696,True
+q3a,title_has_digit/coef,-0.08077168750291781,-0.0807716875029228,True
+q3a,title_has_digit/se_cluster,0.043259615850735164,0.0432596158507394,True
+q3a,title_has_emoji/coef,0.022276712142116843,0.0222767121421141,True
+q3a,title_has_emoji/se_cluster,0.08769330155334121,0.0876933015533431,True
+q3a,pub_is_weekend/coef,0.014816097964306107,0.0148160979642982,True
+q3a,pub_is_weekend/se_cluster,0.012451000158007746,0.0124510001580073,True
+q3a,is_short_60/coef,0.06640836487981744,0.0664083648798293,True
+q3a,is_short_60/se_cluster,0.07205221724172652,0.0720522172417265,True
+q3a,pub_slot=Khuya 0-5h/coef,-0.038493907025317284,-0.0384939070253126,True
+q3a,pub_slot=Khuya 0-5h/se_cluster,0.07790975173691335,0.0779097517369131,True
+q3a,pub_slot=Sáng 6-11h/coef,0.02833756951234588,0.0283375695123515,True
+q3a,pub_slot=Sáng 6-11h/se_cluster,0.04446624180826884,0.0444662418082678,True
+q3a,pub_slot=Chiều 12-17h/coef,-0.04155539730668192,-0.0415553973066788,True
+q3a,pub_slot=Chiều 12-17h/se_cluster,0.04400526644689802,0.0440052664468963,True
+q3a,pub_slot=Đêm 22-23h/coef,-0.18324753237323688,-0.1832475323732305,True
+q3a,pub_slot=Đêm 22-23h/se_cluster,0.07188818693435776,0.0718881869343586,True
+q3a,category=Autos & Vehicles/coef,-0.7234112828902907,-0.7234112828902839,True
+q3a,category=Autos & Vehicles/se_cluster,0.15120253837264472,0.1512025383726491,True
+q3a,category=Comedy/coef,-0.9233788281557176,-0.9233788281557118,True
+q3a,category=Comedy/se_cluster,0.18379106524788125,0.183791065247885,True
+q3a,category=Education/coef,-1.1724802475855471,-1.172480247585521,True
+q3a,category=Education/se_cluster,0.17985790738840407,0.1798579073884004,True
+q3a,category=Entertainment/coef,-0.43043487120469925,-0.4304348712047048,True
+q3a,category=Entertainment/se_cluster,0.13161433799990893,0.1316143379999124,True
+q3a,category=Film & Animation/coef,-0.56632802936656,-0.5663280293665637,True
+q3a,category=Film & Animation/se_cluster,0.20687206074930334,0.2068720607493083,True
+q3a,category=Howto & Style/coef,-0.8496060628899855,-0.8496060628899991,True
+q3a,category=Howto & Style/se_cluster,0.5314052102943554,0.5314052102943759,True
+q3a,category=Music/coef,-0.1385841398172787,-0.1385841398172828,True
+q3a,category=Music/se_cluster,0.10764768776309418,0.1076476877630958,True
+q3a,category=News & Politics/coef,-1.39883224070299,-1.3988322407029952,True
+q3a,category=News & Politics/se_cluster,0.15813814743498375,0.1581381474349828,True
+q3a,category=People & Blogs/coef,-0.1730097422753899,-0.1730097422753964,True
+q3a,category=People & Blogs/se_cluster,0.11625516873862107,0.1162551687386127,True
+q3a,category=Pets & Animals/coef,-0.17133812457750514,-0.1713381245775064,True
+q3a,category=Pets & Animals/se_cluster,0.38877746243762873,0.3887774624376247,True
+q3a,category=Science & Tech/coef,-0.2767058302866877,-0.2767058302866801,True
+q3a,category=Science & Tech/se_cluster,0.12455297501143628,0.124552975011431,True
+q3a,category=Sports/coef,-0.41210431850120754,-0.4121043185012106,True
+q3a,category=Sports/se_cluster,0.1331771939630325,0.1331771939630342,True
+q3a,category=Travel & Events/coef,-0.22320943200439441,-0.2232094320044,True
+q3a,category=Travel & Events/se_cluster,0.19885826998073683,0.1988582699807349,True
+q3a,log10(age_days_last)/VIF,1.246058236969882,1.2460582369698825,True
+q3a,log_subs/VIF,1.3782412738399368,1.3782412738399366,True
+q3a,log10(duration_sec)/VIF,2.4170872533770953,2.417087253377098,True
+q3a,tags_count/VIF,1.329062987242359,1.32906298724236,True
+q3a,title_len/VIF,1.3256617884145607,1.325661788414561,True
+q3a,title_upper_ratio/VIF,1.191912779466433,1.1919127794664326,True
+q3a,title_has_question/VIF,1.0738319630904782,1.0738319630904782,True
+q3a,title_has_exclaim/VIF,1.1164651327044859,1.1164651327044868,True
+q3a,title_has_digit/VIF,1.1411212588323902,1.141121258832389,True
+q3a,title_has_emoji/VIF,1.1104673375246117,1.1104673375246112,True
+q3a,pub_is_weekend/VIF,1.004509765497652,1.0045097654976525,True
+q3a,is_short_60/VIF,2.119145783602432,2.1191457836024385,True
+q3a,pub_slot=Khuya 0-5h/VIF,1.153595933069282,1.153595933069282,True
+q3a,pub_slot=Sáng 6-11h/VIF,1.3165878328530343,1.3165878328530367,True
+q3a,pub_slot=Chiều 12-17h/VIF,1.3168846100371034,1.3168846100371054,True
+q3a,pub_slot=Đêm 22-23h/VIF,1.1215678576755903,1.1215678576755908,True
+q3a,category=Autos & Vehicles/VIF,1.0649913535885143,1.0649913535885158,True
+q3a,category=Comedy/VIF,1.0626059241622015,1.0626059241622012,True
+q3a,category=Education/VIF,1.2384327952812701,1.2384327952812708,True
+q3a,category=Entertainment/VIF,1.216659271299381,1.2166592712993831,True
+q3a,category=Film & Animation/VIF,1.1716773484226743,1.171677348422676,True
+q3a,category=Howto & Style/VIF,1.12693065097498,1.1269306509749812,True
+q3a,category=Music/VIF,1.5193676248997567,1.5193676248997618,True
+q3a,category=News & Politics/VIF,1.3680380715500247,1.3680380715500269,True
+q3a,category=People & Blogs/VIF,1.745902415583369,1.7459024155833764,True
+q3a,category=Pets & Animals/VIF,1.0871743213597855,1.087174321359785,True
+q3a,category=Science & Tech/VIF,1.1067981907103677,1.1067981907103688,True
+q3a,category=Sports/VIF,1.2570359240992592,1.2570359240992597,True
+q3a,category=Travel & Events/VIF,1.0853308380931475,1.0853308380931468,True
+q3a,delta_R2/kenh,0.22696592969016138,0.2269659296901665,True
+q3a,delta_R2/the_loai,0.11201520547249433,0.1120152054724939,True
+q3a,delta_R2/noi_dung,0.0065051768079695815,0.0065051768079691,True
+q3a,delta_R2/thoi_gian,0.0015617330781327876,0.0015617330781331,True
