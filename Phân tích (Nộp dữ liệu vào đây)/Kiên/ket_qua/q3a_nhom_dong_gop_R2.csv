@@ -1,5 +1,0 @@
-﻿group,columns_removed,R2_full,R2_without,delta_R2
-Kenh,log_subs,0.484673471639,0.257707541949,0.22696592969
-Noi_dung,log_duration; tags_count; title_len; title_upper_ratio; title_has_question; title_has_exclaim; title_has_digit; title_has_emoji; short,0.484673471639,0.478168294831,0.00650517680797
-Thoi_gian,weekend; slot:Khuya 0-5h; slot:Chiều 12-17h; slot:Tối 18-21h; slot:Đêm 22-23h,0.484673471639,0.483111738561,0.00156173307813
-The_loai,cat:Autos & Vehicles; cat:Comedy; cat:Education; cat:Entertainment; cat:Film & Animation; cat:Howto & Style; cat:Music; cat:News & Politics; cat:People & Blogs; cat:Pets & Animals; cat:Science & Tech; cat:Sports; cat:Travel & Events,0.484673471639,0.372658266166,0.112015205472
