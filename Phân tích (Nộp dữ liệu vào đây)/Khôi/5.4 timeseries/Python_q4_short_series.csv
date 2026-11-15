@@ -1,0 +1,3 @@
+series,n_points,order,mae_last5,note
+N1,14,"(0, 0, 1)",11.117986990635824,"ngắn hạn, minh họa"
+N2,18,"(1, 1, 1)",14828.107674192473,"ngắn hạn, minh họa"
