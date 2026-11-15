@@ -1,0 +1,33 @@
+MÔI TRƯỜNG PYTHON — ĐỒ ÁN IS403 (PHẦN CỦA QUỲNH)
+=================================================
+Ngày ghi nhận : 09/11/2026
+Interpreter   : C:\Users\NHU QUYNH\AppData\Local\Python\pythoncore-3.14-64\python.exe
+Phiên bản     : Python 3.14.8 (tags/v3.14.8:8e6e75d, Sep 30 2026, 18:19:33) [MSC v.1944 64 bit (AMD64)]
+
+Thư viện chính
+--------------
+pandas          3.0.6
+numpy           2.5.3
+scipy           1.18.1
+scikit-learn    1.9.1
+matplotlib      3.11.2
+openpyxl        3.1.5
+xgboost         3.4.1
+python-docx     1.2.0
+joblib          1.6.0
+threadpoolctl   3.7.0
+
+Cài lại môi trường
+------------------
+py -m pip install -r 05_Code_Output/requirements.txt
+
+Thứ tự chạy lại toàn bộ phần của Quỳnh
+--------------------------------------
+1) py 05_Code_Output/python/01_make_labels.py      -> outputs/4.4 labels/
+2) py 05_Code_Output/python/02_q2c_chisquare.py    -> outputs/5.2c q2c/
+3) py 05_Code_Output/python/03_q5_forecast.py      -> outputs/5.5 Q5/
+   (03_q5_forecast.py --quick để kiểm tra nhanh 2 fold)
+   Script tự xuất q5_report.docx qua md2docx_q5.py.
+
+Lưu ý: các số hiện tại tính trên snapshot dữ liệu 07/11/2026.
+Phải chạy lại trên data_final_20261113 trước hạn 15/11/2026 23:59.

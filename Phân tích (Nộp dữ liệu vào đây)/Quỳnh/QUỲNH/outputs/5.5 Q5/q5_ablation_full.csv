@@ -1,0 +1,5 @@
+﻿label,model,config,pr_auc,roc_auc,delta_pr_auc,delta_roc_auc
+viral_A,Random Forest,Đủ biến X_PRE,0.4198538787186534,0.8382147989824593,0.0,0.0
+viral_A,Random Forest,Bỏ nhóm biến kênh,0.21091490310543382,0.7029045799622855,-0.20893897561321956,-0.13531021902017382
+breakout_B,Random Forest,Đủ biến X_PRE,0.3413630909792918,0.5889992980953365,0.0,0.0
+breakout_B,Random Forest,Bỏ nhóm biến kênh,0.33555175888352995,0.5876741922247624,-0.005811332095761845,-0.001325105870574106

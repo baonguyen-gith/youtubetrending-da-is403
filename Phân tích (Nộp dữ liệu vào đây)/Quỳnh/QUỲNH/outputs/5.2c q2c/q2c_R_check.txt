@@ -1,0 +1,31 @@
+# Kiem tra cheo Q2c bang R
+
+Thoi diem: 2026-11-12 23:10:02
+R: R version 4.6.1 (2026-06-24 ucrt)
+
+## Bang 5.4 (R tinh lai)
+
+| Cap bien | n | chi2 | df | p | Cramer's V | The loai vuot ky vong |
+|---|---:|---:|---:|---:|---:|---|
+| category_name x viral_C | 10.925 | 542,701 | 9 | 4.085e-111 | 0,223 | Gaming |
+| category_name x viral_A | 139.227 | 4.485,278 | 14 | < 1e-300 | 0,179 | Gaming |
+| category_name x viral_A (non-short) | 110.585 | 2.965,115 | 14 | < 1e-300 | 0,164 | Gaming |
+| category_name x viral_A (drop sparse) | 139.223 | 4.484,451 | 13 | < 1e-300 | 0,179 | Gaming |
+| category_name x viral_A (non-short, drop sparse) | 110.582 | 2.963,178 | 13 | < 1e-300 | 0,164 | Gaming |
+
+## So sanh voi Python
+
+- Bang thong ke (n, chi2, df, p, V): PASS
+- Bang quan sat viral_C: PASS
+- Bang quan sat viral_A: PASS
+- Phan du chuan hoa viral_C: PASS
+- Phan du chuan hoa viral_A: PASS
+
+## The loai bi gop vao Khác
+
+- viral_C: Autos & Vehicles; Comedy; Howto & Style; Pets & Animals; Travel & Events
+- viral_A: Nonprofits & Activism
+
+## Ket luan
+
+TAT CA KIEM TRA DAT: ket qua R khop voi Python.

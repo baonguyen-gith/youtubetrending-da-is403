@@ -1,0 +1,34 @@
+MÔI TRƯỜNG R — ĐỒ ÁN IS403 (PHẦN CỦA QUỲNH)
+============================================
+Ngày ghi nhận : 09/11/2026
+Rscript       : C:\Program Files\R\R-4.6.1\bin\Rscript.exe
+Phiên bản     : R version 4.6.1 (2026-06-24 ucrt)
+Nền tảng      : x86_64-w64-mingw32
+
+Gói đã kiểm tra
+---------------
+randomForest    4.7.1.2   (đã cài ngày 09/11/2026 để đối chiếu Q5)
+ggplot2         4.0.3
+cluster         2.1.8.2
+lmtest          0.9.40
+tidyverse       CHƯA CÀI (các script hiện tại không cần)
+dplyr           CHƯA CÀI
+readr           CHƯA CÀI
+car             CHƯA CÀI
+sandwich        CHƯA CÀI
+
+Cài thêm nếu cần
+----------------
+install.packages(c("randomForest", "ggplot2", "cluster", "lmtest"),
+                 repos = "https://cloud.r-project.org")
+
+Script R hiện có
+----------------
+05_Code_Output/R/01_check_labels.R   -> kiểm tra labels.csv
+05_Code_Output/R/02_q2c_chisq.R      -> đối chiếu Chi-square Q2c
+05_Code_Output/R/03_q5_rf.R          -> đối chiếu Random Forest Q5 (nhãn viral_A, fold 1)
+                                       đọc q5_model_data_viral_A.csv (UTF-8 BOM)
+
+Chạy ví dụ
+----------
+& "C:\Program Files\R\R-4.6.1\bin\Rscript.exe" 05_Code_Output/R/03_q5_rf.R
