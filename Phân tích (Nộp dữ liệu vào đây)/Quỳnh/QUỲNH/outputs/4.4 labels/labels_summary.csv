@@ -1,0 +1,4 @@
+﻿label,definition,eligible_n,positive_n,positive_rate
+viral_A,pct_in_age >= 0.90 (hạng trung bình log_views trong nhóm tuổi / n nhóm tuổi),139227,13931,0.10006
+breakout_B,"lvpd - ch_med_loo >= log10(2), cần >= 5 video khác cùng kênh & nhóm tuổi",134703,34055,0.252815
+viral_C,"ever_trending trong in_window_C (không ngắn, đăng trong cửa sổ)",10925,550,0.050343

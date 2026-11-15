@@ -1,0 +1,26 @@
+======================================================================
+Q5 - ĐỐI CHIẾU RANDOM FOREST: PYTHON vs R
+======================================================================
+Thời điểm chạy     : 2026-11-12 23:55:47
+R version          : R version 4.6.1 (2026-06-24 ucrt)
+randomForest       : 4.7.1.2
+Dữ liệu            : q5_model_data_viral_A.csv
+Nhãn               : viral_A
+Fold đối chiếu     : 1 / 5 (GroupKFold theo channel_id)
+Số đặc trưng       : 34
+Train              : 111,381 dòng (11,244 dương)
+Test               : 27,846 dòng (2,687 dương)
+Cấu hình           : ntree=300, nodesize=5, mtry=5, seed=42
+Thời gian huấn luyện: 420.1 giây
+----------------------------------------------------------------------
+ROC-AUC Python     : 0.8245
+ROC-AUC R          : 0.8110
+Chênh lệch |ΔAUC|  : 0.0136 (ngưỡng cho phép: 0,03)
+KẾT LUẬN           : PASS
+----------------------------------------------------------------------
+Ghi chú:
+- AUC tính bằng công thức hạng (Mann-Whitney U), tương đương roc_auc_score.
+- Python dùng class_weight='balanced_subsample'; R không có tùy chọn tương
+  đương trực tiếp nên chênh lệch nhỏ về AUC là chấp nhận được (<= 0,03).
+- SVM và XGBoost chỉ chạy Python theo quy ước của nhóm.
+======================================================================

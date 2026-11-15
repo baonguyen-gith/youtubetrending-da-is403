@@ -1,0 +1,31 @@
+=================================================================
+Q6 - DOI CHIEU K-MEANS PYTHON vs R
+Thoi diem chay: 14/11/2026 23:14
+=================================================================
+Du lieu vao          : q6_R_input.csv
+So video             : 22,851
+So bien dung de cum  : 6 (z_vpd_log, z_growth_log, z_momentum, z_like_rate, z_comment_rate, z_volatility)
+k (Python chon)      : 3
+Thuat toan           : Hartigan-Wong, nstart = 10, iter.max = 300, seed = 42
+Thoi gian chay       : 0.3 giay
+Within-cluster SS    : 93,850.8
+So video moi cum (R) : 1813 / 5812 / 15226
+
+Bang doi chieu so video (Python x R):
+      R
+Python     1     2     3
+     1  1813     0     7
+     2     0     3 15219
+     3     0  5809     0
+
+ARI (Python vs R)    : 0.9986
+Ty le video duoc xep cung nhom voi cum tuong ung (best match): 99.87%
+Nguong chap nhan     : ARI >= 0.8
+
+KET LUAN             : PASS
+- Hai cach cai dat K-means (Python scikit-learn va R stats::kmeans)
+  cho ra cung mot cach phan cum tren thuc te.
+
+- ARI = 1 khi hai cach chia giong het; ARI ~ 0 khi giong ngau nhien.
+- Lech nho (0,8-1,0) la binh thuong vi kmeans cua R va sklearn khoi tao
+  tam cum khac nhau; chi so sanh nhan cuoi cung, khong so sanh tam cum.
