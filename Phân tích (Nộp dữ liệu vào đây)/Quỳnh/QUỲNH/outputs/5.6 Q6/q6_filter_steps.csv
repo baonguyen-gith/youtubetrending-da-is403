@@ -1,0 +1,8 @@
+﻿buoc,n_dong,n_video
+0. Toàn bộ measurements.csv,1066405.0,140387
+1. Chỉ giữ is_last_of_day = TRUE,411843.0,140387
+2. Có >= 5 ngày đo,290192.0,26520
+3. Khoảng cách lần đo đầu–cuối >= 5 ngày,282652.0,25012
+"4. Đủ likes/comments (không ẩn like, không tắt comment)",256985.0,22886
+5. Views lần đo cuối > 0,256593.0,22851
+6. Ghép được subscribers + thể loại (dùng cho hồ sơ cụm),,22851
