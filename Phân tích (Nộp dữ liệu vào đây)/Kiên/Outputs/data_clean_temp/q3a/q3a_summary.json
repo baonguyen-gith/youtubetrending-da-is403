@@ -1,0 +1,17 @@
+{
+  "n_used": 95319,
+  "n_channels": 328,
+  "n_parameters": 31,
+  "R2": 0.4846930720972342,
+  "adjusted_R2": 0.48453083542696007,
+  "RMSE": 0.804534247030514,
+  "df_cluster": 327,
+  "removed_due_to_VIF_gt10": [],
+  "factor_baselines": {
+    "pub_slot": "Tối 18-21h",
+    "category_name": "Gaming"
+  },
+  "inference": "cluster CR1 finite sample correction n_clusters/(n_clusters-1)*(n-1)/(n-k); t reference df G-1",
+  "vif_gt5_remaining": [],
+  "important": "Association, not causation; log_subs measured at data collection, not publication."
+}

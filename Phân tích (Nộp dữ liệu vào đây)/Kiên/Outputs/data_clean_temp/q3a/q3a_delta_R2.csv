@@ -1,0 +1,5 @@
+﻿group,n_terms,R2_full,R2_without_group,delta_R2,removed_columns
+channel,1,0.484693072097,0.257735775062,0.226957297035,log_subs
+content,9,0.484693072097,0.478188142714,0.00650492938339,log_duration;tags_count;title_len;title_upper_ratio;title_has_question;title_has_exclaim;title_has_digit;title_has_emoji;is_short_60
+timing,5,0.484693072097,0.48313139842,0.00156167367757,pub_is_weekend;pub_slot__Chiều 12-17h;pub_slot__Khuya 0-5h;pub_slot__Sáng 6-11h;pub_slot__Đêm 22-23h
+category,14,0.484693072097,0.372680364384,0.112012707713,category_name__Autos & Vehicles;category_name__Comedy;category_name__Education;category_name__Entertainment;category_name__Film & Animation;category_name__Howto & Style;category_name__Music;category_name__News & Politics;category_name__Nonprofits & Activism;category_name__People & Blogs;category_name__Pets & Animals;category_name__Science & Tech;category_name__Sports;category_name__Travel & Events
