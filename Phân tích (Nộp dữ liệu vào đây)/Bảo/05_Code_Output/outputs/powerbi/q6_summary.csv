@@ -1,0 +1,8 @@
+﻿chi_so,gia_tri
+Số video đưa vào phân cụm,22851.0
+Số cụm k,3.0
+Silhouette (k = 3),0.296
+Davies-Bouldin (k = 3),1.437
+ARI trung bình (20 bootstrap),0.991
+Cramér V: cụm × thể loại,0.33
+Cramér V: cụm × viral_A,0.198

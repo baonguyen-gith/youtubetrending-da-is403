@@ -1,0 +1,35 @@
+﻿rank,feature,feature_label,nhom_bien,importance_mean,importance_std
+1,log_subs,Số người đăng ký (log_subs),Kênh,0.1747,0.0062
+2,total_videos,Tổng số video của kênh,Kênh,0.04969,0.00103
+3,channel_age_days,Tuổi kênh (ngày),Kênh,0.01819,0.0015
+4,cat_20,Thể loại: Gaming,Thể loại,0.00236,0.00169
+5,duration_sec,Độ dài video (giây),Nội dung,0.00195,0.00128
+6,title_has_pipe,Tiêu đề có ký tự |,Nội dung,0.0017,0.00063
+7,pub_month,Tháng đăng,Thời gian,0.00109,0.00012
+8,tags_count,Số thẻ tag,Nội dung,0.00095,0.00112
+9,title_has_bracket,Tiêu đề có ngoặc,Nội dung,0.00095,0.00046
+10,cat_24,Thể loại: Entertainment,Thể loại,0.00093,0.00014
+11,title_words,Số từ tiêu đề,Nội dung,0.00072,0.0004
+12,title_upper_ratio,Tỷ lệ chữ HOA tiêu đề,Nội dung,0.00071,0.00113
+13,cat_27,Thể loại: Education,Thể loại,0.00063,5e-05
+14,title_n_hashtag,Số hashtag tiêu đề,Nội dung,0.00051,0.00038
+15,pub_dow,Thứ đăng,Thời gian,0.00033,0.0003
+16,pub_hour,Giờ đăng,Thời gian,0.00029,0.00092
+17,cat_17,Thể loại: Sports,Thể loại,0.00027,0.00024
+18,cat_23,Thể loại: Comedy,Thể loại,0.00024,1e-05
+19,cat_2,Thể loại: Autos & Vehicles,Thể loại,0.00021,2e-05
+20,cat_25,Thể loại: News & Politics,Thể loại,0.00015,2e-05
+21,pub_is_weekend,Đăng cuối tuần,Thời gian,0.00011,0.00012
+22,cat_28,Thể loại: Science & Tech,Thể loại,7e-05,6e-05
+23,cat_19,Thể loại: Travel & Events,Thể loại,3e-05,1e-05
+24,cat_29,Thể loại: Nonprofits,Thể loại,0.0,0.0
+25,title_has_exclaim,Tiêu đề có !,Nội dung,-8e-05,0.00031
+26,cat_15,Thể loại: Pets & Animals,Thể loại,-8e-05,1e-05
+27,cat_26,Thể loại: Howto & Style,Thể loại,-0.00019,2e-05
+28,title_has_emoji,Tiêu đề có emoji,Nội dung,-0.00031,0.00036
+29,title_has_question,Tiêu đề có ?,Nội dung,-0.00042,0.00015
+30,title_len,Độ dài tiêu đề,Nội dung,-0.0005,0.00076
+31,title_has_digit,Tiêu đề có chữ số,Nội dung,-0.00073,0.00016
+32,cat_10,Thể loại: Music,Thể loại,-0.00105,0.00055
+33,cat_22,Thể loại: People & Blogs,Thể loại,-0.00146,0.00068
+34,is_short_60,Video ngắn (≤ 60s),Nội dung,-0.00162,0.00073

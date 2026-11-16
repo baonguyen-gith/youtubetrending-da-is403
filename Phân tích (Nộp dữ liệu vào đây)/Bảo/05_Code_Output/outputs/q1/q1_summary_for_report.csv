@@ -1,0 +1,22 @@
+﻿,value
+n_H,139227
+n_channels_H,464
+hour_best,4
+hour_best_val,0.5130755654996211
+hour_worst,13
+hour_worst_val,-0.3771907226729967
+hour_range,0.8902662881726178
+hour_range_within_channel,0.20945536993283076
+dow_range_within_channel,0.025748400887644074
+between_channel_var_share,0.6800863720426938
+dow_range,0.054947912215806305
+cells_total,168
+cells_blank,0
+cell_best,"4h Thứ Tư (1.031, n=100)"
+cell_worst,"13h Thứ Ba (-0.572, n=562)"
+cat_best,Gaming
+cat_worst,Education
+cat_range_top10,1.752042058460769
+cat_best_within,Music
+cat_worst_within,Howto & Style
+cat_range_top10_within_channel,0.018150053606196925

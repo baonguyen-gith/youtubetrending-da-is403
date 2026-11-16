@@ -1,0 +1,4 @@
+﻿cluster_label,cluster,n,pct,vpd_log_med,growth_log_med,momentum_med,like_rate_med,comment_rate_med,volatility_med,subscribers_med,age_days_med,views_last_med,pct_ever_trending,pct_viral_A,pct_breakout_B,top_category,pct_top_category
+Cụm 1,1,1820,7.9646,2.5033,0.0372,-1.3021,0.0389,0.0024,0.6801,188000.0,19.0383,5213.5,2.0879,8.9011,14.7802,Music,29.2857
+Cụm 2,2,15222,66.6142,3.2453,0.0396,-1.2566,0.0074,0.0002,0.5829,516000.0,20.361,31740.5,4.8482,14.5644,29.569,Gaming,32.2888
+Cụm 3,3,5809,25.4212,2.0106,0.01,-3.2583,0.004,0.0,1.5689,397000.0,22.2753,2011.0,0.5853,0.4648,16.8187,News & Politics,38.1133

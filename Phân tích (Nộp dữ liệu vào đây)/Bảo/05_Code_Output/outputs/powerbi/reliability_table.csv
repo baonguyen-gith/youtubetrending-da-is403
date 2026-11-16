@@ -1,0 +1,18 @@
+﻿tieu_chi,so_dem,mau_so,ty_le_pct,cach_xu_ly,nguon_tinh
+Ẩn lượt thích (likes_hidden),5119,140387,3.65,"Giữ video; likes và like_rate để NaN, chỉ tính tỷ lệ trên video có likes",videos_master.csv
+Tắt bình luận (comments_disabled),2966,140387,2.11,Giữ video; comments và comment_rate để NaN,videos_master.csv
+Độ dài video rỗng (duration_sec),21,140387,0.01,Giữ trong thống kê chung; loại khỏi mô hình dùng duration,videos_master.csv
+Trùng lặp video (video_id lặp trong videos_master),0,140387,0.0,Loại khi làm sạch; kiểm tra lại trên file sạch phải bằng 0,videos_master.csv
+Trùng lặp lần đo (cùng video_id và collected_ts),0,1066405,0.0,Loại khi làm sạch; kiểm tra lại trên file sạch phải bằng 0,measurements.csv
+Trùng lặp dòng Trending (cùng run_ts và video_id),0,9091,0.0,Kiểm tra trên file sạch,trending_clean.csv
+Ngoại lai IQR trên log_views (dưới 1.45),1486,140183,1.06,GIỮ (không loại): đây là video thật có ít lượt xem; phân tích dùng log10 và lv_adj,videos_master.csv
+Ngoại lai IQR trên log_views (trên 7.47),163,140183,0.12,GIỮ (không loại): video có lượt xem rất cao là hiện tượng thật của nền tảng,videos_master.csv
+Lượt thích > lượt xem (trước làm sạch),2112,1066405,0.2,Đặt likes = NaN (nhiễu API / video mới),dq_report.txt
+Lượt thích > lượt xem (còn lại sau làm sạch),0,1066405,0.0,Phải bằng 0,measurements.csv
+Bình luận > lượt xem (trước làm sạch),110,1066405,0.01,Đặt comments = NaN,dq_report.txt
+Bình luận > lượt xem (còn lại sau làm sạch),0,1066405,0.0,Phải bằng 0,measurements.csv
+Lượt xem = 0,4262,1066405,0.4,Giữ trong measurements; loại khỏi phân tích log và tỷ lệ (H yêu cầu views > 0),dq_report.txt
+Lượt xem rỗng (NaN),551,1066405,0.05,Loại dòng đo,dq_report.txt
+Lượt xem GIẢM giữa hai lần đo liên tiếp (tính lại từ views_raw),11065,926018,1.19,Dùng cummax để chuỗi lượt xem đơn điệu (YouTube lọc view ảo),measurements.csv (views_raw)
+Lượt xem GIẢM giữa hai lần đo liên tiếp (theo dq_report),11065,926018,1.19,Đối chiếu với dòng trên: hai số phải khớp,dq_report.txt
+Lượt thích GIẢM giữa hai lần đo liên tiếp,14997,848877,1.77,Giữ nguyên (người dùng có thể bỏ thích); không dùng cummax cho likes,measurements.csv

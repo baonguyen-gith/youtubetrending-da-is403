@@ -1,0 +1,1196 @@
+{
+ "data_dir": "data_final_20261113",
+ "scale": {
+  "n_video": "140.387",
+  "n_channels": "566",
+  "n_channels_master": "566",
+  "n_trending_videos": "1.039",
+  "n_meas": "1.066.405",
+  "n_trending_rows": "9.091",
+  "n_trending_snap": "46",
+  "last_collect_vn": "19:41",
+  "last_collect_date": "12/11/2026",
+  "n_runs": "139",
+  "n_days": "19",
+  "day_first": "2026-10-22",
+  "day_last": "2026-11-12",
+  "n_H": "139.227",
+  "n_ch_H": "464",
+  "n_not_hist": "140",
+  "n_live": "174",
+  "n_excl": "1.160",
+  "n_ch_ge500": "162",
+  "n_ch_lt500": "302",
+  "n_ch_no_hist": "102",
+  "n_ch_hist": "464",
+  "n_ch_ge480": "166",
+  "max_ch_hist": "1.761",
+  "pct_viral": "10,01",
+  "n_viral": "13.931"
+ },
+ "excl": {
+  "not_hist": 140,
+  "live": 174,
+  "views0": 204,
+  "age_lt1": 811
+ },
+ "dq": {
+  "trend_raw": "9.874",
+  "track_raw": "916.835",
+  "hist_raw": "140.247",
+  "chan_raw": "20.160",
+  "bad_id": "7",
+  "fixed_id": "7",
+  "title_suspect": "601",
+  "lk_gt": "2.112",
+  "cm_gt": "110",
+  "v0": "4.262",
+  "vnan": "551",
+  "dec": "11.065",
+  "pairs": "926.018",
+  "pct_dq": "1.19",
+  "missing_days": "2026-10-25, 2026-10-30, 2026-11-01, 2026-11-02",
+  "dq_n_meas_vid": "1.066.405",
+  "ge2": "31.356",
+  "ge5": "30.047",
+  "pct_true": "1,19",
+  "trending_runs": "46",
+  "trending_ndays": "18",
+  "trending_ranges": "22/10–24/10, 26/10–29/10, 31/10, 03/11–12/11",
+  "tracking_runs": "48",
+  "tracking_ndays": "19",
+  "tracking_ranges": "22/10–29/10, 31/10, 03/11–12/11",
+  "history_runs": "45",
+  "history_ndays": "12",
+  "history_ranges": "22/10–23/10, 03/11–12/11",
+  "trend_per_day": "2,6"
+ },
+ "perday": {
+  "trending": [
+   1,
+   5
+  ],
+  "tracking": [
+   1,
+   5
+  ]
+ },
+ "pub_hour_match": "100,00",
+ "is_final": true,
+ "data_label": "dữ liệu chính thức 22/10–12/11/2026",
+ "c30": {
+  "rows": [
+   [
+    "< 10 nghìn",
+    "10",
+    "0,22%",
+    "0,00%",
+    "0,00%",
+    "42,6"
+   ],
+   [
+    "10 nghìn – 1 triệu",
+    "10",
+    "0,07%",
+    "0,00%",
+    "0,00%",
+    "47,1"
+   ],
+   [
+    "> 1 triệu",
+    "10",
+    "0,10%",
+    "0,02%",
+    "0,00%",
+    "51,8"
+   ],
+   [
+    "Chung",
+    "30",
+    "0,08%",
+    "0,00%",
+    "0,00%",
+    "47,1"
+   ]
+  ],
+  "med_views": "0,08%",
+  "med_likes": "0,00%",
+  "med_comments": "0,00%",
+  "max_views": "2,78%",
+  "share_pos": "80",
+  "n_neg_views": 1,
+  "n_exact_views": 5,
+  "n_exact_likes": 17,
+  "n_exact_comments": 27,
+  "n_nonzero_views": 30,
+  "n_nonzero_likes": 29,
+  "n_nonzero_comments": 21,
+  "n_exact_views_nonzero": 5,
+  "n_exact_likes_nonzero": 16,
+  "n_exact_comments_nonzero": 18,
+  "lag_min": "41",
+  "lag_max": "56",
+  "t_first": "20:22",
+  "t_last": "20:36",
+  "t_date": "12/11/2026"
+ },
+ "rel": [
+  {
+   "tc": "Ẩn lượt thích (likes_hidden)",
+   "cnt": "5.119",
+   "den": "140.387",
+   "pct": "3,65",
+   "how": "Giữ video; likes và like_rate để NaN, chỉ tính tỷ lệ trên video có likes"
+  },
+  {
+   "tc": "Tắt bình luận (comments_disabled)",
+   "cnt": "2.966",
+   "den": "140.387",
+   "pct": "2,11",
+   "how": "Giữ video; comments và comment_rate để NaN"
+  },
+  {
+   "tc": "Độ dài video rỗng (duration_sec)",
+   "cnt": "21",
+   "den": "140.387",
+   "pct": "0,01",
+   "how": "Giữ trong thống kê chung; loại khỏi mô hình dùng duration"
+  },
+  {
+   "tc": "Trùng lặp video (video_id lặp trong videos_master)",
+   "cnt": "0",
+   "den": "140.387",
+   "pct": "0,00",
+   "how": "Loại khi làm sạch; kiểm tra lại trên file sạch phải bằng 0"
+  },
+  {
+   "tc": "Trùng lặp lần đo (cùng video_id và collected_ts)",
+   "cnt": "0",
+   "den": "1.066.405",
+   "pct": "0,00",
+   "how": "Loại khi làm sạch; kiểm tra lại trên file sạch phải bằng 0"
+  },
+  {
+   "tc": "Trùng lặp dòng Trending (cùng run_ts và video_id)",
+   "cnt": "0",
+   "den": "9.091",
+   "pct": "0,00",
+   "how": "Kiểm tra trên file sạch"
+  },
+  {
+   "tc": "Ngoại lai IQR trên log_views (dưới 1.45)",
+   "cnt": "1.486",
+   "den": "140.183",
+   "pct": "1,06",
+   "how": "GIỮ (không loại): đây là video thật có ít lượt xem; phân tích dùng log10 và lv_adj"
+  },
+  {
+   "tc": "Ngoại lai IQR trên log_views (trên 7.47)",
+   "cnt": "163",
+   "den": "140.183",
+   "pct": "0,12",
+   "how": "GIỮ (không loại): video có lượt xem rất cao là hiện tượng thật của nền tảng"
+  },
+  {
+   "tc": "Lượt thích > lượt xem (trước làm sạch)",
+   "cnt": "2.112",
+   "den": "1.066.405",
+   "pct": "0,20",
+   "how": "Đặt likes = NaN (nhiễu API / video mới)"
+  },
+  {
+   "tc": "Lượt thích > lượt xem (còn lại sau làm sạch)",
+   "cnt": "0",
+   "den": "1.066.405",
+   "pct": "0,00",
+   "how": "Phải bằng 0"
+  },
+  {
+   "tc": "Bình luận > lượt xem (trước làm sạch)",
+   "cnt": "110",
+   "den": "1.066.405",
+   "pct": "0,01",
+   "how": "Đặt comments = NaN"
+  },
+  {
+   "tc": "Bình luận > lượt xem (còn lại sau làm sạch)",
+   "cnt": "0",
+   "den": "1.066.405",
+   "pct": "0,00",
+   "how": "Phải bằng 0"
+  },
+  {
+   "tc": "Lượt xem = 0",
+   "cnt": "4.262",
+   "den": "1.066.405",
+   "pct": "0,40",
+   "how": "Giữ trong measurements; loại khỏi phân tích log và tỷ lệ (H yêu cầu views > 0)"
+  },
+  {
+   "tc": "Lượt xem rỗng (NaN)",
+   "cnt": "551",
+   "den": "1.066.405",
+   "pct": "0,05",
+   "how": "Loại dòng đo"
+  },
+  {
+   "tc": "Lượt xem GIẢM giữa hai lần đo liên tiếp (tính lại từ views_raw)",
+   "cnt": "11.065",
+   "den": "926.018",
+   "pct": "1,19",
+   "how": "Dùng cummax để chuỗi lượt xem đơn điệu (YouTube lọc view ảo)"
+  },
+  {
+   "tc": "Lượt xem GIẢM giữa hai lần đo liên tiếp (theo dq_report)",
+   "cnt": "11.065",
+   "den": "926.018",
+   "pct": "1,19",
+   "how": "Đối chiếu với dòng trên: hai số phải khớp"
+  },
+  {
+   "tc": "Lượt thích GIẢM giữa hai lần đo liên tiếp",
+   "cnt": "14.997",
+   "den": "848.877",
+   "pct": "1,77",
+   "how": "Giữ nguyên (người dùng có thể bỏ thích); không dùng cummax cho likes"
+  }
+ ],
+ "missing": {
+  "trending": "2026-10-25, 2026-10-30, 2026-11-01, 2026-11-02",
+  "tracking": "2026-10-30, 2026-11-01, 2026-11-02",
+  "history": "2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02"
+ },
+ "runs_by_day": {
+  "2026-10-22": 5,
+  "2026-10-23": 5,
+  "2026-10-24": 2,
+  "2026-10-25": 1,
+  "2026-10-26": 2,
+  "2026-10-27": 2,
+  "2026-10-28": 2,
+  "2026-10-29": 2,
+  "2026-10-31": 2,
+  "2026-11-03": 12,
+  "2026-11-04": 14,
+  "2026-11-05": 11,
+  "2026-11-06": 12,
+  "2026-11-07": 15,
+  "2026-11-08": 12,
+  "2026-11-09": 8,
+  "2026-11-10": 11,
+  "2026-11-11": 12,
+  "2026-11-12": 9
+ },
+ "q1_all": [
+  [
+   "Lượt xem (gốc)",
+   "139.227",
+   "363.216",
+   "33.651",
+   "3.041.980",
+   "8,38",
+   "43,95",
+   "2.940,00"
+  ],
+  [
+   "Lượt xem (log10)",
+   "139.227",
+   "4,44",
+   "4,53",
+   "1,11",
+   "0,25",
+   "-0,43",
+   "0,34"
+  ],
+  [
+   "Lượt thích (gốc)",
+   "134.202",
+   "5.677",
+   "366",
+   "43.043",
+   "7,58",
+   "28,83",
+   "1.281,41"
+  ],
+  [
+   "Lượt thích (log10)",
+   "130.306",
+   "2,53",
+   "2,61",
+   "1,10",
+   "0,43",
+   "-0,09",
+   "-0,38"
+  ],
+  [
+   "Bình luận (gốc)",
+   "136.269",
+   "246,31",
+   "11",
+   "2.727",
+   "11,07",
+   "46,32",
+   "2.975,13"
+  ],
+  [
+   "Bình luận (log10)",
+   "107.778",
+   "1,42",
+   "1,38",
+   "0,89",
+   "0,63",
+   "0,36",
+   "-0,31"
+  ]
+ ],
+ "q1_short": [
+  [
+   "Lượt xem (gốc)",
+   "28.642",
+   "451.516",
+   "30.742",
+   "2.712.110",
+   "6,01",
+   "76,24",
+   "9.222,85"
+  ],
+  [
+   "Lượt xem (log10)",
+   "28.642",
+   "4,43",
+   "4,49",
+   "1,20",
+   "0,27",
+   "-0,32",
+   "0,18"
+  ],
+  [
+   "Lượt thích (gốc)",
+   "28.222",
+   "10.445",
+   "437",
+   "48.232",
+   "4,62",
+   "13,90",
+   "306,48"
+  ],
+  [
+   "Lượt thích (log10)",
+   "27.432",
+   "2,65",
+   "2,69",
+   "1,22",
+   "0,46",
+   "0,01",
+   "-0,60"
+  ],
+  [
+   "Bình luận (gốc)",
+   "28.604",
+   "204,78",
+   "8",
+   "1.443",
+   "7,05",
+   "49,23",
+   "4.082,72"
+  ],
+  [
+   "Bình luận (log10)",
+   "22.063",
+   "1,37",
+   "1,30",
+   "0,91",
+   "0,66",
+   "0,48",
+   "-0,26"
+  ]
+ ],
+ "q1_long": [
+  [
+   "Lượt xem (gốc)",
+   "110.585",
+   "340.347",
+   "34.515",
+   "3.121.343",
+   "9,17",
+   "38,28",
+   "1.977,28"
+  ],
+  [
+   "Lượt xem (log10)",
+   "110.585",
+   "4,44",
+   "4,54",
+   "1,08",
+   "0,24",
+   "-0,47",
+   "0,37"
+  ],
+  [
+   "Lượt thích (gốc)",
+   "105.980",
+   "4.407",
+   "350",
+   "41.460",
+   "9,41",
+   "34,99",
+   "1.737,08"
+  ],
+  [
+   "Lượt thích (log10)",
+   "102.874",
+   "2,50",
+   "2,59",
+   "1,06",
+   "0,42",
+   "-0,16",
+   "-0,37"
+  ],
+  [
+   "Bình luận (gốc)",
+   "107.665",
+   "257,35",
+   "12",
+   "2.976",
+   "11,57",
+   "43,59",
+   "2.592,79"
+  ],
+  [
+   "Bình luận (log10)",
+   "85.715",
+   "1,44",
+   "1,40",
+   "0,89",
+   "0,62",
+   "0,33",
+   "-0,31"
+  ]
+ ],
+ "q1_sum": {
+  "n_H": "139227",
+  "n_channels_H": "464",
+  "hour_best": "4",
+  "hour_best_val": "0.5130755654996211",
+  "hour_worst": "13",
+  "hour_worst_val": "-0.3771907226729967",
+  "hour_range": "0.8902662881726178",
+  "hour_range_within_channel": "0.20945536993283076",
+  "dow_range_within_channel": "0.025748400887644074",
+  "between_channel_var_share": "0.6800863720426938",
+  "dow_range": "0.054947912215806305",
+  "cells_total": "168",
+  "cells_blank": "0",
+  "cell_best": "4h Thứ Tư (1,031, n = 100)",
+  "cell_worst": "13h Thứ Ba (-0,572, n = 562)",
+  "cat_best": "Gaming",
+  "cat_worst": "Education",
+  "cat_range_top10": "1.752042058460769",
+  "cat_best_within": "Music",
+  "cat_worst_within": "Howto & Style",
+  "cat_range_top10_within_channel": "0.018150053606196925"
+ },
+ "q1_dow": [
+  [
+   "Thứ Hai",
+   "18.797",
+   "0,080",
+   "-0,004",
+   "1,05"
+  ],
+  [
+   "Thứ Ba",
+   "19.591",
+   "0,078",
+   "-0,001",
+   "1,06"
+  ],
+  [
+   "Thứ Tư",
+   "20.257",
+   "0,065",
+   "-0,011",
+   "1,07"
+  ],
+  [
+   "Thứ Năm",
+   "19.700",
+   "0,067",
+   "-0,009",
+   "1,05"
+  ],
+  [
+   "Thứ Sáu",
+   "20.516",
+   "0,102",
+   "0,000",
+   "1,06"
+  ],
+  [
+   "Thứ Bảy",
+   "20.677",
+   "0,120",
+   "0,012",
+   "1,04"
+  ],
+  [
+   "Chủ nhật",
+   "19.689",
+   "0,112",
+   "0,015",
+   "1,05"
+  ]
+ ],
+ "q1_hour_top": [
+  [
+   4,
+   "735",
+   "0,513",
+   "0,088"
+  ],
+  [
+   17,
+   "14.755",
+   "0,489",
+   "-0,007"
+  ],
+  [
+   3,
+   "696",
+   "0,375",
+   "-0,016"
+  ]
+ ],
+ "q1_hour_bot": [
+  [
+   13,
+   "3.805",
+   "-0,377",
+   "-0,027"
+  ],
+  [
+   14,
+   "3.886",
+   "-0,327",
+   "-0,024"
+  ],
+  [
+   15,
+   "6.610",
+   "-0,299",
+   "-0,040"
+  ]
+ ],
+ "q1_hour_within_max": [
+  7,
+  "0,109"
+ ],
+ "q1_hour_within_min": [
+  0,
+  "-0,101"
+ ],
+ "q1_like_rate_range": [
+  "0,78",
+  "1,71"
+ ],
+ "q1_cat": [
+  [
+   "Gaming",
+   "49.436",
+   "0,555",
+   "0,02",
+   "1,08",
+   "0,002"
+  ],
+  [
+   "Music",
+   "26.297",
+   "-0,124",
+   "-0,76",
+   "0,61",
+   "0,003"
+  ],
+  [
+   "People & Blogs",
+   "21.995",
+   "-0,333",
+   "-1,21",
+   "0,45",
+   "-0,011"
+  ],
+  [
+   "Entertainment",
+   "8.947",
+   "0,033",
+   "-0,75",
+   "0,77",
+   "0,003"
+  ],
+  [
+   "Sports",
+   "7.011",
+   "-0,017",
+   "-0,59",
+   "0,43",
+   "0,002"
+  ],
+  [
+   "News & Politics",
+   "6.252",
+   "-0,877",
+   "-1,52",
+   "0,04",
+   "0,002"
+  ],
+  [
+   "Education",
+   "5.752",
+   "-1,197",
+   "-1,73",
+   "-0,65",
+   "0,000"
+  ],
+  [
+   "Film & Animation",
+   "4.434",
+   "0,162",
+   "-0,39",
+   "0,71",
+   "-0,008"
+  ],
+  [
+   "Howto & Style",
+   "2.146",
+   "-0,947",
+   "-1,53",
+   "0,33",
+   "-0,015"
+  ],
+  [
+   "Science & Tech",
+   "1.812",
+   "0,198",
+   "-0,48",
+   "0,68",
+   "-0,008"
+  ]
+ ],
+ "q1_month": {
+  "first": "2024-01",
+  "last": "2026-11",
+  "n_first": "729",
+  "n_last_full": "21.248",
+  "n_min": "541",
+  "n_max": "21.248"
+ },
+ "q1_like_mean_ratio": "2,4",
+ "q1_views_mean_over_median": "10,8",
+ "q1_dow_ratio": "1,13",
+ "q1_dow_within_ratio": "1,06",
+ "q1_dow_hi": [
+  "0,102",
+  "0,120"
+ ],
+ "q1_dow_lo": [
+  "0,065",
+  "0,080"
+ ],
+ "q1_dow_hi_gt_lo": true,
+ "q1_dow_within_rng": [
+  "-0,011",
+  "0,015"
+ ],
+ "q1_month_rng": [
+  "-0,156",
+  "0,260"
+ ],
+ "q1_heat": {
+  "hour_rng": "0,850",
+  "dow_rng": "0,078",
+  "hour_dominant": true
+ },
+ "q1_between_share": "68,0",
+ "q1_hour_range_ratio": "7,8",
+ "q1_within_ratio": "1,62",
+ "q1_cat_ratio": "56",
+ "q1_cat_within_range": "0,018",
+ "q1_cat_within_ratio": "1,04",
+ "q3b_rows": [
+  [
+   "Giờ đăng (pub_hour)",
+   "0,99 (0,91–1,08)",
+   "0,854",
+   "1,07 (0,98–1,18)",
+   "0,139",
+   "1,05"
+  ],
+  [
+   "Thứ đăng (pub_dow)",
+   "1,06 (1,02–1,10)",
+   "0,006",
+   "1,05 (1,01–1,09)",
+   "0,014",
+   "2,66"
+  ],
+  [
+   "Tháng đăng (pub_month)",
+   "1,19 (1,14–1,26)",
+   "< 0,001",
+   "1,09 (1,02–1,16)",
+   "0,008",
+   "1,07"
+  ],
+  [
+   "log10 độ dài video (duration_sec)",
+   "0,96 (0,78–1,18)",
+   "0,666",
+   "0,86 (0,70–1,05)",
+   "0,143",
+   "2,39"
+  ],
+  [
+   "Số thẻ tag (tags_count)",
+   "0,95 (0,81–1,10)",
+   "0,488",
+   "0,96 (0,79–1,17)",
+   "0,683",
+   "1,28"
+  ],
+  [
+   "Độ dài tiêu đề (title_len)",
+   "0,94 (0,61–1,43)",
+   "0,761",
+   "1,12 (0,72–1,72)",
+   "0,621",
+   "9,14"
+  ],
+  [
+   "Số từ tiêu đề (title_words)",
+   "1,08 (0,73–1,61)",
+   "0,690",
+   "0,73 (0,48–1,11)",
+   "0,142",
+   "9,77"
+  ],
+  [
+   "Tỷ lệ chữ HOA tiêu đề",
+   "0,97 (0,84–1,13)",
+   "0,698",
+   "1,02 (0,86–1,22)",
+   "0,790",
+   "1,21"
+  ],
+  [
+   "Số hashtag trong tiêu đề",
+   "1,08 (0,93–1,25)",
+   "0,337",
+   "0,95 (0,81–1,13)",
+   "0,575",
+   "2,02"
+  ],
+  [
+   "log10 số người đăng ký (log_subs)",
+   "8,83 (6,20–12,57)",
+   "< 0,001",
+   "–",
+   "–",
+   "1,95"
+  ],
+  [
+   "Tuổi kênh (channel_age_days)",
+   "0,63 (0,48–0,83)",
+   "0,001",
+   "–",
+   "–",
+   "1,59"
+  ],
+  [
+   "log10(số video của kênh + 1)",
+   "0,31 (0,24–0,40)",
+   "< 0,001",
+   "–",
+   "–",
+   "2,46"
+  ],
+  [
+   "Đăng cuối tuần",
+   "0,96 (0,88–1,06)",
+   "0,426",
+   "0,94 (0,86–1,03)",
+   "0,182",
+   "2,66"
+  ],
+  [
+   "Video ngắn (<=60s)",
+   "0,90 (0,62–1,30)",
+   "0,579",
+   "0,87 (0,62–1,23)",
+   "0,434",
+   "2,29"
+  ],
+  [
+   "Tiêu đề có dấu ?",
+   "1,14 (0,81–1,60)",
+   "0,453",
+   "1,42 (0,95–2,11)",
+   "0,087",
+   "1,07"
+  ],
+  [
+   "Tiêu đề có dấu !",
+   "1,06 (0,79–1,42)",
+   "0,717",
+   "1,42 (0,96–2,11)",
+   "0,082",
+   "1,11"
+  ],
+  [
+   "Tiêu đề có chữ số",
+   "1,04 (0,85–1,26)",
+   "0,727",
+   "0,94 (0,77–1,16)",
+   "0,580",
+   "1,13"
+  ],
+  [
+   "Tiêu đề có emoji",
+   "1,20 (0,90–1,61)",
+   "0,208",
+   "1,64 (1,12–2,42)",
+   "0,012",
+   "1,13"
+  ],
+  [
+   "Tiêu đề có ngoặc",
+   "1,49 (1,10–2,02)",
+   "0,011",
+   "1,42 (0,99–2,02)",
+   "0,053",
+   "1,11"
+  ],
+  [
+   "Tiêu đề có ký tự |",
+   "0,79 (0,61–1,03)",
+   "0,085",
+   "0,61 (0,45–0,84)",
+   "0,002",
+   "1,19"
+  ],
+  [
+   "Thể loại: Autos & Vehicles",
+   "0,01 (0,00–0,11)",
+   "< 0,001",
+   "0,00 (0,00–0,02)",
+   "< 0,001",
+   "1,06"
+  ],
+  [
+   "Thể loại: Comedy",
+   "0,11 (0,06–0,18)",
+   "< 0,001",
+   "0,25 (0,14–0,45)",
+   "< 0,001",
+   "1,06"
+  ],
+  [
+   "Thể loại: Education",
+   "0,29 (0,09–0,93)",
+   "0,037",
+   "0,12 (0,02–0,72)",
+   "0,020",
+   "1,16"
+  ],
+  [
+   "Thể loại: Entertainment",
+   "0,59 (0,32–1,09)",
+   "0,090",
+   "0,75 (0,37–1,51)",
+   "0,425",
+   "1,16"
+  ],
+  [
+   "Thể loại: Film & Animation",
+   "0,31 (0,18–0,53)",
+   "< 0,001",
+   "0,53 (0,24–1,17)",
+   "0,116",
+   "1,12"
+  ],
+  [
+   "Thể loại: Howto & Style",
+   "0,39 (0,07–2,17)",
+   "0,279",
+   "0,22 (0,05–0,95)",
+   "0,043",
+   "1,11"
+  ],
+  [
+   "Thể loại: Music",
+   "0,50 (0,31–0,78)",
+   "0,002",
+   "0,68 (0,37–1,27)",
+   "0,227",
+   "1,74"
+  ],
+  [
+   "Thể loại: News & Politics",
+   "0,44 (0,19–1,04)",
+   "0,060",
+   "0,06 (0,02–0,21)",
+   "< 0,001",
+   "1,61"
+  ],
+  [
+   "Thể loại: People & Blogs",
+   "0,59 (0,40–0,87)",
+   "0,008",
+   "0,33 (0,20–0,53)",
+   "< 0,001",
+   "1,60"
+  ],
+  [
+   "Thể loại: Pets & Animals",
+   "0,71 (0,47–1,10)",
+   "0,124",
+   "0,50 (0,12–2,04)",
+   "0,335",
+   "1,06"
+  ],
+  [
+   "Thể loại: Science & Tech",
+   "1,48 (0,69–3,19)",
+   "0,319",
+   "0,41 (0,12–1,42)",
+   "0,158",
+   "1,10"
+  ],
+  [
+   "Thể loại: Sports",
+   "0,69 (0,34–1,37)",
+   "0,283",
+   "0,17 (0,08–0,41)",
+   "< 0,001",
+   "1,19"
+  ],
+  [
+   "Thể loại: Travel & Events",
+   "0,85 (0,36–2,02)",
+   "0,711",
+   "0,80 (0,24–2,74)",
+   "0,727",
+   "1,05"
+  ]
+ ],
+ "q3b_fit": {
+  "n": "139.223",
+  "n_pos": "13.930",
+  "pct_pos": "10,01",
+  "clusters": "464",
+  "aic1": "67.617,0",
+  "aic2": "82.766,3",
+  "aic3": "67.531,0",
+  "mf1": "0,254",
+  "mf2": "0,087",
+  "mf3": "0,255",
+  "lr": "15.155",
+  "daic": "15.149,2",
+  "k1": 34,
+  "k2": 31,
+  "removed_cat": "4",
+  "ref": "Gaming",
+  "removed_name": "['Nonprofits & Activism']"
+ },
+ "q3b_key": {
+  "subs": "8,83 (6,20–12,57)",
+  "age": "0,63 (0,48–0,83)",
+  "tv": "0,31 (0,24–0,40)",
+  "dow": "1,06 (1,02–1,10)",
+  "month": "1,19 (1,14–1,26)",
+  "hour": "0,99 (0,91–1,08)",
+  "weekend": "0,96 (0,88–1,06)",
+  "bracket": "1,49 (1,10–2,02)",
+  "bracket_p": "0,011",
+  "excl2": "1,42 (0,96–2,11)",
+  "emoji2": "1,64 (1,12–2,42)",
+  "q2": "1,42 (0,95–2,11)",
+  "excl2_p": "0,082",
+  "emoji2_p": "0,012",
+  "m3_subs": "8,87 (6,25–12,60)",
+  "vif_len": "9,14",
+  "vif_words": "9,77",
+  "vif_max_other": "2,66",
+  "autos": "0,01 (0,00–0,11)",
+  "comedy": "0,11 (0,06–0,18)",
+  "edu": "0,29 (0,09–0,93)",
+  "sci": "1,48 (0,69–3,19)",
+  "music": "0,50 (0,31–0,78)",
+  "ent": "0,59 (0,32–1,09)"
+ },
+ "q3b_dyn": {
+  "nonchan_sig": [
+   "Thứ đăng (pub_dow): OR 1,06 (1,02–1,10), p = 0,006",
+   "Tháng đăng (pub_month): OR 1,19 (1,14–1,26), p < 0,001",
+   "Tiêu đề có ngoặc: OR 1,49 (1,10–2,02), p = 0,011"
+  ],
+  "m2_title_sig": [
+   "Tiêu đề có emoji: OR 1,64 (1,12–2,42), p = 0,012",
+   "Tiêu đề có ký tự |: OR 0,61 (0,45–0,84), p = 0,002"
+  ],
+  "m2_title_near": [
+   "Tiêu đề có dấu ?: OR 1,42 (0,95–2,11), p = 0,087",
+   "Tiêu đề có dấu !: OR 1,42 (0,96–2,11), p = 0,082",
+   "Tiêu đề có ngoặc: OR 1,42 (0,99–2,02), p = 0,053"
+  ],
+  "news": [
+   "0,44 (0,19–1,04)",
+   "0,06 (0,02–0,21)"
+  ],
+  "n_cat": 13,
+  "n_cat_below1": 12,
+  "cat_ci_has1": [
+   "Entertainment",
+   "Howto & Style",
+   "News & Politics",
+   "Pets & Animals",
+   "Science & Tech",
+   "Sports",
+   "Travel & Events"
+  ],
+  "n_cat_ci_has1": 7,
+  "cat_ci_below1": [
+   "Autos & Vehicles",
+   "Comedy",
+   "Education",
+   "Film & Animation",
+   "Music",
+   "People & Blogs"
+  ],
+  "n_cat_ci_below1": 6,
+  "cat_ci_above1": [],
+  "n_cat_ci_above1": 0,
+  "n_title_ci_has1_m1": 7,
+  "n_title": 8
+ },
+ "q3b_nsig": {
+  "n_terms": 33,
+  "n_sig": 12,
+  "n_sig_nonchan_noncat": 3
+ },
+ "dict_rows": [
+  [
+   "views",
+   "Lượt xem ở lần đo mới nhất",
+   "lượt",
+   "statistics.viewCount (đã làm chuỗi không giảm bằng cummax)",
+   "Không"
+  ],
+  [
+   "likes",
+   "Lượt thích ở lần đo mới nhất",
+   "lượt",
+   "statistics.likeCount; likes > views bị đặt NaN",
+   "Có: người đăng ẩn lượt thích (likes_hidden) hoặc nhiễu API"
+  ],
+  [
+   "comments",
+   "Số bình luận ở lần đo mới nhất",
+   "bình luận",
+   "statistics.commentCount; comments > views bị đặt NaN",
+   "Có: tắt bình luận (comments_disabled) hoặc nhiễu API"
+  ],
+  [
+   "age_days_last",
+   "Tuổi video tại lần đo mới nhất",
+   "ngày",
+   "(last_obs_ts − published_ts) / 86400",
+   "Không"
+  ],
+  [
+   "lv_adj*",
+   "Log10 lượt xem đã trừ trung bình nhóm tuổi (biến dẫn xuất, không nằm trong CSV)",
+   "log10(lượt)",
+   "log_views − trung bình log_views của age_b trên H (prep.py)",
+   "Không (chỉ tính cho video thuộc H)"
+  ],
+  [
+   "log_views",
+   "Logarit cơ số 10 của lượt xem",
+   "log10(lượt)",
+   "log10(views); views = 0 không có giá trị hợp lệ",
+   "Có thể: khi views = 0"
+  ],
+  [
+   "pub_hour",
+   "Giờ đăng theo giờ Việt Nam",
+   "0–23",
+   "Giờ của published_ts ở UTC+7",
+   "Không"
+  ],
+  [
+   "pub_dow",
+   "Thứ đăng",
+   "0–6 (0 = Thứ Hai)",
+   "dayofweek của pub_date_vn",
+   "Không"
+  ],
+  [
+   "pub_slot",
+   "Khung giờ đăng (5 nhóm)",
+   "nhãn",
+   "Khuya 0–5h; Sáng 6–11h; Chiều 12–17h; Tối 18–21h; Đêm 22–23h",
+   "Không"
+  ],
+  [
+   "is_short_60",
+   "Video ngắn từ 60 giây trở xuống",
+   "TRUE/FALSE",
+   "0 < duration_sec ≤ 60 (duration rỗng hoặc 0 → FALSE)",
+   "Không"
+  ],
+  [
+   "like_rate",
+   "Tỷ lệ thích trên lượt xem",
+   "tỷ lệ 0–1",
+   "likes / views",
+   "Có: khi likes rỗng"
+  ],
+  [
+   "subscribers",
+   "Số người đăng ký của kênh TẠI LÚC THU THẬP",
+   "người",
+   "statistics.subscriberCount; API làm tròn XUỐNG 3 chữ số có nghĩa",
+   "Không"
+  ],
+  [
+   "log_subs",
+   "Logarit cơ số 10 của số người đăng ký",
+   "log10(người)",
+   "log10(subscribers)",
+   "Không"
+  ],
+  [
+   "ever_trending",
+   "Video từng lọt Trending trong giai đoạn thu thập",
+   "TRUE/FALSE",
+   "trend_days > 0",
+   "Không"
+  ]
+ ],
+ "dict_cols": [
+  "views",
+  "likes",
+  "comments",
+  "age_days_last",
+  "lv_adj*",
+  "log_views",
+  "pub_hour",
+  "pub_dow",
+  "pub_slot",
+  "is_short_60",
+  "like_rate",
+  "subscribers",
+  "log_subs",
+  "ever_trending",
+  "is_last_of_day"
+ ]
+}

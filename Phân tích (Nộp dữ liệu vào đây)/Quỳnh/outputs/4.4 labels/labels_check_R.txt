@@ -1,0 +1,47 @@
+# Kiem tra cheo labels.csv bang R
+
+Thoi diem: 2026-11-12 23:09:35
+R: R version 4.6.1 (2026-06-24 ucrt)
+File: D:/IS403 - PTDLKD/Đồ án/05_Code_Output/outputs/4.4 labels/labels.csv
+
+## Bo 6 so kiem tra (Bang 4.3)
+
+| # | So can in ra | Gia tri |
+|---|---|---:|
+| 1 | n_H | 139.227 |
+| 2 | So kenh trong H | 464 |
+| 3 | So video nhom [7,10) | 2.325 |
+| 4 | Tong viral_A | 13.931 |
+| 5 | Trung vi lv_adj (4 chu so) | 0,0895 |
+| 6 | ever_trending trong H | 892 |
+
+## Bang tom tat nhan (Bang 5.12)
+
+| Nhan | Du dieu kien | Duong | Ty le duong |
+|---|---:|---:|---:|
+| viral_A | 139.227 | 13.931 | 10.01% |
+| breakout_B | 134.703 | 34.055 | 25.28% |
+| viral_C | 10.925 | 550 | 5.03% |
+
+## Kiem tra cong thuc
+
+- viral_A = (pct_in_age >= 0.90): PASS
+- breakout_B = (lvpd - ch_med_loo >= log10(2)): PASS
+  (so diem sat nguong do lam tron, da bo qua: 2)
+- viral_C = ever_trending trong in_window_C: PASS
+- in_window_C dung cong thuc: PASS
+- age_b dung 14 nhom [a,b): PASS
+- leave-one-out median (1 nhom mau): PASS
+
+## So sanh voi ket qua Python
+
+- labels_summary.csv khop: PASS
+
+## Cua so in_window_C
+
+- Bat dau: 2026-10-19
+- Ket thuc: 2026-11-04 (Trending cuoi 2026-11-12 tru 8 ngay)
+
+## Ket luan
+
+TAT CA KIEM TRA DAT: labels.csv do Python tao nhat quan voi cong thuc.

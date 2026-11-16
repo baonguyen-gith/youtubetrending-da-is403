@@ -1,0 +1,29 @@
+DATA_DIR = C:\Users\Bao\Desktop\bảo\học tập\HK5\IS403.R13_Phân tích dữ liệu kinh doanh\Đồ án\youtubetrending-da-is403\Dữ liệu chính thức\data_final_20261113
+videos_master: 140,387 dòng | H: 139,227 dòng
+
+=== BỘ 6 SỐ KIỂM TRA (điền vào sheet so_kiem_tra) ===
+1. n_H (số video trong H): 139,227
+2. Số kênh khác nhau trong H: 464
+3. Số video H thuộc nhóm tuổi [7, 10): 2,325
+4. Tổng viral_A (số video dương): 13,931
+5. Trung vị lv_adj trên H (4 chữ số): 0.0895
+6. Số video H có ever_trending = TRUE: 892
+
+viral_A chiếm 10.01% H (yêu cầu 9–11%) OK
+
+Phân bố nhóm tuổi:
+age_b
+[1, 2)          727
+[2, 3)          713
+[3, 5)         1522
+[5, 7)         1540
+[7, 10)        2325
+[10, 14)       3360
+[14, 21)       5366
+[21, 30)      15069
+[30, 60)      13298
+[60, 90)      10862
+[90, 180)     25660
+[180, 365)    26796
+[365, 730)    23305
+[730, inf)     8684

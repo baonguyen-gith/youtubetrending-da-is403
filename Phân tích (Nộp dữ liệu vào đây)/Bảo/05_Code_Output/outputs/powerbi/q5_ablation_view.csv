@@ -1,0 +1,4 @@
+﻿cau_hinh,roc_auc,pr_auc,f1
+1. Mô hình nền (chỉ log_subs),0.7432,0.2628,0.3319
+2. Random Forest đủ biến,0.8382,0.4199,0.4404
+3. Random Forest bỏ nhóm biến kênh,0.7029,0.2109,0.2961

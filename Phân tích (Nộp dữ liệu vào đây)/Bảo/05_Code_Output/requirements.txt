@@ -1,0 +1,10 @@
+pandas
+numpy
+scipy
+statsmodels
+matplotlib
+scikit-learn
+nbformat
+nbconvert
+ipykernel
+# Word: node + gói npm "docx"  (npm install docx)
