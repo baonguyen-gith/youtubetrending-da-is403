@@ -1,0 +1,282 @@
+=== FILE: .\Phân tích (Nộp dữ liệu vào đây)\Bảo\05_Code_Output\report\Muc_Bao.docx ===
+--- paragraphs: 116, tables: 10 ---
+[Heading 2] 3.1 Nguồn dữ liệu và cách thu thập
+[Normal] Dữ liệu được thu thập trực tiếp qua YouTube Data API v3, không dùng bộ dữ liệu có sẵn. Ba nhóm dữ liệu được lấy: (i) danh sách Trending của Việt Nam bằng videos.list với chart = mostPopular và regionCode = VN; (ii) danh sách video tải lên của từng kênh bằng playlistItems.list; (iii) thông tin kênh và số người đăng ký bằng channels.list. Việc dùng API chính thức giúp nguồn gốc số liệu minh bạch và truy vết được; đây cũng là nguồn mà chính YouTube dùng để công bố các chỉ số công khai như lượt xem và số người đăng ký (Google for Developers, n.d.).
+[Normal] Script thu thập collect_youtube_v2.py chạy theo lịch run_all.bat và ghi bốn file thô: trending_snapshots.csv (danh sách Trending), video_tracking.csv (đo lại số liệu các video đang theo dõi), channel_history.csv (video tải lên của từng kênh) và channels_info.csv (thông tin và số người đăng ký của kênh). Trong các ngày có dữ liệu, số lượt thực tế mỗi ngày là 1–5 lượt chụp Trending và 1–5 lượt đo lại video. Dữ liệu thô gốc (4 file trước khi làm sạch, thu đến 12/11/2026) được sao lưu sang data_raw_20261112/, đặt chỉ đọc và lưu SHA-256 từng file trong checksums_raw.txt; các file đã làm sạch được sinh lại từ bản sao này bằng clean_data.py.
+[Normal] Trong dữ liệu chính thức 22/10–12/11/2026, nhật ký làm sạch ghi nhận 46 lần chụp Trending trong 18 ngày (trung bình 2,6 lần mỗi ngày có dữ liệu), 48 lượt đo lại video trong 19 ngày và 45 lượt lấy lịch sử kênh trong 12 ngày (22/10–23/10, 03/11–12/11). Giai đoạn theo dõi chính thức kéo dài 22 ngày, từ 22/10 đến 12/11/2026; lần đo cuối cùng trong dữ liệu được ghi lúc 19:41 ngày 12/11/2026 (giờ Việt Nam). Theo kiểm tra trong collection_summary.csv, Trending không có dữ liệu các ngày 2026-10-25, 2026-10-30, 2026-11-01, 2026-11-02; đo lại video (tracking) không có dữ liệu các ngày 2026-10-30, 2026-11-01, 2026-11-02. Lịch sử kênh (history) không được lấy hằng ngày mà chỉ vào các ngày 22/10–23/10, 03/11–12/11. Nhật ký làm sạch còn cảnh báo vài khoảng cách 10–60 phút giữa hai lô liên tiếp (một ở tracking, hai ở history) đang được tính là hai lượt chạy riêng, nên số lượt chạy có thể bị đếm dư nếu đó thực chất là một lượt bị ngắt; điều này chỉ ảnh hưởng đến số lượt chạy được đếm, không ảnh hưởng đến các lần đo. Nguyên nhân các ngày thiếu không được ghi lại trong dữ liệu thu thập. Vì danh sách Trending và số liệu đo lại là số liệu tại thời điểm chụp nên không thể thu bù cho các ngày này, và các ngày này không được điền bù trong dữ liệu đã làm sạch.
+[Normal] Các nguồn dữ liệu của đồ án được tóm tắt trong Bảng 3.1; lịch nghỉ lễ và Tết do nhóm tự tổng hợp từ thông báo nghỉ lễ chính thức của cơ quan nhà nước (holidays_vn.csv, Khôi phụ trách).
+
+<TABLE 1>
+Nguồn | Biến số / dữ liệu | Ghi chú
+YouTube Data API v3 (videos.list, chart = mostPopular, regionCode = VN) | Thứ hạng thịnh hành, lượt xem, lượt thích, bình luận, độ dài, thể loại, số thẻ tag, thời điểm đăng | API chính thức của Google; hạn mức mặc định 10.000 đơn vị mỗi ngày
+YouTube Data API v3 (playlistItems.list, channels.list) | Video lịch sử và số người đăng ký của nhóm kênh | Nhóm đối chứng không thịnh hành; chi phí 1 đơn vị mỗi lần gọi
+Google Trends (pytrends hoặc tải thủ công) | Mức độ quan tâm theo từ khóa theo tuần | Đối chiếu xu hướng (Mục 3.6) và biến ngoại sinh cho ARIMAX
+Lịch nghỉ lễ, Tết Việt Nam | Biến giả ngày lễ, kỳ nghỉ (holidays_vn.csv) | Tự tổng hợp từ lịch nghỉ lễ chính thức, mỗi dòng có nguồn
+</TABLE 1>
+
+[Caption Bang] Bảng 3.1. Nguồn dữ liệu của đồ án
+[Normal] Dữ liệu sau làm sạch gồm năm file, mô tả trong Bảng 3.2. Từ ngày 13/11/2026, mọi con số trong báo cáo chỉ lấy từ thư mục data_final_20261113.
+
+<TABLE 2>
+File | Nội dung
+videos_master.csv | Mỗi dòng một video, số liệu của lần đo mới nhất (55 cột)
+measurements.csv | Mỗi dòng một lần đo; cột is_last_of_day đánh dấu lần đo cuối mỗi ngày
+trending_clean.csv | Mỗi dòng một video trong một lần chụp Trending
+channels_latest.csv | Mỗi dòng một kênh, số liệu mới nhất
+dq_report.txt | Báo cáo chất lượng dữ liệu sinh tự động khi làm sạch
+</TABLE 2>
+
+[Caption Bang] Bảng 3.2. Các file dữ liệu sau làm sạch (nguồn: data_final_20261113/, dq_report.txt)
+[Normal] Quy mô dữ liệu (dữ liệu chính thức 22/10–12/11/2026): 140.387 video của 566 kênh, trong đó 1.039 video từng lọt Trending; 1.066.405 lần đo; 9.091 dòng Trending từ 46 lần chụp. Bối cảnh: theo số liệu Google do Tuoi Tre News (2026) dẫn lại, YouTube tiếp cận khoảng 93% người dùng internet Việt Nam mỗi ngày, và DataReportal (2026) ghi nhận 85,6 triệu người dùng internet tại Việt Nam vào tháng 10/2025, nên đây là nền tảng có quy mô đủ lớn để các câu hỏi của đồ án có ý nghĩa thực tiễn.
+[Heading 2] 3.2 Làm sạch dữ liệu
+[Normal] Quy trình làm sạch do clean_data.py thực hiện và ghi kết quả vào dq_report.txt. Bảng 3.2b liệt kê từng bước cùng số dòng bị tác động, lấy trực tiếp từ dq_report.txt và từ các file sạch.
+
+<TABLE 3>
+Bước | Nội dung | Số dòng | Cách xử lý
+1 | Đọc dữ liệu thô | 9.874 / 916.835 / 140.247 / 20.160 | Lần lượt: trending_snapshots, video_tracking, channel_history, channels_info
+2 | video_id bị hỏng (#NAME?) | 7 | Khôi phục 7/7 dòng qua (channel_id, published_at); không loại dòng nào
+3 | Tiêu đề, tên kênh mất dấu tiếng Việt | 601 nghi hỏng | Thay bằng bản đúng từ video_tracking/channel_history cho 9.874/9.874 dòng Trending
+4a | Lượt thích lớn hơn lượt xem | 2.112 | Đặt likes = NaN (nhiễu API / video mới)
+4b | Bình luận lớn hơn lượt xem | 110 | Đặt comments = NaN
+4c | Lượt xem bằng 0 | 4.262 | Giữ trong measurements; loại khỏi phân tích log và tỷ lệ
+4d | Lượt xem rỗng (NaN) | 551 | Loại dòng đo
+4e | Lượt xem giảm giữa hai lần đo liên tiếp | 11.065 / 926.018 cặp | Dùng cummax để chuỗi đơn điệu
+4f | Kết quả gộp bảng lần đo | 1.066.405 lần đo | Của 140.387 video
+5 | Bảng kênh | 566 kênh | Lấy bản ghi mới nhất từ 20.160 dòng lịch sử
+6 | Bảng video master | 140.387 video | Không video nào thiếu thông tin kênh
+7 | Quần thể phân tích H (Mục 4.1) | 139.227 video | Loại 1.160 video khỏi master (các lý do chồng lấn nhau)
+</TABLE 3>
+
+[Caption Bang] Bảng 3.2b. Các bước làm sạch và số dòng bị tác động (nguồn: dq_report.txt, outputs/reliability/reliability_table.csv)
+[Normal] Trong 1.160 video không thuộc H, có 140 video không có trong lịch sử kênh (in_history = FALSE), 174 video đang phát trực tiếp hoặc chưa phát (is_live_or_upcoming = TRUE), 204 video có lượt xem bằng 0 và 811 video có tuổi dưới 1 ngày; một video có thể rơi vào nhiều nhóm nên các số không cộng thành tổng. Quần thể H còn 139.227 video từ 464 kênh.
+[Normal] Các file CSV được đọc với encoding utf-8-sig và video_id đọc dưới dạng chuỗi. Các cột pub_* đã ở giờ Việt Nam (UTC+7); phép kiểm tra đối chiếu pub_hour với published_ts đổi sang UTC+7 cho kết quả khớp 100,00%. Số lượt thích và bình luận rỗng (do ẩn hoặc tắt) được giữ là NaN, các tỷ lệ like_rate và comment_rate chỉ tính khi giá trị không rỗng.
+[Heading 2] 3.3 Chất lượng dữ liệu và tính nhất quán logic
+[Normal] Độ tin cậy của dữ liệu được chứng minh qua 6 tiêu chí: (1) nguồn gốc minh bạch (API chính thức của Google); (2) chất lượng dữ liệu (xử lý giá trị thiếu, trùng lặp, ngoại lai); (3) tính nhất quán logic (lượt thích và bình luận không vượt quá lượt xem, lượt xem không giảm giữa hai lần đo); (4) đối chiếu ngẫu nhiên với số liệu hiển thị trên YouTube (Mục 3.4); (5) đối chiếu xu hướng với nguồn độc lập là Google Trends (Mục 3.6); (6) nêu rõ các hạn chế (Mục 3.5). Tiêu chí (2) và (3) được kiểm tra bằng Bảng 3.3; mỗi dòng nêu số đếm, tỷ lệ và cách xử lý. Số liệu lấy từ reliability_table.csv.
+
+<TABLE 4>
+Tiêu chí | Số đếm | Tỷ lệ (%) | Cách xử lý
+Ẩn lượt thích (likes_hidden) | 5.119 | 3,65 | Giữ video; likes và like_rate để NaN, chỉ tính tỷ lệ trên video có likes
+Tắt bình luận (comments_disabled) | 2.966 | 2,11 | Giữ video; comments và comment_rate để NaN
+Độ dài video rỗng (duration_sec) | 21 | 0,01 | Giữ trong thống kê chung; loại khỏi mô hình dùng duration
+Trùng lặp video (video_id lặp trong videos_master) | 0 | 0,00 | Không có dòng trùng; đã loại khi làm sạch và kiểm tra lại trên file sạch
+Trùng lặp lần đo (cùng video_id và collected_ts) | 0 | 0,00 | Không có dòng trùng; đã loại khi làm sạch và kiểm tra lại trên file sạch
+Trùng lặp dòng Trending (cùng run_ts và video_id) | 0 | 0,00 | Kiểm tra trên file sạch
+Ngoại lai IQR trên log_views (log10 lượt xem dưới 1,45) | 1.486 | 1,06 | GIỮ (không loại): đây là video thật có ít lượt xem; phân tích dùng log10 và lv_adj
+Ngoại lai IQR trên log_views (log10 lượt xem trên 7,47) | 163 | 0,12 | GIỮ (không loại): video có lượt xem rất cao là hiện tượng thật của nền tảng
+Lượt thích > lượt xem (trước làm sạch) | 2.112 | 0,20 | Đặt likes = NaN (nhiễu API / video mới)
+Lượt thích > lượt xem (còn lại sau làm sạch) | 0 | 0,00 | Đạt: không còn dòng nào sau làm sạch
+Bình luận > lượt xem (trước làm sạch) | 110 | 0,01 | Đặt comments = NaN
+Bình luận > lượt xem (còn lại sau làm sạch) | 0 | 0,00 | Đạt: không còn dòng nào sau làm sạch
+Lượt xem = 0 | 4.262 | 0,40 | Giữ trong measurements; loại khỏi phân tích log và tỷ lệ (H yêu cầu views > 0)
+Lượt xem rỗng (NaN) | 551 | 0,05 | Loại dòng đo
+Lượt xem GIẢM giữa hai lần đo liên tiếp (tính lại từ views_raw; khớp dq_report.txt) | 11.065 | 1,19 | Dùng cummax để chuỗi lượt xem đơn điệu (YouTube lọc view ảo)
+Lượt thích GIẢM giữa hai lần đo liên tiếp | 14.997 | 1,77 | Giữ nguyên (người dùng có thể bỏ thích); không dùng cummax cho likes
+</TABLE 4>
+
+[Caption Bang] Bảng 3.3. Kết quả kiểm tra chất lượng và tính nhất quán logic (nguồn: outputs/reliability/reliability_table.csv). Mẫu số: số video (140.387) cho các dòng về cờ rỗng, trùng video và ngoại lai; số lần đo cho các dòng còn lại
+[Normal] Kết quả cho thấy dữ liệu đạt yêu cầu cho phân tích. Về giá trị rỗng, 3,65% video ẩn lượt thích và 2,11% tắt bình luận; các video này được giữ lại nhưng không đưa vào tỷ lệ. Không phát hiện video trùng hay lần đo trùng trong các file sạch. Về ngoại lai, 1.486 video (1,06%) nằm dưới và 163 video (0,12%) nằm trên ngưỡng IQR của log_views; nhóm chọn giữ lại vì đây là video thật và phân phối lượt xem của nền tảng vốn có đuôi dài, thay vào đó dùng log10 và lv_adj để giảm ảnh hưởng.
+[Normal] Về tính nhất quán logic, 2.112 dòng có lượt thích lớn hơn lượt xem và 110 dòng có bình luận lớn hơn lượt xem trước khi làm sạch; sau khi đặt NaN, kiểm tra lại cho kết quả bằng 0. Lượt xem giảm giữa hai lần đo liên tiếp ở 11.065 trên 926.018 cặp (1,19%); tự tính lại từ cột views_raw cho đúng số này. Hiện tượng này phù hợp với cách YouTube vận hành: hệ thống có thể tạm làm chậm, đóng băng hoặc điều chỉnh số đếm và loại các lượt phát kém chất lượng khi xác thực (YouTube Help, n.d.). Vì vậy nhóm dùng cummax để chuỗi lượt xem không giảm. Lượt thích giảm ở 1,77% cặp, được giữ nguyên vì người xem có thể bỏ thích.
+[Heading 2] 3.4 Đối chiếu ngẫu nhiên 30 video với YouTube
+[Normal] Để kiểm tra số liệu API có khớp số hiển thị trên YouTube, nhóm chọn 30 video theo phân tầng lượt xem từ lần đo gần nhất: 10 video dưới 10 nghìn lượt, 10 video từ 10 nghìn đến 1 triệu lượt và 10 video trên 1 triệu lượt (random_state = 42, script pick30.py). Chỉ các video có lần đo trong 6 giờ cuối của lần thu cuối, đang công khai bình thường và đủ lượt thích, bình luận mới được đưa vào danh sách chọn để giờ chênh giữa hai lần đọc chỉ vài chục phút. Sau lần thu cuối, nhóm mở từng video trên YouTube lúc 20:22–20:36 ngày 12/11/2026 (giờ Việt Nam), tức cách lần đo API 41–56 phút, và ghi số lượt xem, thích, bình luận và giờ xem; nhóm không lưu ảnh chụp màn hình, mọi số được ghi trực tiếp vào reliability_check_30videos.csv. Sai lệch tương đối được tính bằng (YouTube − API) / API, kèm giờ chênh của từng dòng.
+[Normal] Kết quả: trung vị sai lệch tương đối là 0,08% với lượt xem, 0,00% với lượt thích và 0,00% với bình luận; sai lệch tuyệt đối lớn nhất của lượt xem là 2,78%. Lượt xem trên YouTube trùng hoàn toàn với API ở 5/30 video, lượt thích ở 17/30 và bình luận ở 27/30 video (tính cả các trường hợp hai bên cùng bằng 0; nếu chỉ tính video có số đếm API khác 0 thì lượt thích là 16/29 và bình luận là 18/21). Có 80% video mà lượt xem trên YouTube cao hơn API, phù hợp với việc lượt xem tiếp tục tăng trong 41–56 phút giữa hai lần đọc; 1 video có lượt xem thấp hơn API, có thể do YouTube điều chỉnh số đếm khi xác thực (YouTube Help, n.d.). Với chỉ 10 video mỗi tầng, đây là phép kiểm tra tính hợp lý chứ không phải ước lượng chính xác sai số của API.
+
+<TABLE 5>
+Nhóm | Số video | TV sai lệch lượt xem | TV sai lệch lượt thích | TV sai lệch bình luận | Giờ chênh TV (phút)
+< 10 nghìn | 10 | 0,22% | 0,00% | 0,00% | 42,6
+10 nghìn – 1 triệu | 10 | 0,07% | 0,00% | 0,00% | 47,1
+> 1 triệu | 10 | 0,10% | 0,02% | 0,00% | 51,8
+Chung | 30 | 0,08% | 0,00% | 0,00% | 47,1
+</TABLE 5>
+
+[Caption Bang] Bảng 3.4. Kết quả đối chiếu 30 video (nguồn: outputs/reliability/reliability_check_30videos.csv)
+[Heading 2] 3.5 Hạn chế của dữ liệu và các điều chỉnh
+[List Paragraph] Thời gian theo dõi ngắn: kế hoạch là 22 ngày (22/10–12/11/2026) thay vì tối thiểu 8 tuần trong đề cương; thực tế có 19 ngày có số đo do đo lại video (tracking) thiếu các ngày 2026-10-30, 2026-11-01, 2026-11-02. Các chuỗi dựa trên dữ liệu theo dõi (N1, N2) vì vậy chỉ có tối đa 19 điểm theo ngày nên chỉ mang tính minh họa.
+[List Paragraph] Giới hạn 500 video mỗi kênh: script chỉ lấy tối đa 500 video mới nhất của mỗi kênh mỗi lần lấy lịch sử, nên số video theo tháng không phản ánh xu hướng đăng thực của kênh. Có 162 kênh có từ 500 video lịch sử trở lên (nhiều nhất 1.761 video, có thể do các lượt lấy lịch sử ở những ngày khác nhau cộng dồn), và 302 kênh có dưới 500. Chuỗi S1 chỉ dùng các kênh có dưới 500 video.
+[List Paragraph] Số người đăng ký đo lúc thu thập, không phải lúc video được đăng, và API trả về giá trị làm tròn xuống ba chữ số có nghĩa (Google for Developers, n.d.). Biến log_subs vì thế chỉ phản ánh quy mô kênh hiện tại và có sai số làm tròn.
+[List Paragraph] Quy mô và cách chọn mẫu kênh: số kênh thực tế là 566, trong đó 464 kênh có video trong lịch sử (và tạo nên quần thể H) và 102 kênh chỉ xuất hiện qua danh sách Trending. Con số này cao hơn dự kiến 150–200 kênh của đề cương. Mẫu kênh không phải mẫu ngẫu nhiên của toàn bộ YouTube Việt Nam, trong khi Tuoi Tre News (2026) cho biết Việt Nam có hơn 180.000 kênh trên 10.000 người đăng ký, nên kết quả chỉ nên hiểu cho nhóm kênh được theo dõi.
+[List Paragraph] Chênh lệch giữa các kênh lớn: ở Mục 5.1, 68,0% phương sai của lv_adj nằm giữa các kênh, nên mọi so sánh giữa nhóm video (theo giờ, thể loại…) đều lẫn với khác biệt giữa các kênh.
+[List Paragraph] Phủ đo lại không đều: theo dq_report.txt, chỉ 31.356 video có từ 2 lần đo và 30.047 video có từ 5 lần đo, nên các phân tích dùng chuỗi đo (Q6) chỉ áp dụng cho nhóm video nhỏ này.
+[List Paragraph] Ngày thiếu lượt thu: Trending thiếu các ngày 2026-10-25, 2026-10-30, 2026-11-01, 2026-11-02; tracking thiếu các ngày 2026-10-30, 2026-11-01, 2026-11-02; lịch sử kênh chỉ được lấy vào 22/10–23/10, 03/11–12/11. Nguyên nhân các ngày thiếu không được ghi lại và các ngày này không được điền bù (xem Mục 3.1).
+[Heading 2] 5.1 Q1: Thống kê mô tả
+[Normal] Phương pháp.
+[List Paragraph] Bảng thống kê gồm n, trung bình, trung vị, độ lệch chuẩn (mẫu, n − 1), hệ số biến thiên (CV = độ lệch chuẩn / trung bình), độ lệch và độ nhọn dư (tính theo mô-men, không hiệu chỉnh mẫu) của lượt xem, lượt thích, bình luận ở giá trị gốc và log10, tách video ngắn (từ 60 giây trở xuống) và video dài. Với lượt thích và bình luận, log10 chỉ tính trên giá trị lớn hơn 0 và các giá trị rỗng (ẩn hoặc tắt) được bỏ qua.
+[List Paragraph] Trung vị lv_adj và like_rate theo giờ đăng (pub_hour), thứ (pub_dow) và năm-tháng của pub_date_vn.
+[List Paragraph] Heatmap giờ × thứ của trung vị lv_adj; ô có dưới 30 video để trống.
+[List Paragraph] Boxplot lv_adj theo 10 thể loại có nhiều video nhất.
+[List Paragraph] Kiểm tra độ vững (bổ sung): trừ trung vị lv_adj của chính kênh khỏi lv_adj của từng video, để tách khác biệt do kênh nào đăng khỏi khác biệt do giờ hoặc thứ đăng.
+[List Paragraph] Không dùng số video theo tháng để nói về xu hướng vì mỗi kênh chỉ lấy tối đa 500 video mới nhất. Mọi so sánh dùng lv_adj, không dùng lượt xem thô.
+[Normal] Kết quả và mức ý nghĩa.
+[Normal] Cỡ mẫu: n_H = 139.227 video từ 464 kênh (dữ liệu chính thức 22/10–12/11/2026). Đây là thống kê mô tả nên không có kiểm định giả thuyết; “mức ý nghĩa” ở đây là độ lớn của các khác biệt.
+
+<TABLE 6>
+Biến | n | Trung bình | Trung vị | Độ lệch chuẩn | CV | Độ lệch | Độ nhọn
+Lượt xem (gốc) | 139.227 | 363.216 | 33.651 | 3.041.980 | 8,38 | 43,95 | 2.940,00
+Lượt xem (log10) | 139.227 | 4,44 | 4,53 | 1,11 | 0,25 | -0,43 | 0,34
+Lượt thích (gốc) | 134.202 | 5.677 | 366 | 43.043 | 7,58 | 28,83 | 1.281,41
+Lượt thích (log10) | 130.306 | 2,53 | 2,61 | 1,10 | 0,43 | -0,09 | -0,38
+Bình luận (gốc) | 136.269 | 246,31 | 11 | 2.727 | 11,07 | 46,32 | 2.975,13
+Bình luận (log10) | 107.778 | 1,42 | 1,38 | 0,89 | 0,63 | 0,36 | -0,31
+</TABLE 6>
+
+[Caption Bang] Bảng 5.1. Thống kê mô tả lượt xem, lượt thích, bình luận (nguồn: outputs/q1/q1_descriptive_table.csv)
+[Normal] Lượt xem phân bố lệch phải rất mạnh: trung bình 363.216 lượt nhưng trung vị chỉ 33.651 lượt, CV bằng 8,38, độ lệch 43,95 và độ nhọn dư 2.940,00. Sau khi lấy log10, độ lệch giảm còn -0,43 và độ nhọn dư còn 0,34, tức gần đối xứng; đây là lý do mọi phân tích sau đó dùng log10 và lv_adj. Lượt thích và bình luận có hình dạng tương tự; số quan sát của log10 nhỏ hơn vì chỉ tính giá trị lớn hơn 0 (130.306 video có lượt thích và 107.778 video có bình luận khác 0).
+
+<TABLE 7>
+Biến | Nhóm | n | Trung bình | Trung vị | Độ lệch chuẩn | CV
+Lượt xem (gốc) | Ngắn | 28.642 | 451.516 | 30.742 | 2.712.110 | 6,01
+Lượt xem (gốc) | Dài | 110.585 | 340.347 | 34.515 | 3.121.343 | 9,17
+Lượt xem (log10) | Ngắn | 28.642 | 4,43 | 4,49 | 1,20 | 0,27
+Lượt xem (log10) | Dài | 110.585 | 4,44 | 4,54 | 1,08 | 0,24
+Lượt thích (gốc) | Ngắn | 28.222 | 10.445 | 437 | 48.232 | 4,62
+Lượt thích (gốc) | Dài | 105.980 | 4.407 | 350 | 41.460 | 9,41
+Lượt thích (log10) | Ngắn | 27.432 | 2,65 | 2,69 | 1,22 | 0,46
+Lượt thích (log10) | Dài | 102.874 | 2,50 | 2,59 | 1,06 | 0,42
+Bình luận (gốc) | Ngắn | 28.604 | 204,78 | 8 | 1.443 | 7,05
+Bình luận (gốc) | Dài | 107.665 | 257,35 | 12 | 2.976 | 11,57
+Bình luận (log10) | Ngắn | 22.063 | 1,37 | 1,30 | 0,91 | 0,66
+Bình luận (log10) | Dài | 85.715 | 1,44 | 1,40 | 0,89 | 0,62
+</TABLE 7>
+
+[Caption Bang] Bảng 5.1b. Thống kê mô tả tách video ngắn (≤ 60 giây) và video dài (nguồn: outputs/q1/q1_descriptive_table.csv)
+[Normal] Video ngắn có trung vị lượt xem thấp hơn video dài (30.742 so với 34.515) nhưng trung bình cao hơn (451.516 so với 340.347), nghĩa là số ít video ngắn rất thành công kéo trung bình lên. Ở lượt thích, trung bình của video ngắn (10.445) gấp khoảng 2,4 lần video dài (4.407) trong khi trung vị chênh ít hơn nhiều (437 và 350); trung vị bình luận của video ngắn (8) thấp hơn video dài (12).
+[Caption Hinh] Hình 5.1. Trung vị lv_adj theo giờ đăng; đường đứt đỏ là trung vị sau khi trừ trung vị của kênh (nguồn: outputs/q1/q1_by_hour.png)
+[Normal] Theo giờ đăng. Trung vị lv_adj cao nhất lúc 4h (0,513, n = 735) và thấp nhất lúc 13h (-0,377, n = 3.805); khoảng cách 0,890 đơn vị log10, tức khoảng 7,8 lần về lượt xem đã chuẩn hóa tuổi. Tuy nhiên, sau khi trừ trung vị của chính kênh, khoảng cách này co lại còn 0,209 (khoảng 1,62 lần), với giá trị cao nhất lúc 7h (0,109) và thấp nhất lúc 0h (-0,101). Cùng lúc đó, 68,0% phương sai của lv_adj nằm giữa các kênh. Như vậy phần lớn chênh lệch theo giờ trong hình là do những kênh có sẵn nhiều người xem hay đăng vào giờ nào, chứ không phải do bản thân giờ đăng. Tỷ lệ thích (trung vị like_rate) dao động từ 0,78% đến 1,71% giữa các giờ.
+
+<TABLE 8>
+Thứ đăng | n | Trung vị lv_adj | Trung vị lv_adj (trừ kênh) | Trung vị like_rate (%)
+Thứ Hai | 18.797 | 0,080 | -0,004 | 1,05
+Thứ Ba | 19.591 | 0,078 | -0,001 | 1,06
+Thứ Tư | 20.257 | 0,065 | -0,011 | 1,07
+Thứ Năm | 19.700 | 0,067 | -0,009 | 1,05
+Thứ Sáu | 20.516 | 0,102 | 0,000 | 1,06
+Thứ Bảy | 20.677 | 0,120 | 0,012 | 1,04
+Chủ nhật | 19.689 | 0,112 | 0,015 | 1,05
+</TABLE 8>
+
+[Caption Bang] Bảng 5.1c. Trung vị lv_adj và like_rate theo thứ đăng (nguồn: outputs/q1/q1_by_dow.csv)
+[Normal] Theo thứ đăng. Trung vị lv_adj dao động rất hẹp, khoảng cách lớn nhất giữa các thứ chỉ 0,054 (khoảng 1,13 lần) và còn 0,025 sau khi trừ trung vị của kênh. Thứ Sáu đến Chủ nhật (0,102 đến 0,120) cao hơn nhẹ so với Thứ Hai đến Thứ Năm (0,065 đến 0,080), còn tỷ lệ thích gần như không đổi theo thứ (từ 1,04% đến 1,07%).
+[Normal] Theo tháng đăng. Trung vị lv_adj theo năm-tháng (từ 2024-01 đến 2026-11) nằm trong khoảng từ -0,156 đến 0,260 (outputs/q1/q1_by_month.csv). Số video mỗi tháng thay đổi từ 541 đến 21.248 (tháng 2026-10 có 21.248 video), có thể phản ánh giới hạn 500 video mỗi kênh và thời điểm thu thập chứ không phản ánh lượng đăng thực, nên nhóm không diễn giải xu hướng theo tháng và không dùng số video theo tháng để nói về xu hướng.
+[Caption Hinh] Hình 5.2. Heatmap trung vị lv_adj theo giờ và thứ đăng (nguồn: outputs/q1/q1_heatmap.png)
+[Normal] Cả 168 ô giờ × thứ đều có từ 30 video trở lên (0 ô bị để trống). Nếu lấy trung bình theo từng hàng (giờ) rồi so giờ cao nhất với giờ thấp nhất thì chênh 0,850 đơn vị log10; làm tương tự theo từng cột (thứ) thì chỉ chênh 0,078. Mức nổi trội vì vậy gắn với giờ nhiều hơn gắn với thứ, phù hợp với nhận xét ở trên về cơ cấu kênh. Ô cao nhất là 4h Thứ Tư (1,031, n = 100) và ô thấp nhất là 13h Thứ Ba (-0,572, n = 562); ô cao nhất có cỡ mẫu nhỏ nên không nên diễn giải riêng.
+[Caption Hinh] Hình 5.3. Phân bố lv_adj theo 10 thể loại có nhiều video nhất (nguồn: outputs/q1/q1_box_category.png, q1_by_category.csv)
+[Normal] Theo thể loại. Trong 10 thể loại đông nhất, trung vị lv_adj thô cao nhất ở Gaming (0,555, n = 49.436) và thấp nhất ở Education (-1,197, n = 5.752); khoảng cách 1,752 đơn vị log10 (khoảng 56 lần). Tuy nhiên sau khi trừ trung vị của chính kênh, khoảng cách giữa 10 thể loại này chỉ còn 0,018 đơn vị log10 (khoảng 1,04 lần), nhỏ hơn khoảng cách theo giờ trong cùng kênh (0,209 đơn vị log10), và thứ hạng đảo lại: cao nhất là Music, thấp nhất là Howto & Style. Vì vậy chênh lệch thô theo thể loại chủ yếu phản ánh việc thể loại nào tập trung nhiều kênh lớn, không phải bản thân thể loại; nhiều cặp thể loại vẫn có hộp chồng lấn.
+[Normal] Giải thích thực tiễn.
+[Normal] Kết quả cho thấy khác biệt lớn nhất trong dữ liệu là khác biệt giữa các kênh; chênh lệch thô theo thể loại phần lớn cũng phản ánh cơ cấu kênh, còn thời điểm đăng chỉ có liên quan yếu khi so sánh trong cùng một kênh. Điều này phù hợp với bối cảnh nền tảng: YouTube tiếp cận khoảng 93% người dùng internet Việt Nam mỗi ngày (Tuoi Tre News, 2026) trong một thị trường có 85,6 triệu người dùng internet (DataReportal, 2026), tức là các video cạnh tranh để được xem trên một nền tảng rất lớn. Trong dữ liệu của nhóm, lượt xem phân bố rất không đều: trung bình bằng khoảng 10,8 lần trung vị, do một số ít video có lượt xem rất cao kéo trung bình lên. Cần nhớ lượt xem công khai không phải số đếm tuyệt đối: YouTube có thể tạm làm chậm, đóng băng hoặc điều chỉnh số đếm để xác thực (YouTube Help, n.d.), vì vậy các so sánh nên dựa trên lv_adj đã chuẩn hóa tuổi video và các khác biệt nhỏ nên được đọc thận trọng.
+[Normal] Khuyến nghị.
+[List Paragraph] Nhà sáng tạo không nên chọn giờ đăng chỉ dựa trên trung vị theo giờ của toàn bộ nền tảng: chênh lệch khoảng 7,8 lần giữa các giờ phần lớn đến từ việc kênh nào đăng, và khi so trong cùng kênh chỉ còn khoảng 1,62 lần. Khuyến nghị an toàn hơn là thử các khung giờ khác nhau trong chính kênh của mình và so lv_adj hoặc lượt xem theo tuổi video.
+[List Paragraph] Không cần dồn lịch đăng vào cuối tuần chỉ vì trung vị cao hơn: khoảng cách giữa các thứ rất nhỏ (khoảng 1,13 lần) và còn khoảng 1,06 lần khi so trong cùng kênh.
+[List Paragraph] Nhãn hàng và MCN nên coi kênh là yếu tố có liên quan rõ nhất tới lượt xem; thể loại vẫn hữu ích để chọn đối tượng mục tiêu nhưng phần lớn chênh lệch thô theo thể loại là do kênh, còn giờ đăng chỉ nên tinh chỉnh sau cùng trong chính kênh đã chọn. Có thể dùng tỷ lệ thích trung vị (khoảng 1% lượt xem) làm mốc tham chiếu về mức tương tác.
+[Normal] Hạn chế.
+[List Paragraph] Số video theo tháng không phản ánh xu hướng đăng thật do giới hạn 500 video mỗi kênh (Mục 3.5).
+[List Paragraph] Dữ liệu theo dõi chỉ 22 ngày nên không đánh giá được biến động theo mùa trong năm.
+[List Paragraph] Chỉ 464 kênh có video trong H và 68,0% phương sai nằm giữa các kênh, nên so sánh theo giờ, thứ, thể loại lẫn với khác biệt giữa kênh; kiểm tra “trừ trung vị kênh” chỉ là bước kiểm tra độ vững, không phải mô hình đầy đủ (xem Q3).
+[List Paragraph] like_rate chưa được chuẩn hóa theo tuổi video và chỉ tính cho video không ẩn lượt thích; ô giờ × thứ ở các giờ ít video (ví dụ 4 giờ sáng) có cỡ mẫu nhỏ.
+[Heading 2] 5.3b Q3b: Hồi quy Logistic
+[Normal] Phương pháp.
+[Normal] Biến phụ thuộc là viral_A (1 nếu video nằm trong 10% cao nhất theo lượt xem của nhóm tuổi). Biến độc lập là X_PRE (Mục 4.5). Biến số được chuẩn hóa z-score nên odds ratio (OR) hiểu theo mỗi tăng 1 độ lệch chuẩn; biến nhị phân giữ 0/1 nên OR là “có so với không”. Do duration_sec và total_videos lệch phải rất mạnh, nhóm lấy log10(duration_sec) và log10(total_videos + 1) trước khi chuẩn hóa. category_id là biến nhóm với nhóm gốc là Gaming; thể loại có dưới 100 video bị gộp, và vì nhóm gộp chỉ còn 4 video nên các video đó bị loại để tránh ước lượng không ổn định (tách hoàn toàn) với một nhóm quá nhỏ. Hai mô hình: M1 đủ biến; M2 bỏ nhóm biến kênh (log_subs, channel_age_days, total_videos). Thêm M3 (độ vững) thay pub_hour bằng 5 khung giờ pub_slot. Python: statsmodels Logit với cov_type = “cluster” theo channel_id; R: glm(family = binomial) với sandwich::vcovCL(cluster = ~channel_id) và lmtest::coeftest. Sai số chuẩn bền vững theo kênh cần thiết vì các video cùng kênh có sai số tương quan, và khi bỏ qua điều đó sai số chuẩn mặc định có thể đánh giá độ chính xác quá cao (Cameron và Miller, 2015). Báo OR, khoảng tin cậy 95% (Wald), AIC, McFadden R² và VIF.
+[Normal] Kết quả và mức ý nghĩa.
+[Normal] Cỡ mẫu: n = 139.223 video thuộc n_H = 139.227 từ 464 kênh (cụm), trong đó 13.930 video dương (10,01%) (dữ liệu chính thức 22/10–12/11/2026).
+
+<TABLE 9>
+Biến | OR – M1 (CI 95%) | OR – M2 (CI 95%) | VIF (M1)
+Giờ đăng (pub_hour) | 0,99 (0,91–1,08) | 1,07 (0,98–1,18) | 1,05
+Thứ đăng (pub_dow) | 1,06 (1,02–1,10) | 1,05 (1,01–1,09) | 2,66
+Tháng đăng (pub_month) | 1,19 (1,14–1,26) | 1,09 (1,02–1,16) | 1,07
+log10 độ dài video (duration_sec) | 0,96 (0,78–1,18) | 0,86 (0,70–1,05) | 2,39
+Số thẻ tag (tags_count) | 0,95 (0,81–1,10) | 0,96 (0,79–1,17) | 1,28
+Độ dài tiêu đề (title_len) | 0,94 (0,61–1,43) | 1,12 (0,72–1,72) | 9,14
+Số từ tiêu đề (title_words) | 1,08 (0,73–1,61) | 0,73 (0,48–1,11) | 9,77
+Tỷ lệ chữ HOA tiêu đề | 0,97 (0,84–1,13) | 1,02 (0,86–1,22) | 1,21
+Số hashtag trong tiêu đề | 1,08 (0,93–1,25) | 0,95 (0,81–1,13) | 2,02
+log10 số người đăng ký (log_subs) | 8,83 (6,20–12,57) | – | 1,95
+Tuổi kênh (channel_age_days) | 0,63 (0,48–0,83) | – | 1,59
+log10(số video của kênh + 1) | 0,31 (0,24–0,40) | – | 2,46
+Đăng cuối tuần | 0,96 (0,88–1,06) | 0,94 (0,86–1,03) | 2,66
+Video ngắn (<=60s) | 0,90 (0,62–1,30) | 0,87 (0,62–1,23) | 2,29
+Tiêu đề có dấu ? | 1,14 (0,81–1,60) | 1,42 (0,95–2,11) | 1,07
+Tiêu đề có dấu ! | 1,06 (0,79–1,42) | 1,42 (0,96–2,11) | 1,11
+Tiêu đề có chữ số | 1,04 (0,85–1,26) | 0,94 (0,77–1,16) | 1,13
+Tiêu đề có emoji | 1,20 (0,90–1,61) | 1,64 (1,12–2,42) | 1,13
+Tiêu đề có ngoặc | 1,49 (1,10–2,02) | 1,42 (0,99–2,02) | 1,11
+Tiêu đề có ký tự | | 0,79 (0,61–1,03) | 0,61 (0,45–0,84) | 1,19
+Thể loại: Autos & Vehicles | 0,01 (0,00–0,11) | 0,00 (0,00–0,02) | 1,06
+Thể loại: Comedy | 0,11 (0,06–0,18) | 0,25 (0,14–0,45) | 1,06
+Thể loại: Education | 0,29 (0,09–0,93) | 0,12 (0,02–0,72) | 1,16
+Thể loại: Entertainment | 0,59 (0,32–1,09) | 0,75 (0,37–1,51) | 1,16
+Thể loại: Film & Animation | 0,31 (0,18–0,53) | 0,53 (0,24–1,17) | 1,12
+Thể loại: Howto & Style | 0,39 (0,07–2,17) | 0,22 (0,05–0,95) | 1,11
+Thể loại: Music | 0,50 (0,31–0,78) | 0,68 (0,37–1,27) | 1,74
+Thể loại: News & Politics | 0,44 (0,19–1,04) | 0,06 (0,02–0,21) | 1,61
+Thể loại: People & Blogs | 0,59 (0,40–0,87) | 0,33 (0,20–0,53) | 1,60
+Thể loại: Pets & Animals | 0,71 (0,47–1,10) | 0,50 (0,12–2,04) | 1,06
+Thể loại: Science & Tech | 1,48 (0,69–3,19) | 0,41 (0,12–1,42) | 1,10
+Thể loại: Sports | 0,69 (0,34–1,37) | 0,17 (0,08–0,41) | 1,19
+Thể loại: Travel & Events | 0,85 (0,36–2,02) | 0,80 (0,24–2,74) | 1,05
+AIC | 67.617,0 | 82.766,3 | 
+McFadden R² | 0,254 | 0,087 | 
+</TABLE 9>
+
+[Caption Bang] Bảng 5.8. Kết quả hồi quy Logistic cho viral_A (nguồn: outputs/q3b/q3b_or_table.csv). Thể loại so với nhóm gốc Gaming; biến số: OR theo +1 độ lệch chuẩn
+[Caption Hinh] Hình 5.3b. Odds ratio của M1 (thang log) và khoảng tin cậy 95% bền vững theo kênh (nguồn: outputs/q3b/q3b_forest_M1.png)
+[Normal] Nhóm biến kênh chi phối. Trong M1, mỗi tăng 1 độ lệch chuẩn của log_subs đi cùng odds gấp 8,83 (6,20–12,57) lần; tuổi kênh có OR 0,63 (0,48–0,83) và log số video của kênh có OR 0,31 (0,24–0,40), tức khi số người đăng ký như nhau, kênh lâu năm hoặc nhiều video hơn có odds thấp hơn. Bỏ ba biến kênh (M2) làm McFadden R² giảm từ 0,254 xuống 0,087 và AIC tăng 15.149,2 (67.617,0 lên 82.766,3); thống kê tỷ số hợp lý giữa hai mô hình là 15.155 (chỉ tham khảo, chưa hiệu chỉnh cụm). Mô hình thay khung giờ M3 cho kết quả gần như giống M1 (AIC 67.531,0; OR của log_subs 8,87 (6,25–12,60)).
+[Normal] Thể loại. So với Gaming, 12/13 thể loại có odds thấp hơn theo điểm ước lượng, nhưng chỉ 6 thể loại có khoảng tin cậy 95% hoàn toàn dưới 1 (Autos & Vehicles, Comedy, Education, Film & Animation, Music, People & Blogs); 7 thể loại còn lại có khoảng tin cậy chứa 1 (Entertainment, Howto & Style, News & Politics, Pets & Animals, Science & Tech, Sports, Travel & Events), tức chưa phân biệt được với Gaming. Điều này không mâu thuẫn với Mục 5.1: chênh lệch thô theo thể loại ở đó phần lớn phản ánh cơ cấu kênh, và sau khi trừ trung vị kênh, khác biệt giữa các thể loại chỉ còn rất nhỏ.
+[Normal] Thời gian, độ dài và tiêu đề. Khi đã kiểm soát kênh và thể loại, giờ đăng (OR 0,99 (0,91–1,08)) và cuối tuần (OR 0,96 (0,88–1,06)) không có liên quan rõ rệt; độ dài video, video ngắn, số tag và 7/8 đặc điểm tiêu đề đều có khoảng tin cậy chứa 1. Trong 33 hệ số của M1, có 12 hệ số có p < 0,05; chỉ 3 hệ số trong số đó không thuộc nhóm kênh hay thể loại: Thứ đăng (pub_dow): OR 1,06 (1,02–1,10), p = 0,006; Tháng đăng (pub_month): OR 1,19 (1,14–1,26), p < 0,001; Tiêu đề có ngoặc: OR 1,49 (1,10–2,02), p = 0,011. Với 33 hệ số được xét đồng thời, một vài p gần 0,05 có thể chỉ là ngẫu nhiên; riêng pub_month được mã hóa tuyến tính từ 1 đến 12 trong khi dữ liệu trải trên ba năm nên nhóm không diễn giải hệ số này.
+[Normal] Khi bỏ nhóm biến kênh (M2), một số dấu hiệu tiêu đề trở nên có ý nghĩa thống kê (Tiêu đề có emoji: OR 1,64 (1,12–2,42), p = 0,012; Tiêu đề có ký tự |: OR 0,61 (0,45–0,84), p = 0,002), và một số khác tiến sát ngưỡng 0,05 (Tiêu đề có dấu ?: OR 1,42 (0,95–2,11), p = 0,087; Tiêu đề có dấu !: OR 1,42 (0,96–2,11), p = 0,082; Tiêu đề có ngoặc: OR 1,42 (0,99–2,02), p = 0,053); đồng thời các hệ số thể loại đổi mạnh (ví dụ News & Politics từ OR 0,44 (0,19–1,04) ở M1 xuống 0,06 (0,02–0,21) ở M2). Điều này gợi ý các đặc điểm tiêu đề và thể loại đang đại diện cho phong cách hoặc quy mô kênh khi biến kênh bị bỏ, chứ không phải tác động độc lập.
+[Normal] Đa cộng tuyến. Mọi biến có VIF ≤ 2,66 trừ title_len (VIF 9,14) và title_words (VIF 9,77); hai biến này vượt ngưỡng 5 nhưng chưa vượt 10 nên được giữ, tuy nhiên khoảng tin cậy của chúng rộng và không nên diễn giải riêng lẻ.
+[Normal] Giải thích thực tiễn.
+[Normal] Kết quả cho thấy khả năng một video nằm trong top 10% của nhóm tuổi có liên quan mạnh nhất đến quy mô và đặc điểm của kênh đăng; thể loại cũng có liên quan rõ rệt, còn những yếu tố mà người đăng chủ động điều chỉnh sau khi đã chọn kênh và thể loại (giờ đăng, độ dài, tag, cách đặt tiêu đề) có liên quan yếu hoặc không phân biệt được với 0. Điều này nhất quán với Mục 5.1, nơi khác biệt giữa kênh lớn hơn nhiều so với khác biệt theo giờ. Cần đọc OR là tỷ số odds chứ không phải tỷ số xác suất: vì tỷ lệ dương chỉ khoảng 10%, odds gần bằng xác suất khi xác suất nhỏ, nhưng OR khoảng 8,83 không có nghĩa xác suất tăng gấp 8,83 lần. Sai số chuẩn bền vững theo kênh làm khoảng tin cậy rộng hơn so với sai số mặc định, nên các kết luận ở trên đã tính đến việc các video cùng kênh không độc lập (Cameron và Miller, 2015).
+[Normal] Khuyến nghị.
+[List Paragraph] Nhãn hàng và MCN khi chọn kênh hợp tác để mong video “nổi bật so với cùng tuổi” nên xem quy mô và hồ sơ kênh là dấu hiệu có liên quan mạnh nhất; không nên kỳ vọng mẹo về giờ đăng hay tiêu đề bù được khoảng cách này.
+[List Paragraph] Nhà sáng tạo ở kênh nhỏ nên tập trung vào lựa chọn thể loại và nội dung phù hợp với đối tượng của mình hơn là các mẹo định dạng tiêu đề; bằng chứng của đồ án không cho thấy giờ đăng, độ dài video hay phần lớn các đặc điểm tiêu đề có liên quan rõ rệt với việc nổi bật khi đã kiểm soát kênh; riêng dấu ngoặc trong tiêu đề có liên hệ dương nhẹ nhưng cần kiểm chứng thêm vì đã xét nhiều hệ số cùng lúc.
+[List Paragraph] Khi báo cáo hiệu quả theo thể loại cho khách hàng, nên nêu nhóm gốc và nhắc rằng thể loại không tách rời kênh (hệ số thể loại đổi mạnh khi bỏ biến kênh).
+[Normal] Hạn chế.
+[List Paragraph] Nhãn viral_A là nhãn tương đối theo nhóm tuổi, không phải “viral” theo nghĩa lọt Trending.
+[List Paragraph] Odds ratio mô tả liên hệ, không phải quan hệ nhân quả; đặc biệt, số người đăng ký đo lúc thu thập (sau khi video đã đăng) và được làm tròn xuống ba chữ số có nghĩa (Google for Developers, n.d.), nên có thể một phần là hệ quả của video nổi bật chứ không chỉ là nguyên nhân.
+[List Paragraph] Chỉ 464 kênh tạo nên toàn bộ mẫu; một số ít kênh lớn có thể chi phối hệ số, và kết quả không đại diện cho toàn bộ YouTube Việt Nam.
+[List Paragraph] pub_hour, pub_dow, pub_month được đưa vào dạng số tuyến tính theo X_PRE; M3 chỉ kiểm tra riêng giờ đăng. duration_sec và total_videos được lấy log10 (khác danh sách thô ở Bảng 4.2); title_len và title_words gần đa cộng tuyến.
+[List Paragraph] McFadden R² chỉ so sánh được giữa các mô hình trên cùng dữ liệu, không đọc như R² của hồi quy tuyến tính; chưa đánh giá khả năng dự báo ngoài mẫu (thuộc Mục 5.5).
+[Heading 2] Phụ lục C: Bảng độ tin cậy và từ điển dữ liệu (phần của Bảo)
+[Normal] Bảng độ tin cậy đầy đủ là Bảng 3.3 ở Mục 3.3 (outputs/reliability/reliability_table.csv). Bảng C.1 trích các cột thường dùng của videos_master.csv; từ điển đầy đủ cho cả 55 cột của videos_master.csv và các file measurements.csv, trending_clean.csv, channels_latest.csv nằm trong docs/data_dictionary.md (sinh bằng gen_data_dictionary.py); dq_report.txt được mô tả ở cuối file này.
+
+<TABLE 10>
+Cột | Ý nghĩa | Đơn vị | Cách tính | Có thể rỗng? Vì sao
+views | Lượt xem ở lần đo mới nhất | lượt | statistics.viewCount (đã làm chuỗi không giảm bằng cummax) | Không
+likes | Lượt thích ở lần đo mới nhất | lượt | statistics.likeCount; likes > views bị đặt NaN | Có: người đăng ẩn lượt thích (likes_hidden) hoặc nhiễu API
+comments | Số bình luận ở lần đo mới nhất | bình luận | statistics.commentCount; comments > views bị đặt NaN | Có: tắt bình luận (comments_disabled) hoặc nhiễu API
+age_days_last | Tuổi video tại lần đo mới nhất | ngày | (last_obs_ts − published_ts) / 86400 | Không
+lv_adj* | Log10 lượt xem đã trừ trung bình nhóm tuổi (biến dẫn xuất, không nằm trong CSV) | log10(lượt) | log_views − trung bình log_views của age_b trên H (prep.py) | Không (chỉ tính cho video thuộc H)
+log_views | Logarit cơ số 10 của lượt xem | log10(lượt) | log10(views); views = 0 không có giá trị hợp lệ | Có thể: khi views = 0
+pub_hour | Giờ đăng theo giờ Việt Nam | 0–23 | Giờ của published_ts ở UTC+7 | Không
+pub_dow | Thứ đăng | 0–6 (0 = Thứ Hai) | dayofweek của pub_date_vn | Không
+pub_slot | Khung giờ đăng (5 nhóm) | nhãn | Khuya 0–5h; Sáng 6–11h; Chiều 12–17h; Tối 18–21h; Đêm 22–23h | Không
+is_short_60 | Video ngắn từ 60 giây trở xuống | TRUE/FALSE | 0 < duration_sec ≤ 60 (duration rỗng hoặc 0 → FALSE) | Không
+like_rate | Tỷ lệ thích trên lượt xem | tỷ lệ 0–1 | likes / views | Có: khi likes rỗng
+subscribers | Số người đăng ký của kênh TẠI LÚC THU THẬP | người | statistics.subscriberCount; API làm tròn XUỐNG 3 chữ số có nghĩa | Không
+log_subs | Logarit cơ số 10 của số người đăng ký | log10(người) | log10(subscribers) | Không
+ever_trending | Video từng lọt Trending trong giai đoạn thu thập | TRUE/FALSE | trend_days > 0 | Không
+</TABLE 10>
+
+[Caption Bang] Bảng C.1. Trích từ điển dữ liệu (nguồn: docs/data_dictionary.md)
+[Heading 2] Phụ lục D: Dashboard Power BI (phần của Bảo)
+[Normal] Bốn trang dashboard được dựng từ các CSV trong outputs/powerbi/ và lưu trong dashboard.pbix. Ảnh chụp giữ nguyên bố cục; số trên dashboard đã đối chiếu với Bảng 3.3, Bảng 5.1 và Bảng 5.8.
+[Caption Hinh] Hình D.1. Trang 1 - Tổng quan: cỡ mẫu, độ tin cậy và Q1 (nguồn: dashboard.pbix, outputs/powerbi/)
+[Caption Hinh] Hình D.2. Trang 2 - Giờ đăng và thể loại: nhịp giờ, heatmap giờ × thứ, thể loại và Q2b (nguồn: dashboard.pbix, outputs/powerbi/)
+[Caption Hinh] Hình D.3. Trang 3 - Viral: Q3b Logistic (odds ratio, so sánh M1/M2/M3) và Q5 (so sánh mô hình, importance, bỏ nhóm biến kênh) (nguồn: dashboard.pbix, outputs/powerbi/)
+[Caption Hinh] Hình D.4. Trang 4 - Cụm và dự báo: Q6 K-means (PCA, hồ sơ cụm) và Q4 dự báo S1/S2 (nguồn: dashboard.pbix, outputs/powerbi/)
+[Heading 2] Tài liệu tham khảo của phần này
+[Normal] Cameron, A. C., & Miller, D. L. (2015). A practitioner’s guide to cluster-robust inference. Journal of Human Resources, 50(2), 317–372. https://doi.org/10.3368/jhr.50.2.317
+[Normal] DataReportal. (2026). Digital 2026: Vietnam. https://datareportal.com/reports/digital-2026-vietnam
+[Normal] Google for Developers. (n.d.). Channels [YouTube Data API reference]. Google. Retrieved November 10, 2026, from https://developers.google.com/youtube/v3/docs/channels
+[Normal] Tuoi Tre News. (2026, September 17). Vietnam has more than 180,000 YouTube channels with over 10,000 subscribers. https://news.tuoitre.vn/vietnam-has-more-than-180000-youtube-channels-with-over-10000-subscribers-103260917213741415.htm
+[Normal] YouTube Help. (n.d.). How engagement metrics are counted. Google. Retrieved November 10, 2026, from https://support.google.com/youtubecreatorstudio/answer/2991785
+
+
+!!! FAILED .\Phân tích (Nộp dữ liệu vào đây)\Khôi\3.6 trends_check\Giai_thich_3.6_Google_Trends.docx: Package not found at '.\Phân tích (Nộp dữ liệu vào đây)\Khôi\3.6 trends_check\Giai_thich_3.6_Google_Trends.docx'
+
+
+!!! FAILED .\Phân tích (Nộp dữ liệu vào đây)\Khôi\5.2d holiday_tet\Giai_thich_5.2d_Le_va_Tet.docx: Package not found at '.\Phân tích (Nộp dữ liệu vào đây)\Khôi\5.2d holiday_tet\Giai_thich_5.2d_Le_va_Tet.docx'
+
+
+!!! FAILED .\Phân tích (Nộp dữ liệu vào đây)\Khôi\5.4 timeseries\Giai_thich_5.4_Chuoi_thoi_gian_va_du_bao.docx: Package not found at '.\Phân tích (Nộp dữ liệu vào đây)\Khôi\5.4 timeseries\Giai_thich_5.4_Chuoi_thoi_gian_va_du_bao.docx'
+
+

@@ -1,0 +1,912 @@
+=== FILE: template_report.docx.docx ===
+--- paragraphs: 522, tables: 50 ---
+[] ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH
+[] TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN
+[] KHOA HỆ THỐNG THÔNG TIN
+[] ĐỒ ÁN
+[] PHÂN TÍCH DỮ LIỆU KINH DOANH
+[] PHÂN TÍCH CÁC NHÂN TỐ ẢNH HƯỞNG VÀ DỰ BÁO XU HƯỚNG VIDEO YOUTUBE TẠI VIỆT NAM THEO THỜI GIAN ĐĂNG
+[] NGUYỄN GIA BẢO
+[] ĐINH VŨ MINH KHÔI
+[] VŨ THỊ NHƯ QUỲNH
+[] NGUYỄN TRUNG KIÊN (TRƯỞNG NHÓM)
+[] TP.HCM, tháng 11 năm 2026
+[] ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH
+[] TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN
+[] KHOA HỆ THỐNG THÔNG TIN
+[] ĐỒ ÁN
+[] MÔN PHÂN TÍCH DỮ LIỆU KINH DOANH
+[] ĐỀ TÀI:
+[] PHÂN TÍCH CÁC NHÂN TỐ ẢNH HƯỞNG VÀ DỰ BÁO XU HƯỚNG VIDEO YOUTUBE TẠI VIỆT NAM THEO THỜI GIAN ĐĂNG
+[] Giảng viên hướng dẫn: TS. Trần Văn Hải Triều
+[] Lớp: IS403.R13
+[] NHÓM 4
+[] Sinh viên thực hiện:
+[] - Nguyễn Gia Bảo – MSSV: 24520166
+[] - Đinh Vũ Minh Khôi – MSSV: 24520857
+[] - Vũ Thị Như Quỳnh – MSSV: 24521515
+[] - Nguyễn Trung Kiên (Trưởng nhóm) – MSSV: 24520886
+[] TP.HCM, tháng 11 năm 2026
+[Toc Title] GHI CHÚ CHO NHÓM (XÓA TRANG NÀY TRƯỚC KHI NỘP)
+[List Paragraph] Phần tô vàng là chỗ chờ số liệu hoặc nội dung của từng người. Sau khi chạy xong trên data_final (hạn 15/11 23:59), thay toàn bộ phần tô vàng bằng kết quả thật và bỏ tô vàng.
+[List Paragraph] Phần chưa tô vàng là nội dung đã viết từ phân công bản 2 (phương pháp, quy ước, điều chỉnh so với đề cương). Mỗi người đọc lại phần của mình, sửa nếu code làm khác.
+[List Paragraph] Không có con số kết quả nào trong file này là kết quả thật. Ba số 96.334 video, 466 kênh và 636 video Trending là của bản data_clean chiều 03/11 và phải thay bằng số của data_final_20261113.
+[List Paragraph] Mỗi người chép phần của mình sang Muc_<Tên>.docx dùng chung mẫu này, hoặc viết trực tiếp vào đây theo đúng Mục đã phân công (xem Phụ lục A). Kiên ghép và khóa số liệu lúc 17/11 22:00.
+[List Paragraph] Mục lục, Danh mục bảng, Danh mục hình là trường tự động: sau khi sửa nội dung, bấm chuột phải vào mục lục chọn Update Field → Update entire table. Muốn bảng hoặc hình có mặt trong danh mục, đặt chú thích dưới bảng theo kiểu Bảng X.Y và hình theo kiểu Hình X.Y (đã có sẵn style).
+[List Paragraph] Tài liệu tham khảo đã có 22 nguồn nháp (APA 7) để nhóm có điểm xuất phát. Theo quy định của nhóm, mỗi nguồn phải được mở ra đọc và kiểm tra DOI/liên kết (Khôi kiểm lần cuối 19/11 14:00) trước khi giữ lại.
+[List Paragraph] Tên môn: phân công ghi lớp IS403.R13; đề cương ghi tên môn là Phân tích dữ liệu kinh doanh. Cả nhóm xác nhận lại tên môn đúng trên bìa trước khi nộp.
+[List Paragraph] Lịch sử thay đổi để trống; mỗi người ghi một dòng khi nộp phần của mình. Lịch sử kiểm tra ghi sẵn cặp chạy thử chéo theo phân công (Bảo↔Kiên, Khôi↔Quỳnh), cập nhật ngày và kết quả khi làm thật.
+[Heading 1] LỜI CẢM ƠN
+[] Nhóm chúng em xin gửi lời cảm ơn chân thành đến thầy Trần Văn Hải Triều, giảng viên hướng dẫn môn Phân tích dữ liệu kinh doanh, đã định hướng đề tài và góp ý cho nhóm trong suốt quá trình thực hiện đồ án.
+[] Do thời gian và dữ liệu có hạn, đồ án khó tránh khỏi thiếu sót; nhóm rất mong nhận được ý kiến đóng góp của thầy để hoàn thiện hơn. [Nhóm: bổ sung lời cảm ơn cụ thể nếu muốn.]
+[] Nhóm chúng em xin trân trọng cảm ơn thầy!
+[] TP.HCM, ngày [[..]] tháng 11 năm 2026
+[] Nhóm sinh viên thực hiện
+[Heading 1] NHẬN XÉT CỦA GIẢNG VIÊN
+[] TP.HCM, ngày …… tháng …… năm 2026
+[] Người nhận xét
+[] TS. Trần Văn Hải Triều
+[] Quản lý tài liệu
+
+<TABLE 1>
+Thông tin | Chi tiết
+Ngày tạo | 03/11/2026
+Ngày kết thúc dự kiến | 19/11/2026 (nộp 20/11/2026; thuyết trình 24/11/2026)
+Nhóm | 4 – Lớp IS403.R13
+Lưu bởi | Nguyễn Trung Kiên (trưởng nhóm)
+</TABLE 1>
+
+[] Lịch sử thay đổi
+
+<TABLE 2>
+Người thực hiện | Ngày thực hiện | Nội dung | Phiên bản
+[Tên] | [dd/mm/2026] | [Nội dung công việc] (ví dụ: nộp Muc_<Tên>.docx) | […]
+[Tên] | [dd/mm/2026] | [Nội dung công việc] | […]
+[Tên] | [dd/mm/2026] | [Nội dung công việc] | […]
+[Tên] | [dd/mm/2026] | [Nội dung công việc] | […]
+</TABLE 2>
+
+[Caption Bang] Bảng 0.1. Lịch sử thay đổi đồ án
+[] Lịch sử kiểm tra
+
+<TABLE 3>
+Người kiểm tra | Ngày kiểm tra | Nhận xét/đánh giá | Phiên bản
+Nguyễn Gia Bảo | [19/11/2026] | Chạy thử code của Kiên trên môi trường sạch (test_log_Bao.md) [cập nhật khi làm thật] | […]
+Nguyễn Trung Kiên | [19/11/2026] | Chạy thử code của Bảo (test_log_Kien.md) [cập nhật khi làm thật] | […]
+Đinh Vũ Minh Khôi | [19/11/2026] | Chạy thử code của Quỳnh; kiểm trích dẫn và danh sách tài liệu tham khảo hai chiều [cập nhật khi làm thật] | […]
+Vũ Thị Như Quỳnh | [19/11/2026] | Chạy thử code của Khôi (test_log_Quynh.md) [cập nhật khi làm thật] | […]
+</TABLE 3>
+
+[Caption Bang] Bảng 0.2. Lịch sử kiểm tra đồ án
+[Toc Title] MỤC LỤC
+[toc 1] LỜI CẢM ƠN	4
+[toc 1] NHẬN XÉT CỦA GIẢNG VIÊN	5
+[toc 1] DANH MỤC BẢNG	9
+[toc 1] DANH MỤC HÌNH ẢNH	11
+[toc 1] XÁC NHẬN CỦA CÁC THÀNH VIÊN	12
+[toc 1] CHƯƠNG 1: GIỚI THIỆU	13
+[toc 2] 1.1 Bối cảnh	13
+[toc 2] 1.2 Câu hỏi nghiên cứu	13
+[toc 2] 1.3 Mục tiêu nghiên cứu	14
+[toc 2] 1.4 Đối tượng và phạm vi nghiên cứu	14
+[toc 2] 1.5 Bố cục báo cáo	15
+[toc 2] 1.6 Từ ngữ viết tắt và thuật ngữ	15
+[toc 1] CHƯƠNG 2: TỔNG QUAN TÀI LIỆU	17
+[toc 2] 2.1 Các yếu tố ảnh hưởng đến lượt xem video	17
+[toc 2] 2.2 Dự báo chuỗi thời gian	17
+[toc 2] 2.3 Dự đoán video viral và học máy	17
+[toc 2] 2.4 Khoảng trống nghiên cứu	18
+[toc 1] CHƯƠNG 3: DỮ LIỆU VÀ ĐỘ TIN CẬY	19
+[toc 2] 3.1 Nguồn dữ liệu và cách thu thập	19
+[toc 2] 3.2 Làm sạch dữ liệu	20
+[toc 2] 3.3 Chất lượng dữ liệu và tính nhất quán logic	20
+[toc 2] 3.4 Đối chiếu ngẫu nhiên 30 video với YouTube	21
+[toc 2] 3.5 Hạn chế của dữ liệu và các điều chỉnh	22
+[toc 2] 3.6 Đối chiếu xu hướng với Google Trends	22
+[toc 1] CHƯƠNG 4: PHƯƠNG PHÁP CHUNG	23
+[toc 2] 4.1 Quần thể phân tích H	23
+[toc 2] 4.2 Nhóm tuổi video (age_b)	23
+[toc 2] 4.3 Biến log_views và lv_adj	23
+[toc 2] 4.4 Các nhãn video viral	24
+[toc 2] 4.5 Biến đầu vào của mô hình dự báo viral và hồi quy Logistic (X_PRE)	24
+[toc 2] 4.6 Các quy ước kiểm tra và tái lập	24
+[toc 2] 4.7 Công cụ sử dụng	25
+[toc 2] 4.8 Điều chỉnh so với đề cương	26
+[toc 1] CHƯƠNG 5: KẾT QUẢ PHÂN TÍCH	27
+[toc 2] 5.1 Q1: Thống kê mô tả	27
+[toc 2] 5.2 Q2: Kiểm định giả thuyết	29
+[toc 3] 5.2a Q2a: T-test cuối tuần và ngày thường	29
+[toc 3] 5.2b Q2b: ANOVA theo khung giờ và thể loại	30
+[toc 3] 5.2c Q2c: Chi-square giữa thể loại và khả năng lọt Trending	31
+[toc 3] 5.2d Q2d: Hiệu ứng dịp lễ và Tết	32
+[toc 3] Tổng hợp Q2 (đoạn tổng hợp của Kiên)	33
+[toc 2] 5.3 Q3: Hồi quy	33
+[toc 3] 5.3a Q3a: Hồi quy tuyến tính bội	33
+[toc 3] 5.3b Q3b: Hồi quy Logistic	34
+[toc 3] Tổng hợp Q3 (đoạn tổng hợp của Kiên)	35
+[toc 2] 5.4 Q4: Chuỗi thời gian và dự báo	35
+[toc 2] 5.5 Q5: Dự báo video viral	38
+[toc 2] 5.6 Q6: Phân cụm video	40
+[toc 1] CHƯƠNG 6: KẾT LUẬN VÀ KHUYẾN NGHỊ	42
+[toc 2] 6.1 Kết quả chính	42
+[toc 2] 6.2 Khuyến nghị cho nhà sáng tạo và nhãn hàng	42
+[toc 2] 6.3 Hạn chế	42
+[toc 2] 6.4 Hướng mở rộng	42
+[toc 1] CHƯƠNG 7: TÀI LIỆU THAM KHẢO	43
+[toc 1] PHỤ LỤC A: BẢNG PHÂN CÔNG CHI TIẾT	46
+[toc 1] PHỤ LỤC B: LIÊN KẾT DATASET, VIDEO, CODE	47
+[toc 1] PHỤ LỤC C: BẢNG ĐỘ TIN CẬY VÀ TỪ ĐIỂN DỮ LIỆU	48
+[toc 1] PHỤ LỤC D: DASHBOARD POWER BI	49
+[Heading 1] DANH MỤC BẢNG
+[table of figures] Bảng 0.1. Lịch sử thay đổi đồ án	6
+[table of figures] Bảng 0.2. Lịch sử kiểm tra đồ án	6
+[table of figures] Bảng 1.1. Các câu hỏi nghiên cứu và phương pháp	13
+[table of figures] Bảng 1.2. Bố cục báo cáo	15
+[table of figures] Bảng 1.3. Từ ngữ viết tắt và thuật ngữ	16
+[table of figures] Bảng 3.1. Nguồn dữ liệu của đồ án	19
+[table of figures] Bảng 3.2. Các file dữ liệu sau làm sạch (nguồn: data_final_20261113/, dq_report.txt)	20
+[table of figures] Bảng 3.3. Kết quả kiểm tra chất lượng và tính nhất quán logic	21
+[table of figures] Bảng 3.4. Kết quả đối chiếu 30 video (nguồn: reliability_check_30videos.csv)	21
+[table of figures] Bảng 3.5. Từ khóa Google Trends và hệ số Spearman với chuỗi S2 theo tuần (nguồn: outputs/trends_check/)	22
+[table of figures] Bảng 4.1. Ba định nghĩa nhãn viral	24
+[table of figures] Bảng 4.2. Các biến đầu vào X_PRE	24
+[table of figures] Bảng 4.3. Bộ 6 số kiểm tra chung của nhóm	25
+[table of figures] Bảng 4.4. Các điều chỉnh so với đề cương	26
+[table of figures] Bảng 5.1. Thống kê mô tả lượt xem, lượt thích, bình luận (nguồn: outputs/q1/)	27
+[table of figures] Bảng 5.2. Kết quả t-test cuối tuần và ngày thường (nguồn: outputs/q2a/)	29
+[table of figures] Bảng 5.3. Kết quả ANOVA theo khung giờ và thể loại (nguồn: outputs/q2b/)	30
+[table of figures] Bảng 5.4. Kết quả Chi-square (nguồn: outputs/q2c/)	31
+[table of figures] Bảng 5.5. Kết quả so sánh lv_adj theo kỳ nghỉ lễ (nguồn: outputs/q2d/)	32
+[table of figures] Bảng 5.6. Mức đóng góp của từng nhóm nhân tố vào R² (nguồn: outputs/q3a/)	34
+[table of figures] Bảng 5.7. Hệ số hồi quy tuyến tính bội (nguồn: outputs/q3a/)	34
+[table of figures] Bảng 5.8. Kết quả hồi quy Logistic cho viral_A (nguồn: outputs/q3b/)	35
+[table of figures] Bảng 5.9. So sánh mô hình dự báo S1 và S2 trên tập kiểm tra 28 ngày (nguồn: outputs/q4/)	36
+[table of figures] Bảng 5.10. Kết quả chuỗi ngắn N1, N2 (nguồn: outputs/q4/, series_trending.csv)	36
+[table of figures] Bảng 5.11. So sánh mô hình dự báo viral_A, trung bình qua 5 fold (nguồn: q5_model_comparison.csv)	38
+[table of figures] Bảng 5.12. Số video dương của từng nhãn viral (nguồn: outputs/q5/, labels.csv)	39
+[table of figures] Bảng 5.13. So sánh mô hình dự báo breakout_B, trung bình qua 5 fold (nguồn: q5_model_comparison.csv)	39
+[table of figures] Bảng 5.14. Kiểm tra theo thời gian: huấn luyện trước 01/07/2026, kiểm tra từ 01/07/2026 (nguồn: outputs/q5/)	39
+[table of figures] Bảng 5.15. Phân tích ablation: bỏ nhóm biến kênh (nguồn: outputs/q5/)	39
+[table of figures] Bảng 5.16. Độ nhạy theo ngưỡng nhãn viral_A (nguồn: outputs/q5/)	39
+[table of figures] Bảng 5.17. Hồ sơ các cụm video (nguồn: outputs/q6/q6_cluster_profile.csv)	41
+[table of figures] Bảng 6.1. Tổng hợp kết luận theo câu hỏi nghiên cứu	42
+[table of figures] Bảng A.1. Bảng phân công chi tiết của nhóm	46
+[table of figures] Bảng A.2. Lịch thực hiện thực tế (thay cho lịch tuần 1–8 của đề cương)	46
+[table of figures] Bảng B.1. Liên kết và vị trí các sản phẩm của đồ án	47
+[table of figures] Bảng C.1. Trích từ điển dữ liệu	48
+[Heading 1] DANH MỤC HÌNH ẢNH
+[table of figures] Hình 5.1. Trung vị lv_adj theo giờ đăng (nguồn: outputs/q1/q1_by_hour.png)	28
+[table of figures] Hình 5.2. Heatmap trung vị lv_adj theo giờ và thứ đăng (nguồn: outputs/q1/q1_heatmap.png)	28
+[table of figures] Hình 5.3. Phân bố lv_adj theo 10 thể loại có nhiều video nhất (nguồn: outputs/q1/)	28
+[table of figures] Hình 5.4. Trung bình lv_adj theo nhóm và khoảng tin cậy 95% (nguồn: outputs/q2b/)	30
+[table of figures] Hình 5.5. Phần dư chuẩn hóa của bảng chéo thể loại × viral_C (nguồn: outputs/q2c/)	31
+[table of figures] Hình 5.6. Dự báo số video đăng mỗi ngày (S1) trong 4 tuần tới (nguồn: outputs/q4/q4_forecast_S1.csv)	37
+[table of figures] Hình 5.7. Dự báo trung bình lv_adj theo ngày đăng (S2) trong 4 tuần tới (nguồn: outputs/q4/q4_forecast_S2.csv)	37
+[table of figures] Hình 5.8. Mức quan trọng của biến (permutation importance) trong mô hình tốt nhất (nguồn: outputs/q5/q5_importance.csv)	40
+[table of figures] Hình 5.9. Các cụm video trên mặt phẳng hai thành phần chính (nguồn: outputs/q6/q6_pca_points.csv)	41
+[table of figures] Hình D.1. Dashboard Power BI trang 1: tổng quan (nguồn: dashboard.pbix)	49
+[table of figures] Hình D.2. Dashboard Power BI trang 2: giờ đăng và thể loại (nguồn: dashboard.pbix)	49
+[table of figures] Hình D.3. Dashboard Power BI trang 3: viral và cụm (nguồn: dashboard.pbix)	49
+[Heading 1] XÁC NHẬN CỦA CÁC THÀNH VIÊN
+[] Chúng tôi xác nhận đã cùng tham gia thực hiện đồ án, mỗi người chịu trách nhiệm về phần được phân công trong Phụ lục A và đã đọc, thống nhất với nội dung của toàn bộ báo cáo.
+
+<TABLE 4>
+Nguyễn Gia Bảo | Đinh Vũ Minh Khôi | Vũ Thị Như Quỳnh | Nguyễn Trung Kiên
+(Ký tên) | (Ký tên) | (Ký tên) | (Ký tên)
+</TABLE 4>
+
+[Heading 1] CHƯƠNG 1: GIỚI THIỆU
+[Heading 2] 1.1 Bối cảnh
+[] YouTube là một trong những nền tảng video trực tuyến được sử dụng phổ biến nhất tại Việt Nam, đồng thời là kênh quan trọng của nhà sáng tạo nội dung, mạng lưới đa kênh (MCN), đơn vị truyền thông và nhãn hàng trong hoạt động marketing. Mỗi ngày có rất nhiều video được đăng tải, nhưng chỉ một phần nhỏ đạt lượng xem và mức tương tác cao hoặc lọt vào danh sách thịnh hành (Trending).
+[] Các đơn vị này thường quyết định thời điểm đăng, độ dài, thể loại và cách đặt tiêu đề dựa trên kinh nghiệm cá nhân. Họ chưa có công cụ dựa trên dữ liệu thực tế để biết trước video nào có khả năng tăng trưởng nhanh, thời điểm đăng nào hiệu quả hơn và nhân tố nào tác động mạnh nhất, nhằm chủ động tối ưu kế hoạch nội dung và ngân sách quảng cáo. Đây là khoảng trống mà nhóm hướng đến giải quyết.
+[Heading 2] 1.2 Câu hỏi nghiên cứu
+[] Câu hỏi trọng tâm: Video YouTube tại Việt Nam đăng vào thời điểm nào, với đặc điểm nội dung nào thì đạt lượng xem và mức tương tác cao nhất; xu hướng này biến động ra sao theo thời gian và nhân tố nào tác động mạnh nhất, để nhà sáng tạo và nhãn hàng chủ động lên kế hoạch nội dung?
+[] Câu hỏi trọng tâm được chia thành sáu câu hỏi liên quan, trình bày trong Bảng 1.1.
+
+<TABLE 5>
+STT | Câu hỏi | Phương pháp | Mục
+1 | Lượt xem, lượt thích, bình luận phân bố thế nào theo giờ, thứ, tháng? | Thống kê mô tả và trực quan hóa | 5.1
+2 | Khung giờ đăng, ngày thường hay cuối tuần, dịp lễ và Tết có tạo ra khác biệt không? | T-test (Welch), ANOVA kèm Welch ANOVA và Games-Howell, Chi-square; so sánh theo kỳ nghỉ lễ | 5.2
+3 | Nhân tố nào (độ dài video, tiêu đề, thể loại, quy mô kênh…) ảnh hưởng mạnh nhất? | Hồi quy tuyến tính bội, VIF, sai số chuẩn bền vững theo kênh; hồi quy Logistic | 5.3
+4 | Xu hướng đăng video và mức độ thu hút sẽ biến động thế nào trong những tuần tới? | ARIMA, SARIMA, ARIMAX trên các chuỗi S1, S2; chuỗi ngắn N1, N2 mang tính minh họa | 5.4
+5 | Có dự báo được video có khả năng viral ngay sau khi đăng không? | Decision Tree, Random Forest, SVM, XGBoost | 5.5
+6 | Các video có thể chia thành những nhóm hành vi nào? | Phân cụm K-means | 5.6
+</TABLE 5>
+
+[Caption Bang] Bảng 1.1. Các câu hỏi nghiên cứu và phương pháp
+[Heading 2] 1.3 Mục tiêu nghiên cứu
+[List Paragraph] Mô tả phân bố lượt xem, lượt thích và bình luận của video YouTube Việt Nam theo giờ, thứ và tháng đăng, sau khi chuẩn hóa theo tuổi video.
+[List Paragraph] Kiểm định xem thời điểm đăng (khung giờ, cuối tuần, dịp lễ và Tết) và thể loại có liên quan đến khác biệt lượt xem hay không, và khác biệt đó lớn đến đâu.
+[List Paragraph] Xác định nhóm nhân tố (kênh, nội dung, thời gian, thể loại) có liên quan mạnh nhất đến lượt xem và khả năng viral.
+[List Paragraph] Xây dựng mô hình dự báo chuỗi thời gian và mô hình phân loại video viral chỉ dùng thông tin biết lúc đăng.
+[List Paragraph] Đề xuất khuyến nghị thực tiễn cho nhà sáng tạo và nhãn hàng, nêu rõ giới hạn của bằng chứng.
+[Heading 2] 1.4 Đối tượng và phạm vi nghiên cứu
+[List Paragraph] Đối tượng: lượt xem, mức tương tác và khả năng lọt xu hướng của video YouTube cùng các nhân tố thời gian, nội dung và quy mô kênh.
+[List Paragraph] Phạm vi thời gian: (i) dữ liệu lịch sử: các video đăng từ 01/2024 đến thời điểm thu thập; (ii) dữ liệu theo dõi định kỳ: chụp danh sách thịnh hành và đo lại số liệu video theo lịch cố định trong 22 ngày, từ 22/10/2026 đến 12/11/2026 (xem điều chỉnh so với đề cương ở Mục 4.8).
+[List Paragraph] Phạm vi không gian: video thịnh hành tại Việt Nam (mã vùng VN) và video của nhóm kênh Việt Nam thuộc nhiều thể loại ([số kênh thực tế từ data_final] kênh).
+[List Paragraph] Giai đoạn thực hiện: thu thập và làm sạch dữ liệu; chứng minh độ tin cậy; thống kê mô tả; kiểm định và hồi quy; mô hình phân loại viral; dự báo chuỗi thời gian; phân cụm; trực quan hóa Power BI và tổng hợp báo cáo.
+[Heading 2] 1.5 Bố cục báo cáo
+
+<TABLE 6>
+Chương | Nội dung | Người phụ trách
+Chương 1 | Giới thiệu: bối cảnh, câu hỏi, mục tiêu, phạm vi | Kiên
+Chương 2 | Tổng quan tài liệu theo ba nhóm và khoảng trống nghiên cứu | Khôi
+Chương 3 | Dữ liệu và độ tin cậy: thu thập, làm sạch, chất lượng, đối chiếu 30 video, hạn chế, đối chiếu Google Trends | Bảo; Khôi (3.6)
+Chương 4 | Phương pháp chung và bảng điều chỉnh so với đề cương | Kiên
+Chương 5 | Kết quả: 5.1 Thống kê mô tả (Bảo); 5.2 Kiểm định: 5.2a–b (Kiên), 5.2c (Quỳnh), 5.2d (Khôi); 5.3 Hồi quy: 5.3a (Kiên), 5.3b (Bảo); 5.4 Chuỗi thời gian (Khôi); 5.5 Dự báo viral (Quỳnh); 5.6 Phân cụm (Quỳnh) | Cả nhóm (xem Phụ lục A)
+Chương 6 | Kết luận, khuyến nghị, hạn chế, hướng mở rộng | Kiên
+Chương 7 | Tài liệu tham khảo (APA 7) | Khôi
+Phụ lục | A: bảng phân công chi tiết (Kiên); B: liên kết dataset, video, code (Kiên); C: bảng độ tin cậy và từ điển dữ liệu (Bảo); D: ảnh Power BI (Bảo) | Kiên; Bảo
+</TABLE 6>
+
+[Caption Bang] Bảng 1.2. Bố cục báo cáo
+[Heading 2] 1.6 Từ ngữ viết tắt và thuật ngữ
+
+<TABLE 7>
+Từ viết tắt / Thuật ngữ | Ý nghĩa
+API | Giao diện lập trình ứng dụng (YouTube Data API v3)
+MCN | Mạng lưới đa kênh (Multi-Channel Network)
+Trending | Danh sách video thịnh hành (chart = mostPopular, vùng VN)
+H | Quần thể phân tích: video đủ điều kiện lọc ở Mục 4.1
+age_b | Nhóm tuổi video, chia theo khoảng [a, b) ở Mục 4.2
+lv_adj | Log10 lượt xem đã trừ trung bình của nhóm tuổi (Mục 4.3)
+viral_A / B / C | Ba cách định nghĩa video viral (Mục 4.4)
+X_PRE | Tập biến chỉ biết lúc đăng, dùng cho Logistic và mô hình viral (Mục 4.5)
+S1, S2, N1, N2 | Bốn chuỗi thời gian của Q4 (Mục 5.4)
+ADF, KPSS | Kiểm định tính dừng của chuỗi thời gian
+ARIMA, SARIMA, ARIMAX | Mô hình tự hồi quy tích hợp trung bình trượt; có mùa vụ; có biến ngoại sinh
+VIF | Hệ số phóng đại phương sai (đo đa cộng tuyến)
+OR | Tỷ số odds (odds ratio) trong hồi quy Logistic
+ROC-AUC, PR-AUC | Diện tích dưới đường ROC; diện tích dưới đường Precision–Recall
+MAE, sMAPE | Sai số tuyệt đối trung bình; sai số phần trăm tuyệt đối đối xứng
+ARI | Chỉ số Rand điều chỉnh (đo độ ổn định hoặc độ khớp giữa hai cách phân cụm)
+PCA | Phân tích thành phần chính
+</TABLE 7>
+
+[Caption Bang] Bảng 1.3. Từ ngữ viết tắt và thuật ngữ
+[Heading 1] CHƯƠNG 2: TỔNG QUAN TÀI LIỆU
+[] [Khôi: bản nháp bên dưới viết trước để nhóm có khung. Mỗi nguồn phải được mở đọc và kiểm tra lại nhận định trước khi giữ. Cần từ 5 nguồn ngoài Mục 2 cho mỗi người, và từ 20 nguồn cho cả báo cáo. Độ dài đích khoảng 1,5–2 trang.]
+[Heading 2] 2.1 Các yếu tố ảnh hưởng đến lượt xem video
+[] Nhiều nghiên cứu đo lường trực tiếp trên YouTube cho thấy lượt xem phân bố rất lệch: một số ít video chiếm phần lớn lượt xem (Cha và cs., 2007; Cheng và cs., 2008) [Khôi: kiểm chứng nhận định này bằng cách đọc hai nguồn]. Vì vậy việc lấy logarit lượt xem trước khi phân tích là thực hành phổ biến. Zhou và cs. (2010) xem xét vai trò của hệ thống đề xuất của YouTube trong việc dẫn lượt xem, còn Borghol và cs. (2012) dùng các video là bản sao của nhau để tách ảnh hưởng của những yếu tố không phụ thuộc vào nội dung.
+[] Những nghiên cứu này thường tập trung vào phân bố và cơ chế lan truyền, ít xét đồng thời giờ đăng, độ dài video, đặc điểm tiêu đề, thể loại và quy mô kênh trong cùng một mô hình, và chủ yếu không dựa trên thị trường Việt Nam. [Khôi: bổ sung 2–3 nguồn về thời điểm đăng, tiêu đề, độ dài video.]
+[Heading 2] 2.2 Dự báo chuỗi thời gian
+[] Hyndman và Athanasopoulos (2021) trình bày quy trình dự báo gồm kiểm tra tính dừng, chọn mô hình ARIMA theo tiêu chí thông tin, đánh giá trên tập kiểm tra giữ lại và so sánh với phương pháp tham chiếu đơn giản như lặp lại giá trị cùng thứ của tuần trước (seasonal naive). Box và cs. (2015) là tài liệu nền tảng của họ mô hình ARIMA và SARIMA. Khi chuỗi có ngày bằng 0, MAPE không dùng được nên cần các thước đo như MAE hoặc sMAPE. Nhóm áp dụng đúng quy trình này cho các chuỗi S1 và S2 (Mục 5.4).
+[Heading 2] 2.3 Dự đoán video viral và học máy
+[] Szabo và Huberman (2010) cho thấy lượt xem ở thời điểm sau có thể dự báo từ lượt xem sớm của cùng nội dung; Pinto và cs. (2013) và Figueiredo và cs. (2014) tiếp tục hướng này cho YouTube. Các mô hình dựa trên lượt xem sớm không dùng được ngay sau khi đăng, nên nhóm chỉ dùng biến biết lúc đăng (Mục 4.5). Về công cụ, nhóm dùng Decision Tree, Random Forest (Breiman, 2001), SVM (Cortes và Vapnik, 1995), XGBoost (Chen và Guestrin, 2016) và phân cụm K-means (MacQueen, 1967) có đánh giá bằng Silhouette (Rousseeuw, 1987).
+[] Với cỡ mẫu rất lớn, p-value gần như luôn nhỏ nên cần báo kích thước hiệu ứng (Cohen, 1988; Lin và cs., 2013). Các video của cùng một kênh có tương quan với nhau, nên nhóm dùng sai số chuẩn bền vững theo kênh (Cameron và Miller, 2015) thay vì giả định độc lập.
+[Heading 2] 2.4 Khoảng trống nghiên cứu
+[] Từ tổng quan trên, nhóm xác định khoảng trống: (i) thiếu phân tích trên dữ liệu YouTube Việt Nam có chuẩn hóa theo tuổi video; (ii) ít nghiên cứu kết hợp giờ đăng, dịp lễ và Tết, thể loại và quy mô kênh trong một khung phân tích thống nhất, có báo cáo kích thước hiệu ứng; (iii) mô hình dự báo viral thường dùng thông tin sau đăng, khó dùng để lập kế hoạch. Đồ án này nhắm vào ba khoảng trống đó. [Khôi: rà lại bằng nguồn đã đọc; sửa nếu không còn đúng.]
+[Heading 1] CHƯƠNG 3: DỮ LIỆU VÀ ĐỘ TIN CẬY
+[Heading 2] 3.1 Nguồn dữ liệu và cách thu thập
+[] Dữ liệu được thu thập trực tiếp qua YouTube Data API v3, không dùng bộ dữ liệu có sẵn. Ba nhóm dữ liệu được lấy: (i) danh sách Trending của Việt Nam bằng videos.list với chart = mostPopular và regionCode = VN; (ii) danh sách video tải lên của từng kênh bằng playlistItems.list; (iii) thông tin kênh và số người đăng ký bằng channels.list.
+[] Script thu thập collect_youtube_v2.py chạy theo lịch run_all.bat bốn lần mỗi ngày, mỗi lượt có các bước ghi trong log (nhãn [A], [C], [B], [backup]). [Bảo: xác nhận và mô tả đúng từng bước của một lượt chạy (chụp Trending, đo lại video, bổ sung lịch sử kênh, sao lưu).] Dữ liệu thô gốc được sao lưu sang data_raw_20261103/, đặt chỉ đọc và lưu SHA-256 từng file trong checksums_raw.txt. Giai đoạn theo dõi kéo dài 22 ngày, từ 22/10 đến 12/11/2026; lần thu cuối lúc 20:00 ngày 12/11, sau đó lịch thu được tắt. [Bảo: bổ sung ngày nào thiếu lượt và cách xử lý (collection_log.csv).]
+[] Các nguồn dữ liệu của đồ án được tóm tắt trong Bảng 3.1; lịch nghỉ lễ và Tết do nhóm tự tổng hợp từ thông báo nghỉ lễ chính thức của cơ quan nhà nước (holidays_vn.csv, Khôi phụ trách).
+
+<TABLE 8>
+Nguồn | Biến số / dữ liệu | Ghi chú
+YouTube Data API v3 (videos.list, chart = mostPopular, regionCode = VN) | Thứ hạng thịnh hành, lượt xem, lượt thích, bình luận, độ dài, thể loại, số thẻ tag, thời điểm đăng | API chính thức của Google; hạn mức mặc định 10.000 đơn vị mỗi ngày
+YouTube Data API v3 (playlistItems.list, channels.list) | Video lịch sử và số người đăng ký của nhóm kênh | Nhóm đối chứng không thịnh hành; chi phí 1 đơn vị mỗi lần gọi
+Google Trends (pytrends hoặc tải thủ công) | Mức độ quan tâm theo từ khóa theo tuần | Đối chiếu xu hướng (Mục 3.6) và biến ngoại sinh cho ARIMAX
+Lịch nghỉ lễ, Tết Việt Nam | Biến giả ngày lễ, kỳ nghỉ (holidays_vn.csv) | Tự tổng hợp từ lịch nghỉ lễ chính thức, mỗi dòng có nguồn
+</TABLE 8>
+
+[Caption Bang] Bảng 3.1. Nguồn dữ liệu của đồ án
+[] Dữ liệu sau làm sạch gồm năm file, mô tả trong Bảng 3.2. Từ ngày 13/11/2026, mọi con số trong báo cáo chỉ lấy từ thư mục data_final_20261113.
+
+<TABLE 9>
+File | Nội dung
+videos_master.csv | Mỗi dòng một video, số liệu của lần đo mới nhất (55 cột)
+measurements.csv | Mỗi dòng một lần đo; cột is_last_of_day đánh dấu lần đo cuối mỗi ngày
+trending_clean.csv | Mỗi dòng một video trong một lần chụp Trending
+channels_latest.csv | Mỗi dòng một kênh, số liệu mới nhất
+dq_report.txt | Báo cáo chất lượng dữ liệu sinh tự động khi làm sạch
+</TABLE 9>
+
+[Caption Bang] Bảng 3.2. Các file dữ liệu sau làm sạch (nguồn: data_final_20261113/, dq_report.txt)
+[] Quy mô dữ liệu: [điền từ data_final: số video, số kênh, số video từng lọt Trending, số lần đo, số lần chụp Trending. Số tạm của bản data_clean chiều 03/11/2026: 96.334 video, 466 kênh, 636 video từng lọt Trending, KHÔNG dùng trong báo cáo cuối.]
+[Heading 2] 3.2 Làm sạch dữ liệu
+[] Quy trình làm sạch do clean_data.py thực hiện và ghi kết quả vào dq_report.txt. [Bảo: mô tả từng bước và số dòng bị loại ở mỗi bước, gồm: chuẩn hóa kiểu dữ liệu video_id (chuỗi 11 ký tự); xử lý giá trị rỗng; loại trùng video và trùng lần đo; xử lý video đang phát trực tiếp hoặc chưa phát (is_live_or_upcoming); đổi giờ đăng sang giờ Việt Nam (các cột pub_*).]
+[] Các file CSV được đọc với encoding utf-8-sig và video_id đọc dưới dạng chuỗi. Số lượt thích và bình luận rỗng (do ẩn hoặc tắt) được giữ là NaN, các tỷ lệ like_rate và comment_rate chỉ tính khi giá trị không rỗng.
+[Heading 2] 3.3 Chất lượng dữ liệu và tính nhất quán logic
+[] Độ tin cậy của dữ liệu được chứng minh qua 6 tiêu chí: (1) nguồn gốc minh bạch (API chính thức của Google); (2) chất lượng dữ liệu (xử lý giá trị thiếu, trùng lặp, ngoại lai); (3) tính nhất quán logic (lượt thích và bình luận không vượt quá lượt xem, lượt xem không giảm giữa hai lần đo); (4) đối chiếu ngẫu nhiên với số liệu hiển thị trên YouTube (Mục 3.4); (5) đối chiếu xu hướng với nguồn độc lập là Google Trends (Mục 3.6); (6) nêu rõ các hạn chế (Mục 3.5). Tiêu chí (2) và (3) được kiểm tra bằng Bảng 3.3.
+[] Nhóm kiểm tra các tiêu chí trong Bảng 3.3; mỗi dòng nêu số đếm, tỷ lệ và cách xử lý. Số liệu trong bảng lấy từ reliability_table.csv của bản chạy cuối.
+
+<TABLE 10>
+Tiêu chí | Số đếm | Tỷ lệ (%) | Cách xử lý
+Ẩn lượt thích | […] | […] | […]
+Tắt bình luận | […] | […] | […]
+Trùng lặp video | […] | […] | […]
+Trùng lặp lần đo | […] | […] | […]
+Ngoại lai (IQR trên log_views) | […] | […] | […]
+Lượt thích lớn hơn lượt xem | […] | […] | […]
+Bình luận lớn hơn lượt xem | […] | […] | […]
+Lượt xem giảm giữa hai lần đo | […] | […] | […]
+Lượt thích giảm giữa hai lần đo | […] | […] | […]
+</TABLE 10>
+
+[Caption Bang] Bảng 3.3. Kết quả kiểm tra chất lượng và tính nhất quán logic
+[Heading 2] 3.4 Đối chiếu ngẫu nhiên 30 video với YouTube
+[] Để kiểm tra số liệu API có khớp số hiển thị trên YouTube, nhóm chọn 30 video theo phân tầng lượt xem từ lần đo gần nhất: 10 video dưới 10 nghìn lượt, 10 video từ 10 nghìn đến 1 triệu lượt và 10 video trên 1 triệu lượt (random_state = 42). Sau lần thu cuối ngày 12/11 lúc 20:00, nhóm mở từng video trên YouTube trong vòng khoảng 90 phút, ghi số lượt xem, thích, bình luận, giờ xem và chụp màn hình. Sai lệch tương đối được tính bằng (YouTube − API) / API, kèm giờ chênh của từng dòng.
+[] Kết quả: trung vị sai lệch lượt xem […], lượt thích […], bình luận […]. Sai lệch dương chủ yếu do thời gian trôi giữa lần đo API và lần xem trên YouTube [Bảo: xác nhận bằng cột giờ chênh].
+
+<TABLE 11>
+Nhóm | Số video | TV sai lệch lượt xem | TV sai lệch lượt thích | TV sai lệch bình luận | Giờ chênh trung vị (phút)
+< 10 nghìn | 10 | […] | […] | […] | […]
+10 nghìn – 1 triệu | 10 | […] | […] | […] | […]
+> 1 triệu | 10 | […] | […] | […] | […]
+Chung | 30 | […] | […] | […] | […]
+</TABLE 11>
+
+[Caption Bang] Bảng 3.4. Kết quả đối chiếu 30 video (nguồn: reliability_check_30videos.csv)
+[Heading 2] 3.5 Hạn chế của dữ liệu và các điều chỉnh
+[List Paragraph] Thời gian theo dõi ngắn: 22 ngày (22/10–12/11/2026) thay vì tối thiểu 8 tuần trong đề cương. Các chuỗi dựa trên dữ liệu theo dõi (N1, N2) chỉ có khoảng 20–23 điểm nên chỉ mang tính minh họa.
+[List Paragraph] Giới hạn 500 video mỗi kênh: script chỉ lấy tối đa 500 video mới nhất của mỗi kênh, nên số video theo tháng không phản ánh xu hướng đăng thực của kênh. Chuỗi S1 chỉ dùng các kênh có dưới 500 video.
+[List Paragraph] Số người đăng ký đo lúc thu thập, không phải lúc video được đăng. Biến log_subs vì thế chỉ phản ánh quy mô kênh hiện tại.
+[List Paragraph] Quy mô mẫu kênh: số kênh thực tế là […] kênh; đề cương ghi 150–200 kênh (bảng nguồn dữ liệu ghi 50–100). [Bảo/Kiên: nêu rõ chênh lệch (nếu có) và nguyên nhân sau khi có data_final.]
+[List Paragraph] Ngày thiếu lượt thu: [Bảo: liệt kê (nếu có) và lý do].
+[Heading 2] 3.6 Đối chiếu xu hướng với Google Trends
+[] Để kiểm tra chuỗi dữ liệu của nhóm có cùng xu hướng với một nguồn độc lập, nhóm lấy chỉ số Google Trends (vùng VN, theo tuần, từ 01/01/2024 đến 12/11/2026) cho [3–5] từ khóa liên quan đến nội dung YouTube Việt Nam (nhóm nền tảng, giải trí, âm nhạc, game), tải bằng pytrends hoặc tải thủ công từ trends.google.com khi gặp lỗi 429. Chỉ số Trends và chuỗi S2 trung bình theo tuần được đưa về cùng độ phân giải tuần và cùng khoảng thời gian, rồi tính tương quan hạng Spearman. Đây chỉ là đối chiếu xu hướng, không phải bằng chứng quan hệ nhân quả.
+
+<TABLE 12>
+Từ khóa | Lý do chọn | Spearman ρ | p
+[…] | […] | […] | […]
+[…] | […] | […] | […]
+[…] | […] | […] | […]
+</TABLE 12>
+
+[Caption Bang] Bảng 3.5. Từ khóa Google Trends và hệ số Spearman với chuỗi S2 theo tuần (nguồn: outputs/trends_check/)
+[Heading 1] CHƯƠNG 4: PHƯƠNG PHÁP CHUNG
+[] Chương này nêu các quy ước dùng chung cho cả bốn thành viên. Phương pháp riêng của từng phần được trình bày ở đầu phần kết quả tương ứng trong Chương 5. Mỗi phần phân tích được chạy bằng Python và R; các phương pháp xác định (t-test, ANOVA, OLS, Logit, Chi-square) phải khớp nhau đến 3 chữ số thập phân, còn các phương pháp ngẫu nhiên (Random Forest, K-means) cho phép AUC chênh không quá 0,03 và ARI từ 0,8 trở lên. SVM và XGBoost chỉ chạy bằng Python (ngoại lệ được ghi rõ).
+[Heading 2] 4.1 Quần thể phân tích H
+[] Quần thể H gồm các video thỏa đồng thời: in_history = TRUE; không phải video đang phát trực tiếp hoặc chưa phát (is_live_or_upcoming = FALSE); số lượt xem lớn hơn 0; tuổi video tính đến lần đo cuối age_days_last từ 1 ngày trở lên. Cỡ mẫu n_H được ghi ở đầu mỗi mục kết quả. [Kiên: điền n_H và số kênh trong H từ data_final.]
+[Heading 2] 4.2 Nhóm tuổi video (age_b)
+[] Vì lượt xem là số liệu tích lũy nên video càng cũ càng có nhiều lượt xem. Nhóm chia tuổi video thành 14 nhóm theo các mốc 1, 2, 3, 5, 7, 10, 14, 21, 30, 60, 90, 180, 365, 730 ngày và vô cực, theo khoảng đóng bên trái, mở bên phải [a, b). Ví dụ video đúng 2 ngày tuổi thuộc nhóm [2, 3).
+[Heading 2] 4.3 Biến log_views và lv_adj
+[] log_views là logarit cơ số 10 của lượt xem, dùng vì phân phối lượt xem lệch phải. Để so sánh công bằng giữa các video khác tuổi, nhóm định nghĩa lv_adj = log_views trừ trung bình log_views của nhóm tuổi tương ứng, trong đó trung bình tính trên H. Mọi so sánh về lượt xem trong báo cáo đều dùng lv_adj, không dùng lượt xem thô.
+[Heading 2] 4.4 Các nhãn video viral
+[] Nhóm dùng ba cách định nghĩa video viral để kiểm tra độ vững của kết luận (Bảng 4.1).
+
+<TABLE 13>
+Nhãn | Định nghĩa | Dùng cho
+viral_A | pct_in_age = hạng trung bình của log_views trong nhóm tuổi chia cho số video của nhóm tuổi; viral_A = pct_in_age ≥ 0,90. Phải chiếm 9–11% của H. | Logistic (Q3b), Chi-square, Q5, Q6
+breakout_B | lvpd = log10(max(views_per_day, 1)); ch_med_loo = trung vị lvpd của các video khác cùng kênh, cùng nhóm tuổi (loại chính nó, cần ít nhất 5 video khác, thiếu thì NaN); breakout_B = lvpd − ch_med_loo ≥ log10(2). | Q5
+viral_C | ever_trending, xét trong H và trong cửa sổ in_window_C: video không ngắn, đăng từ 19/10/2026 đến (ngày chụp Trending cuối cùng trừ 8 ngày), dự kiến 04/11. | Chi-square (Q2c), Q5 (chỉ khi có ít nhất 100 video dương)
+</TABLE 13>
+
+[Caption Bang] Bảng 4.1. Ba định nghĩa nhãn viral
+[Heading 2] 4.5 Biến đầu vào của mô hình dự báo viral và hồi quy Logistic (X_PRE)
+[] Để mô hình dùng được ngay sau khi đăng video, chỉ các biến biết tại thời điểm đăng được đưa vào X (Bảng 4.2). Các biến sau đăng như views, likes, comments, like_rate, comment_rate, views_per_day, age_days_last, n_obs, ever_trending, log_views, lv_adj, pct_in_age và mọi cột bắt đầu bằng trend_ bị cấm; chương trình có lệnh assert dừng nếu X chứa cột cấm. Lưu ý số người đăng ký được đo lúc thu thập, không phải lúc đăng.
+
+<TABLE 14>
+Nhóm biến | Biến
+Thời gian đăng | pub_hour, pub_dow, pub_is_weekend, pub_month
+Đặc điểm video | duration_sec, is_short_60, tags_count, category_id
+Đặc điểm tiêu đề | title_len, title_words, title_upper_ratio, title_has_question, title_has_exclaim, title_has_digit, title_has_emoji, title_has_bracket, title_has_pipe, title_n_hashtag
+Quy mô kênh | log_subs, channel_age_days, total_videos
+</TABLE 14>
+
+[Caption Bang] Bảng 4.2. Các biến đầu vào X_PRE
+[Heading 2] 4.6 Các quy ước kiểm tra và tái lập
+[List Paragraph] Video ngắn: Trending không có video nào từ 60 giây trở xuống, nên is_short_60 phải có trong mô hình hoặc được tách riêng; mọi kiểm định ở Q2 chạy thêm một bản bỏ video ngắn để kiểm tra độ vững.
+[List Paragraph] Chuỗi thời gian: lấy từ measurements.csv với is_last_of_day = TRUE, không dùng các lần đo trùng trong ngày.
+[List Paragraph] Giờ, thứ, tháng: dùng các cột pub_* (đã ở giờ Việt Nam, pub_dow = 0 là Thứ Hai), không tự tính lại từ published_ts vì cột đó ở UTC.
+[List Paragraph] Số ngẫu nhiên và môi trường: Python random_state = 42; R set.seed(42); phiên bản thư viện lưu trong env_python.txt và env_R.txt.
+[List Paragraph] Kết luận: dùng ngôn ngữ “có liên quan”, không dùng “gây ra”; với cỡ mẫu rất lớn (n_H = […] video), p-value gần như luôn rất nhỏ nên kết luận dựa vào kích thước hiệu ứng.
+[List Paragraph] Bộ 6 số kiểm tra: cả bốn thành viên tính cùng 6 số trên cùng dữ liệu để chắc chắn quần thể H và nhãn giống nhau (Bảng 4.3).
+
+<TABLE 15>
+# | Số cần in ra | Giá trị (data_final)
+1 | n_H: số video trong quần thể H | […]
+2 | Số kênh khác nhau trong H | […]
+3 | Số video trong H thuộc nhóm tuổi [7, 10) | […]
+4 | Tổng viral_A (số video dương) | […]
+5 | Trung vị lv_adj trên H (làm tròn 4 chữ số) | […]
+6 | Số video trong H có ever_trending = TRUE | […]
+</TABLE 15>
+
+[Caption Bang] Bảng 4.3. Bộ 6 số kiểm tra chung của nhóm
+[Heading 2] 4.7 Công cụ sử dụng
+[] Python (pandas, NumPy, SciPy, statsmodels, pingouin, scikit-learn, XGBoost, Matplotlib, google-api-python-client, pytrends); R (tidyverse, ggplot2, car, sandwich, lmtest, rstatix, effectsize, forecast, randomForest, cluster); Power BI để dựng dashboard từ các file CSV trong outputs/. [Điền phiên bản thật từ env_python.txt và env_R.txt.]
+[Heading 2] 4.8 Điều chỉnh so với đề cương
+[] So với đề cương ngày 02/10/2026, nhóm thực hiện các điều chỉnh trong Bảng 4.4 để phù hợp với dữ liệu và thời gian thực tế.
+
+<TABLE 16>
+Nội dung | Đề cương | Thực hiện | Lý do
+Thời gian theo dõi | Tối thiểu 8 tuần | 22 ngày (22/10–12/11/2026) | [Kiên: xác nhận lý do]
+Số kênh | 150–200 kênh (bảng nguồn ghi 50–100) | [Số kênh thực tế từ data_final] | [Kiên: xác nhận lý do]
+Dự báo Q4 | Dự báo lượt xem và số video thịnh hành | Dự báo bốn chuỗi S1, S2, N1, N2 | Mỗi ngày Trending luôn khoảng 197 video nên số video thịnh hành không biến thiên đủ để dự báo
+Sai số chuẩn hồi quy | HAC cho chuỗi thời gian | Sai số chuẩn bền vững theo kênh (cluster-robust) | Các video cùng kênh tương quan với nhau
+Hậu định ANOVA | Tukey HSD | Games-Howell khi phương sai không đều | Tukey chỉ đúng khi phương sai đều
+Lịch thực hiện | Tuần 1–8 | Lịch theo ngày 03/11–24/11/2026 (Phụ lục A) | [Kiên: xác nhận lý do]
+</TABLE 16>
+
+[Caption Bang] Bảng 4.4. Các điều chỉnh so với đề cương
+[Heading 1] CHƯƠNG 5: KẾT QUẢ PHÂN TÍCH
+[] Mỗi mục dưới đây trình bày phương pháp riêng, kết quả và mức ý nghĩa, giải thích thực tiễn có trích dẫn, khuyến nghị và hạn chế. Mọi con số truy được về một file trong outputs/ của gói nộp (tên file ghi trong chú thích từng bảng và hình); các con số lấy từ dữ liệu chốt data_final_20261113. Cỡ mẫu n_H được ghi ở đầu mỗi mục kết quả.
+[Heading 2] 5.1 Q1: Thống kê mô tả
+[] Phương pháp.
+[List Paragraph] Bảng thống kê gồm n, trung bình, trung vị, độ lệch chuẩn, hệ số biến thiên, độ lệch và độ nhọn của lượt xem, lượt thích, bình luận (giá trị gốc và log10), tách video ngắn và video dài.
+[List Paragraph] Trung vị lv_adj và like_rate theo giờ đăng (pub_hour), thứ (pub_dow) và năm-tháng của pub_date_vn.
+[List Paragraph] Heatmap giờ × thứ của trung vị lv_adj; ô có dưới 30 video để trống.
+[List Paragraph] Boxplot lv_adj theo 10 thể loại có nhiều video nhất.
+[List Paragraph] Không dùng số video theo tháng để nói về xu hướng vì mỗi kênh chỉ lấy tối đa 500 video mới nhất. Mọi so sánh dùng lv_adj, không dùng lượt xem thô.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n_H = […] video từ […] kênh (data_final_20261113).
+
+<TABLE 17>
+Biến | n | Trung bình | Trung vị | Độ lệch chuẩn | CV | Độ lệch | Độ nhọn
+Lượt xem (gốc) | […] | […] | […] | […] | […] | […] | […]
+Lượt xem (log10) | […] | […] | […] | […] | […] | […] | […]
+Lượt thích (gốc) | […] | […] | […] | […] | […] | […] | […]
+Lượt thích (log10) | […] | […] | […] | […] | […] | […] | […]
+Bình luận (gốc) | […] | […] | […] | […] | […] | […] | […]
+Bình luận (log10) | […] | […] | […] | […] | […] | […] | […]
+</TABLE 17>
+
+[Caption Bang] Bảng 5.1. Thống kê mô tả lượt xem, lượt thích, bình luận (nguồn: outputs/q1/)
+
+<TABLE 18>
+[Chèn hình: outputs/q1/q1_by_hour.png: trung vị lv_adj theo giờ đăng]
+</TABLE 18>
+
+[Caption Hinh] Hình 5.1. Trung vị lv_adj theo giờ đăng (nguồn: outputs/q1/q1_by_hour.png)
+
+<TABLE 19>
+[Chèn hình: outputs/q1/q1_heatmap.png: heatmap giờ × thứ]
+</TABLE 19>
+
+[Caption Hinh] Hình 5.2. Heatmap trung vị lv_adj theo giờ và thứ đăng (nguồn: outputs/q1/q1_heatmap.png)
+
+<TABLE 20>
+[Chèn hình: outputs/q1/: boxplot lv_adj theo 10 thể loại]
+</TABLE 20>
+
+[Caption Hinh] Hình 5.3. Phân bố lv_adj theo 10 thể loại có nhiều video nhất (nguồn: outputs/q1/)
+[] Giải thích thực tiễn.
+[] [Bảo: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Bảo: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Số video theo tháng không phản ánh xu hướng đăng thật do giới hạn 500 video mỗi kênh (Mục 3.5).
+[List Paragraph] Dữ liệu theo dõi chỉ 22 ngày nên không đánh giá được biến động theo mùa trong năm.
+[List Paragraph] [Bảo: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 2] 5.2 Q2: Kiểm định giả thuyết
+[] Với cỡ mẫu rất lớn (n_H = […] video), p-value gần như luôn rất nhỏ, nên các kết luận dưới đây dựa chủ yếu vào kích thước hiệu ứng (Cohen’s d, η², Cramér’s V) và khoảng tin cậy 95%, không chỉ vào p (Cohen, 1988; Lin và cs., 2013). Mỗi kiểm định chạy thêm một bản bỏ video ngắn (is_short_60) để kiểm tra độ vững. [Kiên: đoạn mở đầu và tổng hợp cho 5.2 viết sau khi đọc các mục của Khôi và Quỳnh (17/11 18:00–21:30).]
+[Heading 3] 5.2a Q2a: T-test cuối tuần và ngày thường
+[] Phương pháp.
+[] Biến kết quả là lv_adj, nhóm theo pub_is_weekend. Dùng Welch t-test (Welch, 1947), Cohen’s d và khoảng tin cậy 95% của chênh lệch trung bình. Kiểm tra phương sai bằng Levene và dạng phân phối bằng QQ-plot (không dùng Shapiro làm căn cứ duy nhất vì cỡ mẫu lớn luôn bác bỏ). Mann-Whitney dùng để kiểm tra độ vững. R: t.test, effectsize::cohens_d, car::leveneTest; Python: scipy.stats.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n_H = […] video từ […] kênh (data_final_20261113).
+
+<TABLE 21>
+Nhóm | n | TB lv_adj | Chênh lệch (CI 95%) | t (df) | p | Cohen’s d
+Cuối tuần | […] | […] | […] | […] | […] | […]
+Ngày thường | […] | […] |  |  |  | 
+Bản bỏ video ngắn | […] | […] | […] | […] | […] | […]
+</TABLE 21>
+
+[Caption Bang] Bảng 5.2. Kết quả t-test cuối tuần và ngày thường (nguồn: outputs/q2a/)
+[] Nếu |d| < 0,2 thì nêu rõ đây là khác biệt nhỏ dù p có thể rất nhỏ. [Kiên: viết kết luận.]
+[] Giải thích thực tiễn.
+[] [Kiên: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Kiên: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Kiểm định so sánh trung bình lv_adj, không kiểm soát đồng thời các biến khác; phần đó thuộc hồi quy (Mục 5.3).
+[List Paragraph] [Kiên: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 3] 5.2b Q2b: ANOVA theo khung giờ và thể loại
+[] Phương pháp.
+[] ANOVA một yếu tố cho lv_adj theo pub_slot (5 nhóm) và theo category_name. Kiểm tra Levene; nếu phương sai không đều dùng Welch ANOVA và hậu định Games-Howell (Games và Howell, 1976), vì Tukey HSD chỉ đúng khi phương sai đều. Kruskal-Wallis dùng để kiểm tra độ vững; kích thước hiệu ứng là η². R: oneway.test, rstatix::games_howell_test; Python: pingouin.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n_H = […] video từ […] kênh (data_final_20261113).
+
+<TABLE 22>
+Yếu tố | F (df1, df2) | p | η² | Số cặp khác biệt có ý nghĩa
+Khung giờ (pub_slot) | […] | […] | […] | […]
+Thể loại (category_name) | […] | […] | […] | […]
+</TABLE 22>
+
+[Caption Bang] Bảng 5.3. Kết quả ANOVA theo khung giờ và thể loại (nguồn: outputs/q2b/)
+
+<TABLE 23>
+[Chèn hình: outputs/q2b/: trung bình lv_adj theo nhóm kèm khoảng tin cậy 95%]
+</TABLE 23>
+
+[Caption Hinh] Hình 5.4. Trung bình lv_adj theo nhóm và khoảng tin cậy 95% (nguồn: outputs/q2b/)
+[] Giải thích thực tiễn.
+[] [Kiên: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Kiên: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Các nhóm thể loại có cỡ mẫu rất chênh lệch; nhóm nhỏ cho khoảng tin cậy rộng.
+[List Paragraph] [Kiên: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 3] 5.2c Q2c: Chi-square giữa thể loại và khả năng lọt Trending
+[] Phương pháp.
+[] Chỉ dùng video thuộc cửa sổ in_window_C (không ngắn). Lập bảng chéo category_name × viral_C; gộp các thể loại có tần số kỳ vọng dưới 5 vào nhóm Khác. Báo χ², bậc tự do, p, hệ số Cramér’s V và phần dư chuẩn hóa để biết thể loại nào lọt Trending nhiều hơn kỳ vọng. Làm thêm category_name × viral_A trên toàn bộ H. Python: scipy.stats.chi2_contingency; R: chisq.test.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n = […] video trong cửa sổ in_window_C (không ngắn) cho viral_C; n_H = […] cho viral_A.
+
+<TABLE 24>
+Cặp biến | χ² | df | p | V | Thể loại vượt kỳ vọng nhiều nhất
+Thể loại × viral_C | […] | […] | […] | […] | […]
+Thể loại × viral_A | […] | […] | […] | […] | […]
+</TABLE 24>
+
+[Caption Bang] Bảng 5.4. Kết quả Chi-square (nguồn: outputs/q2c/)
+
+<TABLE 25>
+[Chèn hình: outputs/q2c/: phần dư chuẩn hóa theo thể loại]
+</TABLE 25>
+
+[Caption Hinh] Hình 5.5. Phần dư chuẩn hóa của bảng chéo thể loại × viral_C (nguồn: outputs/q2c/)
+[] Kết luận về độ lớn dựa vào V, không chỉ p. Số video dương của viral_C: […] trên […] video trong cửa sổ.
+[] Giải thích thực tiễn.
+[] [Quỳnh: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Quỳnh: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Nhãn viral_C có thể có rất ít video dương vì chỉ xét các video đăng trong cửa sổ ngắn.
+[List Paragraph] [Quỳnh: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 3] 5.2d Q2d: Hiệu ứng dịp lễ và Tết
+[] Phương pháp.
+[] Lịch nghỉ lễ holidays_vn.csv gồm các ngày nghỉ (kể cả nghỉ bù và kỳ Tết) của 2024, 2025, 2026, lấy từ văn bản hoặc thông báo nghỉ lễ chính thức; period_id gom các ngày nghỉ liên tiếp thành một kỳ. Với mỗi kỳ, so lv_adj của video đăng trong kỳ với video đăng ở các ngày không nghỉ lễ trong cùng (các) tháng dương lịch mà kỳ đó chạm tới. Dùng Welch t-test, Cohen’s d và khoảng tin cậy 95% của chênh lệch; chạy từng kỳ và gộp chung; điều chỉnh đa so sánh bằng Holm (Holm, 1979); kỳ có dưới 100 video thì gộp lại; chạy thêm bản bỏ video ngắn.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n_H = […] video từ […] kênh (data_final_20261113) (số kỳ nghỉ lễ sau khi gộp: […]).
+
+<TABLE 26>
+Kỳ nghỉ | n trong kỳ | n đối chứng | Chênh lệch | CI 95% | p (Holm) | d
+Tết 2024 | […] | […] | […] | […] | […] | […]
+… | […] | […] | […] | […] | […] | […]
+Gộp chung | […] | […] | […] | […] | […] | […]
+</TABLE 26>
+
+[Caption Bang] Bảng 5.5. Kết quả so sánh lv_adj theo kỳ nghỉ lễ (nguồn: outputs/q2d/)
+[] Giải thích thực tiễn.
+[] [Khôi: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Khôi: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Mỗi kênh chỉ lấy tối đa 500 video mới nhất, nên số video của các kỳ lễ cũ (đặc biệt Tết 2024) có thể ít và lệch về các kênh đăng thưa; số video mỗi kỳ có thể không đều (kỳ dưới 100 video phải gộp).
+[List Paragraph] [Khôi: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 3] Tổng hợp Q2 (đoạn tổng hợp của Kiên)
+[] [Kiên: đoạn tổng hợp so sánh kích thước hiệu ứng của khung giờ, cuối tuần, thể loại, dịp lễ và Tết; chỉ dùng số đã có ở các mục trên.]
+[Heading 2] 5.3 Q3: Hồi quy
+[] [Kiên: đoạn mở đầu về hai hồi quy (tuyến tính cho log_views, Logistic cho viral_A) và vì sao dùng sai số chuẩn bền vững theo kênh.]
+[Heading 3] 5.3a Q3a: Hồi quy tuyến tính bội
+[] Phương pháp.
+[] Mô hình: log_views ~ log10(age_days_last) + log_subs + log10(duration_sec) + tags_count + title_len + title_upper_ratio + title_has_question + title_has_exclaim + title_has_digit + title_has_emoji + pub_is_weekend + pub_slot + category_name + is_short_60. VIF được báo cho mọi biến; biến có VIF vượt 5 được nêu, vượt 10 bị loại (duration_sec và is_short_60 dễ trùng thông tin). Sai số chuẩn bền vững theo kênh (cluster-robust, theo channel_id): R sandwich::vcovCL, Python cov_type = “cluster” (Cameron và Miller, 2015). Đề cương ghi HAC; báo cáo dùng sai số chuẩn bền vững theo kênh vì các video cùng kênh tương quan nhau.
+[] Nhân tố mạnh nhất được đánh giá bằng hệ số chuẩn hóa và mức giảm R² khi bỏ từng nhóm biến: kênh (log_subs); nội dung (log10(duration_sec), tags_count, title_*, is_short_60); thời gian (pub_is_weekend, pub_slot); thể loại (category_name). log10(age_days_last) luôn giữ trong mô hình. Phần dư được chẩn đoán bằng QQ-plot và đồ thị phần dư theo giá trị dự đoán.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n_H = […] video từ […] kênh (data_final_20261113).
+
+<TABLE 27>
+Nhóm biến bị bỏ | R² mô hình đầy đủ | R² sau khi bỏ nhóm | Mức giảm R²
+Kênh (log_subs) | […] | […] | […]
+Nội dung | […] | […] | […]
+Thời gian | […] | […] | […]
+Thể loại | […] | […] | […]
+</TABLE 27>
+
+[Caption Bang] Bảng 5.6. Mức đóng góp của từng nhóm nhân tố vào R² (nguồn: outputs/q3a/)
+
+<TABLE 28>
+Biến | Hệ số | Sai số chuẩn (theo kênh) | p | VIF
+[…] | […] | […] | […] | […]
+[…] | […] | […] | […] | […]
+[…] | […] | […] | […] | […]
+</TABLE 28>
+
+[Caption Bang] Bảng 5.7. Hệ số hồi quy tuyến tính bội (nguồn: outputs/q3a/)
+[] Giải thích thực tiễn.
+[] [Kiên: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Kiên: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Số người đăng ký đo lúc thu thập, không phải lúc đăng video.
+[List Paragraph] Kết quả cho thấy mối liên hệ, không chứng minh quan hệ nhân quả.
+[List Paragraph] [Kiên: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 3] 5.3b Q3b: Hồi quy Logistic
+[] Phương pháp.
+[] Biến phụ thuộc là viral_A; biến độc lập là X_PRE (Mục 4.5). Biến số được chuẩn hóa z-score nên odds ratio được hiểu theo mỗi tăng 1 độ lệch chuẩn; category_id là biến nhóm, bỏ nhóm gốc. Hai mô hình: M1 đủ biến; M2 bỏ nhóm biến kênh (log_subs, channel_age_days, total_videos). Python: statsmodels Logit với cov_type = “cluster” theo channel_id; R: glm(family = binomial) với sandwich::vcovCL(cluster = ~channel_id) và lmtest::coeftest. Báo odds ratio, khoảng tin cậy 95%, AIC, McFadden R² và VIF.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n_H = […] video từ […] kênh (data_final_20261113).
+
+<TABLE 29>
+Biến | OR – M1 (CI 95%) | OR – M2 (CI 95%) | VIF (M1)
+[…] | […] | […] | […]
+[…] | […] | […] | […]
+[…] | […] | […] | […]
+AIC | […] | […] | 
+McFadden R² | […] | […] | 
+</TABLE 29>
+
+[Caption Bang] Bảng 5.8. Kết quả hồi quy Logistic cho viral_A (nguồn: outputs/q3b/)
+[] Giải thích thực tiễn.
+[] [Bảo: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Bảo: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Nhãn viral_A là nhãn tương đối theo nhóm tuổi, không phải “viral” theo nghĩa lọt Trending.
+[List Paragraph] Odds ratio mô tả liên hệ, không phải quan hệ nhân quả.
+[List Paragraph] [Bảo: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 3] Tổng hợp Q3 (đoạn tổng hợp của Kiên)
+[] [Kiên: đoạn tổng hợp kết quả hai hồi quy; nêu nhóm nhân tố mạnh nhất nhất quán giữa Q3a và Q3b (nếu có).]
+[Heading 2] 5.4 Q4: Chuỗi thời gian và dự báo
+[] Phương pháp.
+[] Nhóm dựng bốn chuỗi: S1 là số video đăng mỗi ngày (pub_date_vn), ngày không có video bằng 0, chỉ dùng các kênh có dưới 500 video; S2 là trung bình lv_adj theo ngày đăng, bỏ video đăng trong 7 ngày cuối, khoảng từ 01/01/2024 đến ngày thu cuối trừ ngày cuối; N1 là số video mới vào Trending mỗi ngày (bỏ ngày 22/10 là lần chụp đầu); N2 là trung vị lượt xem của video hạng 1–50 ở lần chụp 20:00 giờ Việt Nam. N1 và N2 chỉ có khoảng 20–23 điểm.
+[] Với S1 và S2: kiểm định tính dừng ADF và KPSS, phân tích ACF/PACF, lấy log và sai phân khi cần; mô hình ARIMA, SARIMA (mùa vụ 7 ngày) và ARIMAX (biến lễ và Tết từ holidays_vn.csv; với Google Trends thì chuyển chuỗi sang theo tuần) (Box và cs., 2015; Hyndman và Athanasopoulos, 2021). Giữ 28 ngày cuối làm tập kiểm tra, chọn mô hình theo AIC và sai số trên tập kiểm tra, luôn so với seasonal naive. S1 có ngày bằng 0 nên dùng MAE và sMAPE, không dùng MAPE. Kiểm tra phần dư bằng Ljung-Box. Với N1 và N2: chỉ ARIMA bậc nhỏ (p, q tối đa 1), kiểm tra 5 ngày cuối, không SARIMA, gắn nhãn ngắn hạn và chỉ mang tính minh họa. Dự báo 4 tuần tới của S1 và S2 kèm khoảng tin cậy 95%.
+[] Vì sao không dự báo số video thịnh hành: mỗi ngày Trending luôn có khoảng 197 video, nên số video thịnh hành gần như không đổi và không phải đại lượng có thể dự báo; bốn chuỗi trên là thay thế cho câu hỏi này.
+[] Kết quả và mức ý nghĩa.
+
+<TABLE 30>
+Chuỗi | Mô hình | AIC | MAE (test) | sMAPE (test) | Ljung-Box p | Bậc (p,d,q)
+S1 | Seasonal naive | – | […] | […] | – | –
+S1 | ARIMA / SARIMA / ARIMAX | […] | […] | […] | […] | […]
+S2 | Seasonal naive | – | […] | […] | – | –
+S2 | ARIMA / SARIMA / ARIMAX | […] | […] | […] | […] | […]
+S2 | ARIMAX có Google Trends (theo tuần) | […] | […] | […] | […] | […]
+</TABLE 30>
+
+[Caption Bang] Bảng 5.9. So sánh mô hình dự báo S1 và S2 trên tập kiểm tra 28 ngày (nguồn: outputs/q4/)
+[] Mô hình chọn phải có sai số kiểm tra thấp hơn seasonal naive; nếu không thì ghi trung thực, không đổi cách đánh giá để thắng. [Khôi: viết kết quả thật.]
+[] Chuỗi ngắn N1 và N2 chỉ mang tính minh họa ngắn hạn (ARIMA bậc nhỏ, p và q tối đa 1, kiểm tra 5 ngày cuối, không SARIMA); kết quả ở Bảng dưới đây.
+
+<TABLE 31>
+Chuỗi | Ý nghĩa | Số điểm | Bậc (p,d,q) | MAE (5 ngày cuối) | Ghi chú
+N1 | Số video mới vào Trending mỗi ngày | […] | […] | […] | Ngắn hạn, minh họa
+N2 | Trung vị lượt xem hạng 1–50 (lần chụp 20:00) | […] | […] | […] | Ngắn hạn, minh họa
+</TABLE 31>
+
+[Caption Bang] Bảng 5.10. Kết quả chuỗi ngắn N1, N2 (nguồn: outputs/q4/, series_trending.csv)
+
+<TABLE 32>
+[Chèn hình: outputs/q4/q4_forecast_S1.csv: hình dự báo S1 (train, test, forecast, CI 95%)]
+</TABLE 32>
+
+[Caption Hinh] Hình 5.6. Dự báo số video đăng mỗi ngày (S1) trong 4 tuần tới (nguồn: outputs/q4/q4_forecast_S1.csv)
+
+<TABLE 33>
+[Chèn hình: outputs/q4/q4_forecast_S2.csv: hình dự báo S2]
+</TABLE 33>
+
+[Caption Hinh] Hình 5.7. Dự báo trung bình lv_adj theo ngày đăng (S2) trong 4 tuần tới (nguồn: outputs/q4/q4_forecast_S2.csv)
+[] Giải thích thực tiễn.
+[] [Khôi: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Khôi: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Chuỗi N1, N2 chỉ có khoảng 20–23 điểm nên chỉ mang tính minh họa ngắn hạn.
+[List Paragraph] Số video đăng theo ngày chịu ảnh hưởng của giới hạn 500 video mỗi kênh, nên S1 chỉ lấy các kênh chưa chạm trần.
+[List Paragraph] [Khôi: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 2] 5.5 Q5: Dự báo video viral
+[] Phương pháp.
+[List Paragraph] Nhãn: viral_A, breakout_B và viral_C (Mục 4.4); nhãn C chỉ huấn luyện khi có ít nhất 100 video dương, nếu không thì chỉ mô tả.
+[List Paragraph] Đầu vào: chỉ X_PRE (Mục 4.5), có lệnh assert dừng nếu X chứa cột cấm.
+[List Paragraph] Chia dữ liệu: GroupKFold 5 phần theo channel_id (tập kênh của train và test không giao nhau trong từng fold). Kiểm tra theo thời gian: huấn luyện trên video đăng trước 01/07/2026, kiểm tra trên video đăng từ ngày đó.
+[List Paragraph] Mô hình: Decision Tree (max_depth 6, min_samples_leaf 50, class_weight balanced); Random Forest (300 cây, min_samples_leaf 5, class_weight balanced_subsample) (Breiman, 2001); SVM nhân RBF có StandardScaler trên mẫu phân tầng 15–20 nghìn dòng (Cortes và Vapnik, 1995); XGBoost (scale_pos_weight = số âm / số dương, max_depth 4, 250–300 cây, learning_rate 0,05–0,07) (Chen và Guestrin, 2016); mô hình nền chỉ dùng log_subs. Mọi random_state = 42.
+[List Paragraph] Ngưỡng quyết định: chọn trên tập validation (tách 20% kênh của train bằng GroupShuffleSplit) để tối đa F1.
+[List Paragraph] Đánh giá: ROC-AUC, PR-AUC, Precision, Recall, F1 và Recall trong top 10% điểm cao nhất, theo trung bình ± độ lệch chuẩn qua 5 fold và riêng cho kiểm tra theo thời gian.
+[List Paragraph] Phân tích mô hình tốt nhất: bỏ nhóm biến kênh (log_subs, channel_age_days, total_videos) rồi so sánh; permutation importance trên tập kiểm tra; độ nhạy ngưỡng nhãn A tại 5%, 10%, 20%. Random Forest được đối chiếu bằng R (AUC chênh không quá 0,03); SVM và XGBoost chỉ chạy Python.
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu: n_H = […] video từ […] kênh (data_final_20261113) (SVM chạy trên mẫu phân tầng […] dòng).
+
+<TABLE 34>
+Nhãn | Mô hình | ROC-AUC | PR-AUC | Precision | Recall | F1 | Recall top 10%
+viral_A | Mô hình nền (log_subs) | […] | […] | […] | […] | […] | […]
+viral_A | Decision Tree | […] | […] | […] | […] | […] | […]
+viral_A | Random Forest | […] | […] | […] | […] | […] | […]
+viral_A | SVM (RBF) | […] | […] | […] | […] | […] | […]
+viral_A | XGBoost | […] | […] | […] | […] | […] | […]
+</TABLE 34>
+
+[Caption Bang] Bảng 5.11. So sánh mô hình dự báo viral_A, trung bình qua 5 fold (nguồn: q5_model_comparison.csv)
+
+<TABLE 35>
+Nhãn | Số video đủ điều kiện | Số video dương | Tỷ lệ dương (%)
+viral_A | […] | […] | […]
+breakout_B | […] | […] | […]
+viral_C | […] | […] | […]
+</TABLE 35>
+
+[Caption Bang] Bảng 5.12. Số video dương của từng nhãn viral (nguồn: outputs/q5/, labels.csv)
+
+<TABLE 36>
+Nhãn | Mô hình | ROC-AUC | PR-AUC | Precision | Recall | F1 | Recall top 10%
+breakout_B | Mô hình nền (log_subs) | […] | […] | […] | […] | […] | […]
+breakout_B | Decision Tree | […] | […] | […] | […] | […] | […]
+breakout_B | Random Forest | […] | […] | […] | […] | […] | […]
+breakout_B | SVM (RBF) | […] | […] | […] | […] | […] | […]
+breakout_B | XGBoost | […] | […] | […] | […] | […] | […]
+</TABLE 36>
+
+[Caption Bang] Bảng 5.13. So sánh mô hình dự báo breakout_B, trung bình qua 5 fold (nguồn: q5_model_comparison.csv)
+
+<TABLE 37>
+Nhãn | Mô hình (kiểm tra theo thời gian) | ROC-AUC | PR-AUC | Precision | Recall | F1
+viral_A | Mô hình nền | […] | […] | […] | […] | […]
+viral_A | Mô hình tốt nhất | […] | […] | […] | […] | […]
+breakout_B | Mô hình tốt nhất | […] | […] | […] | […] | […]
+</TABLE 37>
+
+[Caption Bang] Bảng 5.14. Kiểm tra theo thời gian: huấn luyện trước 01/07/2026, kiểm tra từ 01/07/2026 (nguồn: outputs/q5/)
+
+<TABLE 38>
+Cấu hình (mô hình tốt nhất) | PR-AUC | ROC-AUC | Thay đổi so với đủ biến
+Đủ biến X_PRE | […] | […] | –
+Bỏ nhóm biến kênh | […] | […] | […]
+</TABLE 38>
+
+[Caption Bang] Bảng 5.15. Phân tích ablation: bỏ nhóm biến kênh (nguồn: outputs/q5/)
+
+<TABLE 39>
+Ngưỡng viral_A | Số video dương | PR-AUC | ROC-AUC
+Top 5% | […] | […] | […]
+Top 10% (mặc định) | […] | […] | […]
+Top 20% | […] | […] | […]
+</TABLE 39>
+
+[Caption Bang] Bảng 5.16. Độ nhạy theo ngưỡng nhãn viral_A (nguồn: outputs/q5/)
+[] Nếu mô hình tốt nhất không hơn mô hình nền về PR-AUC thì ghi trung thực. [Quỳnh: viết kết quả thật; nhãn viral_C chỉ thêm bảng nếu có ít nhất 100 video dương.]
+
+<TABLE 40>
+[Chèn hình: outputs/q5/q5_importance.csv: permutation importance trên tập kiểm tra]
+</TABLE 40>
+
+[Caption Hinh] Hình 5.8. Mức quan trọng của biến (permutation importance) trong mô hình tốt nhất (nguồn: outputs/q5/q5_importance.csv)
+[] Giải thích thực tiễn.
+[] [Quỳnh: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Quỳnh: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Nhãn viral_C có thể có ít video dương.
+[List Paragraph] Số người đăng ký đo lúc thu thập, không phải lúc đăng, nên biến log_subs có thể làm mô hình trông tốt hơn thực tế.
+[List Paragraph] SVM chạy trên mẫu phân tầng, không phải toàn bộ dữ liệu.
+[List Paragraph] [Quỳnh: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 2] 5.6 Q6: Phân cụm video
+[] Phương pháp.
+[] Dữ liệu lấy từ measurements.csv với is_last_of_day = TRUE; giữ video có từ 5 ngày đo trở lên, khoảng cách giữa lần đo đầu và cuối từ 5 ngày trở lên, đủ lượt thích và bình luận, lượt xem cuối lớn hơn 0. Sáu biến hành vi: [Quỳnh: liệt kê 6 biến và công thức]. like_rate được cắt ở phân vị 99 rồi chuẩn hóa bằng StandardScaler. Số video trước và sau lọc được ghi lại.
+[] K-means với k từ 2 đến 8 (n_init = 10, random_state = 42) (MacQueen, 1967); chọn k bằng Silhouette (Rousseeuw, 1987), elbow và Davies-Bouldin. Độ ổn định kiểm tra bằng 20 mẫu bootstrap và ARI trung bình; dưới 0,6 thì ghi cảnh báo cụm không ổn định. Mỗi cụm phải có từ 5% số video trở lên, nếu không thì chọn k nhỏ hơn. PCA 2 chiều dùng để trực quan hóa. Hồ sơ cụm gồm trung vị 6 biến, số người đăng ký, tuổi video, tỷ lệ từng lọt Trending và thể loại nổi bật; Chi-square cụm × thể loại và cụm × viral_A. K-means được đối chiếu bằng R (ARI giữa cụm R và Python từ 0,8 trở lên).
+[] Kết quả và mức ý nghĩa.
+[] Cỡ mẫu của Q6 khác n_H vì dùng measurements.csv đã lọc: […] video. Số video trước lọc […], sau lọc […]; k được chọn = […]; Silhouette = […]; ARI bootstrap trung bình = […].
+
+<TABLE 41>
+Cụm | n | % | Trung vị 6 biến | Tỷ lệ từng lọt Trending | Thể loại nổi bật
+1 | […] | […] | […] | […] | […]
+2 | […] | […] | […] | […] | […]
+… | […] | […] | […] | […] | […]
+</TABLE 41>
+
+[Caption Bang] Bảng 5.17. Hồ sơ các cụm video (nguồn: outputs/q6/q6_cluster_profile.csv)
+
+<TABLE 42>
+[Chèn hình: outputs/q6/q6_pca_points.csv: PCA 2 chiều tô màu theo cụm]
+</TABLE 42>
+
+[Caption Hinh] Hình 5.9. Các cụm video trên mặt phẳng hai thành phần chính (nguồn: outputs/q6/q6_pca_points.csv)
+[] Giải thích thực tiễn.
+[] [Quỳnh: giải thích kết quả theo nghĩa thực tiễn, có trích dẫn nguồn (từ 5 nguồn cho cả phần của mình, ghi vào references_log theo APA 7).]
+[] Khuyến nghị.
+[] [Quỳnh: khuyến nghị cụ thể cho nhà sáng tạo hoặc nhãn hàng, chỉ dựa trên kết quả đã có ở trên, dùng ngôn ngữ “có liên quan”.]
+[] Hạn chế.
+[List Paragraph] Silhouette trung bình có thể thấp, tức ranh giới giữa các cụm không rõ.
+[List Paragraph] Chỉ video có từ 5 ngày đo trở lên được đưa vào, nên mẫu có thể lệch về các video đăng sớm trong giai đoạn theo dõi.
+[List Paragraph] [Quỳnh: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 1] CHƯƠNG 6: KẾT LUẬN VÀ KHUYẾN NGHỊ
+[] [Kiên: Mục 6 chỉ tổng hợp từ các mục trên; không chứa con số nào không có trong các mục khác.]
+[Heading 2] 6.1 Kết quả chính
+
+<TABLE 43>
+STT | Câu hỏi | Kết luận chính (kèm kích thước hiệu ứng)
+1 | Phân bố theo giờ, thứ, tháng (Q1) | […]
+2 | Khác biệt theo khung giờ, cuối tuần, dịp lễ và Tết (Q2) | […]
+3 | Nhân tố có liên quan mạnh nhất (Q3) | […]
+4 | Dự báo chuỗi thời gian (Q4) | […]
+5 | Dự báo video viral (Q5) | […]
+6 | Các nhóm hành vi video (Q6) | […]
+</TABLE 43>
+
+[Caption Bang] Bảng 6.1. Tổng hợp kết luận theo câu hỏi nghiên cứu
+[Heading 2] 6.2 Khuyến nghị cho nhà sáng tạo và nhãn hàng
+[] [Kiên: tổng hợp từ phần “Khuyến nghị” của mọi mục ở Chương 5; mỗi khuyến nghị nêu rõ dựa trên kết quả nào và dùng ngôn ngữ “có liên quan”.]
+[Heading 2] 6.3 Hạn chế
+[List Paragraph] Thời gian theo dõi 22 ngày, ngắn hơn đề cương; chuỗi N1, N2 chỉ minh họa.
+[List Paragraph] Giới hạn 500 video mỗi kênh và số người đăng ký đo lúc thu thập (Mục 3.5).
+[List Paragraph] Các kết quả mô tả mối liên hệ, không phải quan hệ nhân quả.
+[List Paragraph] Nhãn viral_C có thể có ít video dương; cụm K-means có thể không ổn định (Mục 5.5, 5.6).
+[List Paragraph] [Kiên: bổ sung hạn chế phát sinh khi chạy thật.]
+[Heading 2] 6.4 Hướng mở rộng
+[List Paragraph] Kéo dài thời gian theo dõi (tối thiểu 8 tuần như đề cương) để chuỗi N1, N2 đủ dài cho dự báo.
+[List Paragraph] Q6 nâng cao: nội suy lượt xem tại các mốc 24 giờ, 72 giờ và 7 ngày để phân cụm theo đường tăng trưởng; chỉ làm khi có đủ video đăng từ 04/11 có đo phủ ba mốc này.
+[List Paragraph] Mở rộng sang dữ liệu thời điểm đăng chi tiết hơn và thêm biến nội dung (ví dụ phân tích hình ảnh hoặc ngôn ngữ của tiêu đề) nếu có điều kiện.
+[Heading 1] CHƯƠNG 7: TÀI LIỆU THAM KHẢO
+[] [Khôi: 22 nguồn nháp, xếp theo APA 7. Mỗi nguồn phải đã được mở đọc; kiểm tra DOI và liên kết (19/11 14:00); trích dẫn trong báo cáo và danh sách này phải khớp hai chiều; thêm các nguồn của từng người vào references_log.]
+[] [Khôi: bổ sung nguồn thực tiễn (ví dụ báo cáo DataReportal hoặc Statista về YouTube và người dùng internet Việt Nam, tài liệu chính thức của Google/YouTube) để các phần “Giải thích thực tiễn” có trích dẫn. Chỉ thêm nguồn đã mở đọc; mục tiêu từ 20 nguồn cho cả báo cáo, mỗi người từ 5 nguồn cho phần mình.]
+[] Borghol, Y., Ardon, S., Carlsson, N., Eager, D., & Mahanti, A. (2012). The untold story of the clones: Content-agnostic factors that impact YouTube video popularity. Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 1186–1194. https://doi.org/10.1145/2339530.2339717
+[] Box, G. E. P., Jenkins, G. M., Reinsel, G. C., & Ljung, G. M. (2015). Time series analysis: Forecasting and control (5th ed.). Wiley.
+[] Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5–32. https://doi.org/10.1023/A:1010933404324
+[] Cameron, A. C., & Miller, D. L. (2015). A practitioner’s guide to cluster-robust inference. Journal of Human Resources, 50(2), 317–372. https://doi.org/10.3368/jhr.50.2.317
+[] Cha, M., Kwak, H., Rodriguez, P., Ahn, Y.-Y., & Moon, S. (2007). I tube, you tube, everybody tubes: Analyzing the world’s largest user generated content video system. Proceedings of the 7th ACM SIGCOMM Conference on Internet Measurement, 1–14. https://doi.org/10.1145/1298306.1298309
+[] Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 785–794. https://doi.org/10.1145/2939672.2939785
+[] Cheng, X., Dale, C., & Liu, J. (2008). Statistics and social network of YouTube videos. 2008 16th International Workshop on Quality of Service, 229–238. https://doi.org/10.1109/IWQOS.2008.32
+[] Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates.
+[] Cortes, C., & Vapnik, V. (1995). Support-vector networks. Machine Learning, 20(3), 273–297. https://doi.org/10.1007/BF00994018
+[] Figueiredo, F., Almeida, J. M., Gonçalves, M. A., & Benevenuto, F. (2014). On the dynamics of social media popularity: A YouTube case study. ACM Transactions on Internet Technology, 14(4), Article 24. https://doi.org/10.1145/2665065
+[] Games, P. A., & Howell, J. F. (1976). Pairwise multiple comparison procedures with unequal n’s and/or variances: A Monte Carlo study. Journal of Educational Statistics, 1(2), 113–125. https://doi.org/10.3102/10769986001002113
+[] Google for Developers. (n.d.). YouTube Data API v3: Overview and quota costs. https://developers.google.com/youtube/v3
+[] Google. (n.d.). Google Trends. https://trends.google.com
+[] Holm, S. (1979). A simple sequential rejective multiple test procedure. Scandinavian Journal of Statistics, 6(2), 65–70.
+[] Hyndman, R. J., & Athanasopoulos, G. (2021). Forecasting: Principles and practice (3rd ed.). OTexts. https://otexts.com/fpp3/
+[] Lin, M., Lucas, H. C., Jr., & Shmueli, G. (2013). Too big to fail: Large samples and the p-value problem. Information Systems Research, 24(4), 906–917. https://doi.org/10.1287/isre.2013.0480
+[] MacQueen, J. (1967). Some methods for classification and analysis of multivariate observations. Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability, 1, 281–297. University of California Press.
+[] Pinto, H., Almeida, J. M., & Gonçalves, M. A. (2013). Using early view patterns to predict the popularity of YouTube videos. Proceedings of the Sixth ACM International Conference on Web Search and Data Mining, 365–374. https://doi.org/10.1145/2433396.2433443
+[] Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. Journal of Computational and Applied Mathematics, 20, 53–65. https://doi.org/10.1016/0377-0427(87)90125-7
+[] Szabo, G., & Huberman, B. A. (2010). Predicting the popularity of online content. Communications of the ACM, 53(8), 80–88. https://doi.org/10.1145/1787234.1787254
+[] Welch, B. L. (1947). The generalization of “Student’s” problem when several different population variances are involved. Biometrika, 34(1–2), 28–35. https://doi.org/10.1093/biomet/34.1-2.28
+[] Zhou, R., Khemmarat, S., & Gao, L. (2010). The impact of YouTube recommendation system on video views. Proceedings of the 10th ACM SIGCOMM Conference on Internet Measurement, 404–410. https://doi.org/10.1145/1879141.1879193
+[Heading 1] PHỤ LỤC A: BẢNG PHÂN CÔNG CHI TIẾT
+[] Bảng A.1 là bảng phân công chi tiết của nhóm. Cột Đóng góp để trống đến khi cả nhóm thống nhất (dự kiến 19/11/2026). Mã việc và hạn từng việc xem trong file Phan_cong_cong_viec_Nhom4_IS403.xlsx.
+
+<TABLE 44>
+Thành viên (MSSV) | Nhiệm vụ cụ thể | Sản phẩm | Phần trong báo cáo | Ngôn ngữ chính / đối chiếu | Đóng góp
+Nguyễn Gia Bảo (24520166) | Thu thập dữ liệu, nhật ký thu thập, chốt và đóng gói dataset; độ tin cậy (bảng chất lượng, đối chiếu 30 video); Q1 thống kê mô tả; Q3b hồi quy Logistic; Power BI; dựng video | data_final_20261113, checksums.txt, q1, q3b, reliability, data_dictionary.md, dashboard.pbix, video_final | Mục 3.1–3.5, 5.1, 5.3b; Phụ lục C, D | Python (làm sạch, Logistic) / R (vẽ Q1, glm) | […%]
+Đinh Vũ Minh Khôi (24520857) | Lịch lễ; bốn chuỗi S1, S2, N1, N2; Google Trends; Q4 ARIMA, SARIMA, ARIMAX và dự báo 4 tuần; Q2d hiệu ứng lễ và Tết; tổng quan tài liệu; tài liệu tham khảo chung | holidays_vn.csv, series_daily.csv, trends_raw.csv, q4, q2d, trends_check, references.docx | Mục 2, 3.6, 5.2d, 5.4, 7 | R (forecast) / Python (statsmodels) | […%]
+Vũ Thị Như Quỳnh (24521515) | Nhãn viral A, B, C; Q5 bốn mô hình và phân tích mô hình; Q6 phân cụm K-means; Q2c Chi-square; khung và ghép bộ slide | labels.csv, q5, q6, q2c, presentation.pptx/pdf | Mục 5.2c, 5.5, 5.6 | Python / R (Random Forest, K-means) | […%]
+Nguyễn Trung Kiên, trưởng nhóm (24520886) | Hạ tầng nhóm, điều phối, họp và tập chéo; Q2a t-test, Q2b ANOVA, Q3a hồi quy tuyến tính bội; viết Mục 1, 4, 6; ghép báo cáo; đóng gói và nộp bài | q2a, q2b, q3a, report_final.docx/.pdf, README.md, Nhom4_FullProject_NguyenTrungKien.zip | Mục 1, 4, 5.2a–b, 5.3a, 6; Phụ lục A, B | R / Python (statsmodels, scipy) | […%]
+</TABLE 44>
+
+[Caption Bang] Bảng A.1. Bảng phân công chi tiết của nhóm
+
+<TABLE 45>
+Thời gian | Mốc công việc
+03/11 – 06/11 | Thiết lập thu thập; họp chốt quy ước (04/11); viết bước tiền xử lý chung; điền bộ 6 số kiểm tra lần 1 (06/11 22:00)
+07/11 – 12/11 | Chạy phân tích bằng ngôn ngữ chính và đối chiếu ngôn ngữ còn lại; họp giữa kỳ (09/11); lần thu dữ liệu cuối và đối chiếu 30 video (12/11)
+13/11 – 15/11 | Chốt dữ liệu data_final_20261113 (13/11 12:00); chạy chính thức mọi phần; hạn cứng 15/11 23:59
+16/11 – 17/11 | Mỗi người viết phần báo cáo của mình (nộp 17/11 18:00); Kiên ghép bản nháp và khóa số liệu (17/11 22:00); Power BI
+18/11 – 20/11 | Nộp slide, tập chéo, quay video thô (18/11); dựng video, chạy thử code chéo, chốt báo cáo và đóng gói (19/11); nộp bài (mục tiêu 19/11 22:00, đệm đến 20/11)
+21/11 – 24/11 | Tập dượt hai lần (21–22/11), kiểm tra thiết bị (23/11), thuyết trình (24/11)
+</TABLE 45>
+
+[Caption Bang] Bảng A.2. Lịch thực hiện thực tế (thay cho lịch tuần 1–8 của đề cương)
+[Heading 1] PHỤ LỤC B: LIÊN KẾT DATASET, VIDEO, CODE
+
+<TABLE 46>
+Hạng mục | Liên kết / vị trí
+Dataset (data_final_20261113) | [Link Google Drive, ghi trong link_dataset.txt]
+Video thuyết trình | [Link Drive hoặc YouTube không công khai, ghi trong link_video.txt]
+Mã nguồn và kết quả | 05_Code_Output/ (python/, R/, outputs/q1 … q6, dashboard.pbix, README.md, requirements.txt)
+Slide | 01_Presentation/presentation.pptx và presentation.pdf
+</TABLE 46>
+
+[Caption Bang] Bảng B.1. Liên kết và vị trí các sản phẩm của đồ án
+[Heading 1] PHỤ LỤC C: BẢNG ĐỘ TIN CẬY VÀ TỪ ĐIỂN DỮ LIỆU
+[] [Bảo: chèn reliability_table.csv bản cuối; và tóm tắt data_dictionary.md (mỗi cột của videos_master.csv và 4 file còn lại: ý nghĩa, đơn vị, cách tính, cột nào có thể rỗng và vì sao). Bản đầy đủ nằm trong 03_Dataset/data_dictionary.md.]
+
+<TABLE 47>
+Cột | Ý nghĩa | Đơn vị | Cách tính | Có thể rỗng? Vì sao
+[…] | […] | […] | […] | […]
+[…] | […] | […] | […] | […]
+</TABLE 47>
+
+[Caption Bang] Bảng C.1. Trích từ điển dữ liệu
+[Heading 1] PHỤ LỤC D: DASHBOARD POWER BI
+[] Dashboard gồm 3 trang đọc từ các CSV trong outputs/: (1) tổng quan: cỡ mẫu, độ tin cậy, Q1; (2) giờ đăng và thể loại: heatmap, trung bình theo nhóm của Q2b; (3) viral và cụm: so sánh mô hình Q5, importance, hồ sơ cụm Q6, dự báo Q4 nếu đủ chỗ. [Bảo: ghi rõ trang hoặc biểu đồ nào chưa làm nếu không kịp.]
+
+<TABLE 48>
+[Chèn ảnh dashboard trang 1: tổng quan]
+</TABLE 48>
+
+[Caption Hinh] Hình D.1. Dashboard Power BI trang 1: tổng quan (nguồn: dashboard.pbix)
+
+<TABLE 49>
+[Chèn ảnh dashboard trang 2: giờ đăng và thể loại]
+</TABLE 49>
+
+[Caption Hinh] Hình D.2. Dashboard Power BI trang 2: giờ đăng và thể loại (nguồn: dashboard.pbix)
+
+<TABLE 50>
+[Chèn ảnh dashboard trang 3: viral và cụm]
+</TABLE 50>
+
+[Caption Hinh] Hình D.3. Dashboard Power BI trang 3: viral và cụm (nguồn: dashboard.pbix)
+
+

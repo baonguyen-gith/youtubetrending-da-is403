@@ -1,0 +1,31 @@
+{
+  "dataset": "../../02_Data/data_clean_temp",
+  "input_videos": 96334,
+  "n_H": 95319,
+  "excluded": 1015,
+  "excluded_reasons_overlapping": {
+    "not_history": 235,
+    "live_or_upcoming": 104,
+    "views_not_positive_or_na": 170,
+    "age_lt_1_or_na": 629
+  },
+  "n_age_bins": 14,
+  "lv_adj_center_check_max_abs": 6.07006356183529e-16,
+  "six_numbers": {
+    "n_H": 95319,
+    "n_channels_H": 328,
+    "n_age_7_10": 1594,
+    "n_viral_A": 9542,
+    "median_lv_adj": 0.09052413336656251,
+    "n_ever_trending_H": 399
+  },
+  "versions": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.10.8"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "NOT_RUN",
+  "details": [
+    {
+      "python_file": "prep/bo_6_so.csv",
+      "R_file": "prep/bo_6_so_R.csv",
+      "status": "R_NOT_RUN"
+    },
+    {
+      "python_file": "q2a/q2a_tests.csv",
+      "R_file": "q2a/q2a_tests_R.csv",
+      "status": "R_NOT_RUN"
+    },
+    {
+      "python_file": "q2b/q2b_anova.csv",
+      "R_file": "q2b/q2b_anova_R.csv",
+      "status": "R_NOT_RUN"
+    },
+    {
+      "python_file": "q3a/q3a_coefficients.csv",
+      "R_file": "q3a/q3a_coefficients_R.csv",
+      "status": "R_NOT_RUN"
+    },
+    {
+      "python_file": "q3a/q3a_delta_R2.csv",
+      "R_file": "q3a/q3a_delta_R2_R.csv",
+      "status": "R_NOT_RUN"
+    }
+  ],
+  "failures": [],
+  "note": "PASS only when all actual R output files exist and each comparison matches. Do not interpret NOT_RUN as PASS."
+}

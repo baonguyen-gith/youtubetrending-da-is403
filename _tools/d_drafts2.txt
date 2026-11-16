@@ -1,0 +1,64 @@
+=== FILE: Giai_thich_3.6_Google_Trends.docx ===
+--- paragraphs: 17, tables: 0 ---
+[Title] Mục 3.6 - Đối chiếu với Google Trends
+[Heading 2] Task này để làm gì
+[Normal] Kiểm tra xem điểm "độ hơn kém so với video cùng tuổi" của các video đăng trong tuần (chuỗi S2) có đi cùng mức quan tâm của người dùng trên Google Trends hay không. Đây là một phép đối chiếu độc lập với dữ liệu YouTube của nhóm, không phải một mô hình dự báo.
+[Heading 2] Cách làm
+[List Bullet] Chọn 5 từ khóa (YouTube, TikTok, MV, Liên Quân, Tết), lý do chọn nằm trong trends_keywords.csv.
+[List Bullet] Lấy chỉ số Google Trends theo tuần (tuần bắt đầu Chủ nhật) tại Việt Nam, 147 tuần từ 07/01/2024 đến 25/10/2026 (đủ tuần 7 ngày với S2).
+[List Bullet] Tính hệ số tương quan hạng Spearman giữa S2 theo tuần và chỉ số Trends của từng từ khóa; kiểm tra thêm bằng sai phân bậc 1 để loại ảnh hưởng của xu hướng chung; hiệu chỉnh p-value bằng Holm vì thử 5 từ khóa cùng lúc.
+[Heading 2] Các file trong thư mục
+[List Bullet] trends_keywords.csv: 5 từ khóa và lý do chọn.
+[List Bullet] trends_raw.csv: dữ liệu Trends gốc theo tuần.
+[List Bullet] trends_check_weekly.csv: bảng ghép S2 theo tuần với chỉ số Trends.
+[List Bullet] trends_check_results.csv: kết quả tương quan từng từ khóa.
+[List Bullet] trends_check.png: hình hai trục S2 và Trends.
+[Heading 2] Kết quả chính
+[Normal] Tất cả hệ số tương quan đều nhỏ và âm nhẹ: YouTube -0,075; TikTok -0,002; MV -0,124; Liên Quân -0,052; Tết -0,029. Sau hiệu chỉnh Holm, p nhỏ nhất là 0,677 nên không có từ khóa nào tương quan có ý nghĩa với S2. Kiểm tra bằng sai phân cho cùng kết luận.
+[Heading 2] Cách hiểu và lưu ý
+[Normal] Kết quả cho thấy mức quan tâm tìm kiếm không giải thích được độ hơn kém của video theo tuần đăng. Điều này không có nghĩa Trends vô dụng: nó chỉ đo lượng tìm kiếm, còn S2 đo hiệu suất video sau khi đã loại ảnh hưởng của tuổi video. Số liệu Trends là chỉ số tương đối 0-100, đã được chuẩn hóa bởi Google.
+
+
+=== FILE: Giai_thich_5.2d_Le_va_Tet.docx ===
+--- paragraphs: 16, tables: 0 ---
+[Title] Mục 5.2d - Hiệu ứng ngày lễ và Tết
+[Heading 2] Task này để làm gì
+[Normal] Trả lời câu hỏi: video đăng vào các kỳ nghỉ lễ và Tết có lượt xem cao hơn (hoặc thấp hơn) video đăng ở ngày thường cùng tháng hay không, sau khi đã loại ảnh hưởng của tuổi video.
+[Heading 2] Cách làm
+[List Bullet] Lịch lễ gồm 15 kỳ nghỉ trong 2024-2026 (Tết Nguyên đán, 30/4 - 1/5, Giỗ Tổ, Quốc khánh, Tết Dương lịch), lấy ngày theo văn bản chính thức (Công văn 8662/VPCP 2023, Thông báo 6150/TB-BLĐTBXH 2024, Công văn 9859/VPCP 2025); nguồn từng kỳ ghi trong holidays_sources.md.
+[List Bullet] Mỗi kỳ được so với nhóm đối chứng là các ngày không nghỉ lễ trong cùng các tháng đó, trên điểm lv_adj (log10 lượt xem đã trừ trung bình theo nhóm tuổi video).
+[List Bullet] Dùng kiểm định Welch t, kèm Cohen d và khoảng tin cậy 95%; hiệu chỉnh p-value bằng Holm. Kỳ dưới 100 video được gộp lại.
+[List Bullet] Chạy lại sau khi bỏ video ngắn (dưới 60 giây) để kiểm tra độ vững.
+[Heading 2] Các file trong thư mục
+[List Bullet] holidays_vn.csv và holidays_sources.md: lịch lễ và nguồn. File csv được tạo bằng make_holidays.py, không sửa tay trong Excel (Excel làm hỏng định dạng ngày và dấu tiếng Việt).
+[List Bullet] q2d_results_Python.csv: kết quả chính; q2d_results_R.csv: kết quả kiểm tra bằng R, khớp với Python.
+[List Bullet] Cột version: tat_ca là toàn bộ video; bo_video_ngan là sau khi bỏ video ngắn.
+[Heading 2] Kết quả chính
+[Normal] Sau hiệu chỉnh Holm, không kỳ nào có khác biệt có ý nghĩa thống kê. Kỳ nổi bật nhất là Tết 2026: chênh lệch +0,098 trên thang log10 (p = 0,0086 nhưng Holm 0,137). Gộp cả ba dịp Tết: +0,056 (Holm 0,888) với toàn bộ video và +0,086 (Holm 0,140) khi bỏ video ngắn. Các lễ khác gộp lại gần bằng 0 (-0,013).
+[Heading 2] Cách hiểu và lưu ý
+[Normal] Có xu hướng Tết nhỉnh hơn ngày thường, nhưng chưa đủ bằng chứng để kết luận sau khi hiệu chỉnh nhiều phép so sánh. Không nên viết "đăng dịp lễ thì nhiều view hơn". Đây là so sánh mô tả, chưa phải quan hệ nhân quả.
+
+
+=== FILE: Giai_thich_5.4_Chuoi_thoi_gian_va_du_bao.docx ===
+--- paragraphs: 19, tables: 0 ---
+[Title] Mục 5.4 - Chuỗi thời gian và dự báo
+[Heading 2] Task này để làm gì
+[Normal] Xây dựng bốn chuỗi thời gian theo ngày đăng và dự báo xu hướng ngắn hạn: S1 là số video đăng mỗi ngày (kênh có dưới 500 video lịch sử), S2 là điểm trung bình lv_adj của video đăng mỗi ngày (bỏ 7 ngày cuối vì video còn quá mới), N1 là số video mới vào Trending mỗi ngày, N2 là trung vị lượt xem của top 1-50 Trending.
+[Heading 2] Cách làm
+[List Bullet] Kiểm tra tính dừng bằng ADF và KPSS: S1 không dừng (cần log và sai phân bậc 1), S2 dừng.
+[List Bullet] So sánh ARIMA, SARIMA (mùa 7 ngày), ARIMAX (thêm hai biến giả: lễ khác và Tết) với mô hình nền seasonal naive (lấy giá trị cùng thứ của tuần trước).
+[List Bullet] Đánh giá trên 28 ngày cuối làm tập kiểm tra, chọn mô hình theo AIC, đo sai số bằng MAE, kiểm tra phần dư bằng Ljung-Box (14 độ trễ).
+[List Bullet] N1 và N2 chỉ có 14 và 18 điểm hợp lệ nên chỉ chạy ARIMA ngắn hạn để minh họa.
+[List Bullet] Mọi bước chạy bằng Python (statsmodels) và R (forecast) để đối chiếu.
+[Heading 2] Các file trong thư mục
+[List Bullet] series_daily.csv, series_trending.csv, series_notes.md: bốn chuỗi và ghi chú ngày thiếu dữ liệu.
+[List Bullet] Python_q4_* và R_q4_*: kiểm tra tính dừng, so sánh mô hình, hệ số ARIMAX, dự báo (csv, png), ACF/PACF, chuỗi ngắn N1 N2.
+[Heading 2] Kết quả chính
+[List Bullet] S1: ARIMAX (2,1,2)(1,0,1,7) được chọn theo AIC, MAE 44,47 so với seasonal naive 46,43, tức chỉ tốt hơn một chút; Ljung-Box p = 0,0115 nên phần dư còn chút tự tương quan. Tết làm giảm khoảng 18% số video đăng trong ngày.
+[List Bullet] S2: seasonal naive thắng (MAE 0,1635 so với 0,2155 của ARIMAX), vì trong 28 ngày kiểm tra chuỗi tăng còn mô hình kéo về mức thấp. sMAPE của S2 không đáng tin vì S2 có giá trị gần 0.
+[List Bullet] Thứ Bảy là ngày cao nhất ở cả hai chuỗi; đây là gợi ý, chưa phải nhân quả.
+[List Bullet] N1, N2: Python và R chọn bậc khác nhau (do chuỗi quá ngắn), nên chỉ dùng để minh họa.
+[Heading 2] Lưu ý
+[Normal] Dữ liệu thu đến 12/11/2026. Không đọc xu hướng S1 là xu hướng của toàn nền tảng, vì S1 chỉ gồm 302 kênh theo dõi.
+
+

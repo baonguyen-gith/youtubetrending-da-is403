@@ -1,0 +1,6 @@
+{
+  "anova": "Classic F and Welch F are both reported. Primary inference Welch if median Levene p<0.05.",
+  "eta": "Eta-square is classical SSB/SST; it is not Welch-specific.",
+  "posthoc": "Games-Howell uses q=abs(mean1-mean2)/sqrt(0.5*(s1²/n1+s2²/n2)); family-wise p from studentized range.",
+  "small_groups": "Groups with n>=2 retained (source requirement). Interpret very small categories cautiously; do not generalize."
+}

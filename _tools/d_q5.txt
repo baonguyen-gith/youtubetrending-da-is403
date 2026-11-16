@@ -1,0 +1,101 @@
+=== FILE: Phan_loai_file_Q5_ban_cap_nhat.docx ===
+--- paragraphs: 58, tables: 2 ---
+[Normal] XÂY DỰNG MÔ HÌNH DỰ BÁO Q5
+Phân loại file, thuật ngữ và vai trò biến trong dự báo video viral
+[Normal] Viết theo cách nhập môn: giả định người đọc chưa học Machine Learning hoặc thống kê.
+[Heading 1] 1. Bức tranh tổng thể: các file dùng để làm gì?
+[Normal] Dự án có hai loại file chính:
+[List Bullet] Dữ liệu để huấn luyện (training data): mỗi dòng là một video; các cột mô tả video/kênh được dùng để dự đoán. Cột mục tiêu (target/label) cho biết video có được xem là viral theo tiêu chí đang nghiên cứu hay không.
+[List Bullet] File kết quả/thí nghiệm: ghi lại mô hình đã chạy, điểm đánh giá, độ quan trọng của biến hoặc kết quả khi bỏ một nhóm biến. Các file này giúp trả lời “mô hình làm tốt đến đâu?” và “biến nào có ích?”, chứ không phải dữ liệu đầu vào để train lại.
+[Heading 1] 2. Từ điển thuật ngữ cơ bản
+
+<TABLE 1>
+Thuật ngữ | Giải thích dễ hiểu
+Machine Learning  / (học máy) | Máy tính học quy luật từ các ví dụ đã có, rồi dùng quy luật đó để dự đoán trường hợp mới. Ở đây, máy học từ video cũ để dự đoán video nào có khả năng viral.
+Feature /  / biến đầu vào | Thông tin đưa cho mô hình để dự đoán, ví dụ số subscriber, tuổi kênh, thời lượng video. Hãy hình dung feature như các thông tin người xem xét trước khi đưa ra dự đoán.
+Target / label / / nhãn mục tiêu | Đáp án mà mô hình cần học. Ví dụ viral_A=1 nghĩa là video được gán là viral_A; viral_A=0 nghĩa là không. Mỗi tiêu chí viral là một bài toán dự đoán riêng.
+Train / training | Giai đoạn mô hình xem các ví dụ đã có feature và đáp án để học cách liên hệ thông tin với kết quả.
+Test / testing | Dữ liệu được giữ lại, không dùng để dạy mô hình. Sau khi học xong, mô hình dự đoán trên test để kiểm tra khả năng áp dụng cho video chưa thấy.
+Baseline  / (mô hình nền) | Một cách dự đoán đơn giản để làm mốc so sánh. Nếu mô hình phức tạp không tốt hơn baseline, thì việc phức tạp hóa có thể chưa đem lại lợi ích. Trong CSV này, baseline dùng log_subs làm thông tin chính để dự đoán.
+Classifier / / bộ phân loại | Mô hình trả lời câu hỏi thuộc nhóm nào. Với Q5, đây là phân loại nhị phân: viral hoặc không viral theo một nhãn.
+Decision Tree  / (cây quyết định) | Mô hình đặt các câu hỏi lần lượt, như một sơ đồ nhánh: “subscriber lớn hơn ngưỡng không?”, “video dài hơn bao nhiêu?”. Đi theo nhánh đến cuối sẽ ra dự đoán. Dễ hình dung, nhưng một cây đơn có thể thay đổi nhiều khi dữ liệu thay đổi.
+Random Forest  / (rừng ngẫu nhiên) | Tạo nhiều cây quyết định khác nhau, mỗi cây đưa ra dự đoán rồi kết hợp các dự đoán. Giống hỏi nhiều người đánh giá và lấy ý kiến tổng hợp; thường ổn định hơn một cây đơn.
+SVM  / (Support Vector Machine) | Mô hình tìm ranh giới để phân biệt nhóm 0 và nhóm 1. Có thể hình dung nó vẽ đường phân cách sao cho hai nhóm được tách tốt; với dữ liệu phức tạp, SVM có thể dùng ranh giới cong.
+XGBoost | Mô hình xây nhiều cây theo từng lượt. Cây sau tập trung sửa những lỗi mà các cây trước còn mắc. Đây là phương pháp mạnh thường dùng cho dữ liệu dạng bảng, nhưng cần điều chỉnh tham số và kiểm tra để tránh học quá sát dữ liệu train.
+Overfitting  / (học quá khớp) | Mô hình học thuộc các ví dụ train, kể cả nhiễu, nên điểm train cao nhưng dự đoán video mới kém.
+Cross-validation  / (kiểm định chéo) | Chia dữ liệu thành nhiều phần/fold. Mỗi lượt dùng một phần để kiểm tra và phần còn lại để train; lặp lại để xem kết quả có ổn định không.
+Fold | Một lượt chia dữ liệu trong cross-validation. Fold 1, fold 2… là các lần kiểm tra khác nhau.
+Metric /  / chỉ số đánh giá | Con số dùng để mô tả mô hình dự đoán tốt đến đâu. Không nên chỉ nhìn một chỉ số vì mỗi chỉ số trả lời một câu hỏi khác nhau.
+Threshold  / (ngưỡng) | Điểm cắt để chuyển điểm dự đoán thành 0 hoặc 1. Hạ ngưỡng thường bắt được nhiều video viral hơn nhưng cũng có thể báo nhầm nhiều hơn.
+Feature importance  / (độ quan trọng biến) | Ước lượng biến nào được mô hình sử dụng nhiều/đóng góp nhiều vào dự đoán. Không đồng nghĩa biến đó gây ra viral.
+Ablation study  / (thí nghiệm loại bỏ) | Chạy mô hình với đủ biến, sau đó bỏ một biến hoặc một nhóm biến và chạy lại. Nếu kết quả giảm, nhóm bị bỏ có thể đang cung cấp thông tin hữu ích.
+Data leakage  / (rò rỉ dữ liệu) | Mô hình vô tình được cung cấp thông tin chỉ biết sau thời điểm dự đoán. Khi đó điểm đánh giá có thể cao giả tạo nhưng không dùng được ngoài thực tế.
+Class imbalance  / (mất cân bằng lớp) | Số video viral ít hơn nhiều so với video không viral. Vì vậy accuracy có thể gây hiểu nhầm; cần xem thêm precision, recall và PR-AUC.
+</TABLE 1>
+
+[Heading 1] 3. File tổng hợp và hướng dẫn đọc workbook
+[Heading 2] Q5_tong_hop(1).xlsx
+[Normal] Đây là workbook tổng hợp nhiều bảng kết quả. Mỗi sheet tập trung vào một câu hỏi nghiên cứu. Các sheet bắt đầu bằng GC_ là phần giải thích/ghi chú đi kèm sheet tương ứng.
+[Normal] 00_Huong_dan — Trang hướng dẫn cách đọc workbook, ý nghĩa các bảng và phạm vi phân tích. Nên đọc đầu tiên.
+[Normal] 01_Bang_5_11_viral_A — Bảng kết quả cho bài toán viral_A. Dùng để xem mô hình nào dự đoán tốt hơn theo các chỉ số được báo cáo.
+[Normal] 02_Bang_5_13_breakout_B — Bảng kết quả cho breakout_B. Đây là bài toán khác viral_A, vì định nghĩa nhãn và tỷ lệ video dương khác nhau.
+[Normal] 03_Bang_5_12_nhan — Tổng hợp số video đủ điều kiện, số video dương và tỷ lệ dương cho các nhãn. Giúp biết bài toán có mất cân bằng lớp hay không.
+[Normal] 04_Bang_5_14_thoi_gian — Phân tích theo thời gian/cửa sổ. Dùng để xem kết quả thay đổi theo giai đoạn và kiểm tra cách chọn thời điểm dữ liệu.
+[Normal] 05_Bang_5_15_ablation — Kết quả thí nghiệm loại nhóm biến. So sánh mô hình đủ biến với mô hình bỏ một nhóm để biết nhóm đó có ích không.
+[Normal] 06_Bang_5_16_do_nhay — Phân tích độ nhạy. Xem kết quả thay đổi khi thay ngưỡng hoặc điều kiện gán nhãn; giúp tránh kết luận phụ thuộc vào một ngưỡng duy nhất.
+[Normal] 07_Importance — Bảng feature importance. Cho biết biến nào được mô hình sử dụng nổi bật; đây là giải thích mô hình, không phải bằng chứng nhân quả.
+[Normal] 08_CV_folds — Kết quả theo từng fold của cross-validation. Dùng để kiểm tra mô hình có ổn định qua các lần chia dữ liệu hay không.
+[Normal] GC_* — Các sheet ghi chú/giải thích của bảng cùng số thứ tự. Đọc cùng sheet chính để hiểu cách diễn giải, điều kiện hoặc giới hạn.
+[Heading 1] 4. Nhóm file CSV: mô tả và cách sử dụng
+[Heading 2] q5_model_comparison(1).csv
+[Normal] Nhóm: So sánh mô hình. Mỗi dòng là một nhãn + một mô hình. Các cột model cho biết phương pháp; các cột metric cho biết kết quả trung bình qua các fold; *_sd cho biết độ dao động giữa các fold; n_folds là số fold. Dùng file này để chọn mô hình có hiệu năng phù hợp. Không dùng làm feature input.
+[Heading 2] q5_cv_folds(1).csv
+[Normal] Nhóm: Kết quả từng fold. Mỗi dòng là một lần đánh giá cụ thể. label là bài toán; model là mô hình; fold là lượt chia; n_train/n_test là số mẫu train/test; n_pos_test là số mẫu dương trong test; threshold là ngưỡng; pos_rate là tỷ lệ dương. Dùng để kiểm tra kết quả trung bình có bị một fold tốt/xấu bất thường chi phối không.
+[Heading 2] q5_importance(1).csv
+[Normal] Nhóm: Độ quan trọng của biến. feature là tên biến; importance_mean là mức importance trung bình; importance_std là độ dao động qua các lần chạy/fold. Dùng để xếp thứ tự biến đáng chú ý. Không diễn giải thành “feature gây viral”.
+[Heading 2] q5_ablation(1).csv và q5_ablation_full(1).csv
+[Normal] Nhóm: Thí nghiệm bỏ nhóm biến. Hai file thuộc cùng nhóm và nên đọc cùng nhau. q5_ablation_full chứa cấu hình đủ biến và cấu hình bỏ nhóm biến, cùng PR-AUC/ROC-AUC và delta so với đủ biến. q5_ablation ghi chi tiết metric và độ lệch chuẩn qua fold cho cấu hình, gồm precision, recall, F1, Recall@Top10. Dùng để đo mức đóng góp của nhóm biến kênh.
+[Heading 2] q5_labels_summary(1).csv
+[Normal] Nhóm: Tóm tắt nhãn. label là tên tiêu chí; n_eligible là số video đủ điều kiện; n_positive là số video được gán dương; rate_pct là tỷ lệ dương. Dùng để hiểu kích thước dataset và độ mất cân bằng trước khi train.
+[Heading 1] 5. Các chỉ số trong CSV: hiểu bằng câu hỏi đơn giản
+
+<TABLE 2>
+Chỉ số | Diễn giải
+ROC-AUC | Mô hình có xếp video viral cao hơn video không viral nói chung không? 0.5 gần mức đoán ngẫu nhiên; càng cao càng tốt, nhưng vẫn cần metric khác khi viral hiếm.
+PR-AUC | Khi mô hình tìm các video viral, sự cân bằng giữa tìm đúng và tìm đủ tốt đến đâu? Thường hữu ích hơn ROC-AUC khi lớp viral ít.
+Precision | Trong những video mô hình gọi là viral, bao nhiêu video thật sự viral? Precision cao nghĩa là ít báo nhầm.
+Recall | Trong tất cả video thật sự viral, mô hình tìm được bao nhiêu? Recall cao nghĩa là bỏ sót ít.
+F1 | Một điểm kết hợp precision và recall. Có ích khi cần cân bằng hai mục tiêu, nhưng không thay thế việc xem từng chỉ số.
+Recall@Top10 | Trong nhóm 10% video có điểm dự đoán cao nhất, mô hình bắt được bao nhiêu video viral thật. Hữu ích nếu chỉ có thể xem xét một phần nhỏ video.
+*_sd | Độ lệch chuẩn: cho biết kết quả biến động ra sao giữa các fold. Trung bình tốt nhưng độ lệch lớn có thể nghĩa là mô hình không ổn định.
+delta_pr_auc / delta_roc_auc | Chênh lệch điểm so với cấu hình tham chiếu (thường là đủ biến). Số âm nghĩa là điểm giảm khi dùng cấu hình đó.
+</TABLE 2>
+
+[Heading 1] 6. Biến đầu vào đã xác định trong báo cáo
+[Normal] log_subs — Số subscriber được biến đổi bằng log (logarithm). Dùng để biểu diễn quy mô kênh mà không để kênh cực lớn lấn át quá nhiều. Cần xem pipeline để biết log cơ số nào và có cộng hằng số trước khi log không.
+[Normal] total_videos — Tổng số video của kênh. Đại diện lượng nội dung kênh đã đăng.
+[Normal] channel_age_days — Số ngày kể từ khi kênh bắt đầu/được tạo theo định nghĩa dataset. Đại diện tuổi kênh.
+[Normal] duration_sec — Thời lượng video tính bằng giây.
+[Normal] title_has_bracket — Biến dạng cờ cho biết tiêu đề có dấu ngoặc theo quy tắc mã hóa. Cần kiểm tra regex/chính sách tạo biến để biết chính xác dấu nào được tính.
+[Normal] Nhóm biến kênh — Nhóm feature mô tả kênh được loại trong ablation. Kết quả cho viral_A giảm đáng kể khi bỏ nhóm này; với breakout_B giảm ít hơn. Danh sách cột thành viên nhóm cần lấy từ feature matrix/ghi chú pipeline.
+[Normal] Các feature khác — q5_importance.csv có danh sách 34 feature, trong khi workbook importance có thể hiển thị 30 dòng. Cần đối chiếu phiên bản xuất để giải thích từng biến còn lại chính xác.
+[Heading 1] 7. Đọc kết quả thực tế trong bộ file
+[Normal] • q5_labels_summary ghi viral_A: 139,227 video đủ điều kiện, 13,931 dương (khoảng 10.01%); breakout_B: 134,703 đủ điều kiện, 34,055 dương (25.28%); viral_C: 10,925 đủ điều kiện, 550 dương (5.03%). viral_C có số mẫu dương khá ít, nên metric có thể dao động và cần diễn giải cẩn thận.
+[Normal] • q5_model_comparison cho viral_A: Random Forest có ROC-AUC khoảng 0.838 và PR-AUC khoảng 0.420; XGBoost có ROC-AUC khoảng 0.847 trong bảng. Nên xem PR-AUC, precision/recall và Recall@Top10 cùng nhau, không chỉ chọn theo ROC-AUC.
+[Normal] • q5_ablation_full: viral_A PR-AUC giảm từ khoảng 0.420 (đủ biến) xuống 0.211 (bỏ nhóm biến kênh), ROC-AUC giảm khoảng 0.135. Điều này cho thấy nhóm biến kênh có đóng góp đáng kể cho bài toán viral_A trong thí nghiệm này.
+[Normal] • Với breakout_B, ablation cho thấy PR-AUC giảm nhẹ hơn, khoảng 0.006; ROC-AUC gần như không đổi. Có thể nhóm biến kênh ít quan trọng hơn đối với breakout_B trong cấu hình đã chạy, nhưng không nên khái quát vượt ngoài dataset/thí nghiệm này.
+[Normal] • Importance preview xếp log_subs, total_videos, channel_age_days, duration_sec và title_has_pipe trong các biến đầu. Đây là thứ tự importance theo mô hình, không phải thứ tự nguyên nhân.
+[Heading 1] 8. Quy trình train model đề xuất
+[List Number] Xác định một target cụ thể cho mỗi lần train (viral_A hoặc breakout_B hoặc viral_C); không gộp ba nhãn thành một nếu chưa có định nghĩa chung.
+[List Number] Chọn feature matrix video. Chỉ đưa feature có thể biết tại đúng thời điểm cần dự đoán; không dùng thông tin phát sinh sau đó.
+[List Number] Chia dữ liệu train/test theo mục tiêu thực tế. Nếu muốn dự đoán video tương lai, nên cân nhắc chia theo thời gian; nếu video cùng kênh có tính tương tự mạnh, kiểm tra cách chia để tránh test quá dễ.
+[List Number] Train baseline trước. Baseline là mốc đơn giản; sau đó thử Decision Tree, Random Forest, SVM và XGBoost. So sánh bằng cùng một cách chia dữ liệu.
+[List Number] Dùng cross-validation để xem mô hình ổn định hay không. Báo cáo trung bình và độ lệch chuẩn qua fold.
+[List Number] Với nhãn viral hiếm, theo dõi PR-AUC, precision, recall, F1 và Recall@Top10. Chọn threshold dựa trên mục tiêu: hạn chế báo nhầm hay hạn chế bỏ sót.
+[List Number] Chạy ablation để kiểm tra nhóm biến. Nếu bỏ nhóm biến mà điểm giảm, nhóm đó có thông tin hữu ích; nếu không giảm, có thể cân nhắc đơn giản hóa.
+[List Number] Kiểm tra leakage, dữ liệu thiếu, trùng video, thời điểm snapshot và cách tạo nhãn trước khi kết luận.
+[Heading 1] 9. Giới hạn và thông tin cần bổ sung
+[Normal] Tài liệu giải thích các file đã được cung cấp. Vì chưa có bảng feature matrix đầy đủ kèm data dictionary, không thể mô tả chính xác mọi cột đầu vào. Để hoàn thiện phần giải thích từng biến, cần cung cấp CSV dữ liệu video gốc hoặc danh sách đầy đủ tên cột cùng công thức tạo biến. Cũng cần đối chiếu vì q5_importance và workbook importance có số dòng feature khác nhau.
+[Normal] Định nghĩa viral_A, breakout_B, viral_C được dùng như bối cảnh trong tài liệu; theo yêu cầu, không còn mục riêng đánh số cho ba nhãn mục tiêu.
+
+

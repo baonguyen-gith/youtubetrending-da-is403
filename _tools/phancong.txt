@@ -1,0 +1,353 @@
+=== FILE: Phân công.docx ===
+--- paragraphs: 77, tables: 22 ---
+[] Phân công và lịch làm việc đến 20/11/2026 – Đồ án IS403.R13
+[] Bản 2: mỗi người làm độc lập đến khi ghép cuối  ·  Nhóm 4  ·  Cập nhật 03/11/2026  ·  Nộp 20/11  ·  Thuyết trình 24/11
+
+<TABLE 1>
+Thành viên | Việc chính | Mục chi tiết
+Nguyễn Gia Bảo (24520166) | Thu thập và chốt dữ liệu; độ tin cậy; Q1; Q3b Logistic; Power BI; dựng video | Mục 2
+Đinh Vũ Minh Khôi (24520857) | Lịch lễ; chuỗi thời gian Q4; Q2d lễ và Tết; Google Trends; tài liệu tham khảo | Mục 3
+Vũ Thị Như Quỳnh (24521515) | Nhãn viral; Q5 dự báo viral; Q6 phân cụm; Q2c Chi-square; ghép slide | Mục 4
+Nguyễn Trung Kiên (24520886), trưởng nhóm | Q2a t-test; Q2b ANOVA; Q3a hồi quy; ghép báo cáo; đóng gói và nộp | Mục 5
+</TABLE 1>
+
+[Heading 1] Đọc phần này trước
+
+<TABLE 2>
+Nguyên tắc của bản phân công này / Mỗi người tự làm từ đầu đến cuối, không chờ ai giao file. Dữ liệu đầu vào của cả nhóm là cùng một bộ file trên Drive; mọi thứ khác (lọc quần thể, nhãn viral, lịch lễ, chuỗi thời gian, Google Trends) mỗi người tự tính trong code của mình theo công thức ghi sẵn ở mục 0. / Nhóm chỉ gặp nhau ở 5 điểm chung: (1) Bảo đưa dữ liệu chốt lên Drive một lần cho cả nhóm (13/11); (2) bảng so_kiem_tra để chắc chắn bốn người ra cùng một số; (3) họp ngắn 04/11 và 09/11 và buổi tập chéo 18/11; (4) ghép cuối 17–19/11: báo cáo (Kiên), slide (Quỳnh), video và Power BI (Bảo), đóng gói và nộp (Kiên); (5) tập dượt 21–23/11. / Mỗi người có một mục riêng (mục 2 đến 5) liệt kê từng việc theo thứ tự ngày: việc gì, làm thế nào, ra file nào, tên gì, và tiêu chí «Xong khi» để tự kiểm tra. Làm xong mục nào thì tích vào bang_tien_do. / Hạn cứng: 15/11 23:59 mọi kết quả đã chạy trên dữ liệu chốt; 17/11 18:00 mỗi người nộp phần báo cáo của mình; 19/11 22:00 gói nộp hoàn chỉnh (nộp luôn nếu xong); 24/11 thuyết trình (cả 4 người có mặt, đến trước 15 phút).
+</TABLE 2>
+
+[Heading 2] Những gì đã đổi so với bản trước
+
+<TABLE 3>
+Nội dung | Bản trước | Bản này | Lý do
+Nhãn viral, quần thể H, lv_adj | Quỳnh giao labels.csv cho Kiên (10/11) và Bảo. | Mỗi người tự tính theo công thức mục 0.2; đối chiếu bằng bộ 6 số kiểm tra (06/11 và 13/11). | Không ai phải chờ ai.
+Q2c Chi-square thể loại × viral | Kiên (chờ nhãn của Quỳnh) | Quỳnh | Nhãn nằm sẵn trong code của Quỳnh.
+Q2d hiệu ứng lễ và Tết | Kiên (chờ lịch lễ của Khôi) | Khôi | Khôi tự làm lịch lễ nên tự phân tích luôn.
+Hồi quy Logistic | Quỳnh | Bảo (mã Q3b) | Cân tải: Quỳnh nặng nhất ngày 10–11/11, Bảo nhẹ phần phân tích trong 06–11/11.
+Đối chiếu Google Trends (độ tin cậy) | Bảo, chờ trends_raw.csv và chuỗi S2 của Khôi. | Khôi làm trọn từ khóa, tải, tính Spearman, viết mục 3.6. | Không bàn giao.
+Kết quả cho Power BI | Quỳnh giao cho Bảo ngày 16/11. | Bảo tự đọc CSV trong outputs/ sau 15/11 23:59; thiếu file nào thì bỏ biểu đồ đó, không chờ. | Theo lựa chọn của nhóm: Bảo làm toàn bộ Power BI.
+Video | Mỗi người quay phần mình, Kiên dựng. | Mỗi người quay thô, Bảo dựng toàn bộ. | Giảm tải cho Kiên (đang ghép báo cáo và đóng gói).
+Viết báo cáo | Kiên viết nhiều mục chung. | Mỗi người viết trọn phần của mình (phương pháp, kết quả, bốn nhịp insight, trích dẫn) vào file riêng Muc_<Tên>.docx; Kiên chỉ ghép và viết mục chung. | Ghép cơ học, không phải viết lại.
+Lần thu cuối và dữ liệu chốt | Thu lần cuối 12/11 20:00, tắt lịch sáng 13/11; cửa sổ nhãn C cố định đến 05/11; ghi 23 ngày quan sát. | Thu lần cuối 12/11 20:00 và tắt lịch ngay sau lần đó; cửa sổ nhãn C tính bằng công thức từ dữ liệu; ghi 22 ngày (22/10–12/11). | Bản trước tự mâu thuẫn (lần cuối là 12/11 hay 13/11).
+Kiểm tra code | Nhờ 1 người không viết phần đó chạy lại. | Ghép cặp cố định: Bảo ↔ Kiên, Khôi ↔ Quỳnh chạy thử code của nhau trên môi trường sạch (19/11). | Rõ ai làm, làm lúc nào.
+Sau 20/11 | Không có. | Thêm 21–23/11 tập dượt có bấm giờ; 24/11 thuyết trình. | Phần chấm trực tiếp, hỏi bất kỳ ai, vắng là 0 điểm.
+</TABLE 3>
+
+[Heading 2] Các quy ước mới cần cả nhóm xác nhận ở buổi họp 04/11
+[] Những điểm dưới đây là chỗ bản cũ chưa nói rõ nên mỗi người có thể hiểu một kiểu. Mình đã chốt tạm; nếu nhóm đổi thì sửa ở mục 0 rồi báo cả nhóm, không tự đổi trong code riêng.
+[List Paragraph] Nhóm tuổi age_b chia theo khoảng đóng bên trái, mở bên phải [a, b): tuổi đúng bằng 2 ngày thuộc nhóm 2–3. Nếu code mẫu hiện có dùng quy ước khác thì sửa code, không sửa quy ước.
+[List Paragraph] Xếp hạng phần trăm của nhãn A tính bằng (hạng trung bình) / n trong từng nhóm tuổi, ngưỡng viral_A là >= 0,90 (cách tính trong Python và R giống nhau, xem 0.2).
+[List Paragraph] Nhãn B: trung vị ch_med_loo chỉ tính khi kênh có ít nhất 5 video KHÁC cùng nhóm tuổi; thiếu thì để NaN và loại khỏi mô hình nhãn B.
+[List Paragraph] Cửa sổ nhãn C: từ 19/10 đến (ngày chụp Trending cuối cùng trong trending_clean.csv trừ 8 ngày); dự kiến là 04/11 nếu lần chụp cuối là 12/11.
+[List Paragraph] Đối chiếu 30 video: mở YouTube xong trong khoảng 90 phút sau lần đo (không còn 1 giờ), ghi giờ chênh từng dòng để tính sai lệch.
+[List Paragraph] Ngưỡng khớp Python và R: phương pháp xác định (t-test, ANOVA, OLS, Logit, Chi-square) phải khớp 3 chữ số thập phân; phương pháp ngẫu nhiên (Random Forest, K-means) cho phép AUC chênh <= 0,03 và ARI >= 0,8. SVM và XGBoost chỉ chạy Python (ngoại lệ phải ghi trong báo cáo).
+[List Paragraph] Q6 nâng cao (nội suy mốc 24 giờ, 72 giờ, 7 ngày) mặc định KHÔNG làm; chỉ làm nếu Quỳnh xong hết mọi việc trước 14/11.
+[Heading 1] 0. Quy ước chung (cả nhóm cùng dùng, không ai tự đổi)
+[Heading 2] 0.1 Dữ liệu
+[List Paragraph] Trước 13/11: dùng thư mục data_clean/ hiện có (bản chiều 03/11: 96.334 video, 466 kênh, 636 video từng lọt Trending). Từ 13/11: data_final_20261113/ do Bảo đưa lên Drive. Mọi con số đưa vào báo cáo chỉ lấy từ «data_final».
+[List Paragraph] Trong code, dòng đầu luôn là biến đường dẫn DATA_DIR (Python) hoặc data_dir (R). Chuyển từ data_clean sang data_final chỉ cần đổi đúng một dòng này rồi chạy lại.
+[List Paragraph] Năm file: videos_master.csv (1 video, số liệu lần đo mới nhất), measurements.csv (1 lần đo), trending_clean.csv (1 video trong 1 lần chụp Trending), channels_latest.csv (1 kênh), dq_report.txt. Cột chính của từng file: xem bản phân công cũ, mục 0; Bảo sẽ viết đầy đủ trong data_dictionary.md (14/11).
+[List Paragraph] Đọc file đúng cách. Python: pd.read_csv(..., encoding="utf-8-sig", dtype={"video_id": str}). R: readr::read_csv(..., col_types = cols(video_id = "c")). Không mở rồi lưu CSV bằng Excel. Kiểm tra: (df.video_id.str.len() != 11).sum() phải bằng 0.
+[Heading 2] 0.2 Công thức chuẩn (mọi người viết lại trong code của mình)
+
+<TABLE 4>
+Khái niệm | Định nghĩa | Python (pandas) | R (tidyverse)
+Quần thể H | in_history = TRUE và is_live_or_upcoming = FALSE và views > 0 và age_days_last >= 1. Ghi cỡ mẫu n_H ở đầu mỗi mục kết quả. | H = df[df.in_history & ~df.is_live_or_upcoming & (df.views>0) & (df.age_days_last>=1)].copy() | H <- df %>% filter(in_history, !is_live_or_upcoming, views>0, age_days_last>=1)
+Nhóm tuổi age_b | Cạnh: 1, 2, 3, 5, 7, 10, 14, 21, 30, 60, 90, 180, 365, 730, vô cực; khoảng [a, b). | pd.cut(H.age_days_last, [1,2,3,5,7,10,14,21,30,60,90,180,365,730,np.inf], right=False) | cut(age_days_last, c(1,2,3,5,7,10,14,21,30,60,90,180,365,730,Inf), right=FALSE)
+log_views và lv_adj | log_views là log10 của lượt xem (đã có cột). lv_adj = log_views trừ trung bình log_views của nhóm tuổi, trung bình tính trên H. | H["lv_adj"] = H.log_views - H.groupby("age_b", observed=True).log_views.transform("mean") | H <- H %>% group_by(age_b) %>% mutate(lv_adj = log_views - mean(log_views)) %>% ungroup()
+Nhãn A viral_A | pct_in_age = (hạng trung bình của log_views trong nhóm tuổi) / (số video của nhóm tuổi); viral_A = pct_in_age >= 0,90. Phải chiếm 9–11% H. | H.groupby("age_b", observed=True).log_views.rank(pct=True, method="average") | ave(log_views, age_b, FUN = function(x) rank(x, ties.method = "average") / length(x))
+Nhãn B breakout_B | lvpd = log10(max(views_per_day, 1)). ch_med_loo = trung vị lvpd của các video KHÁC cùng channel_id cùng age_b (loại chính nó; cần >= 5 video khác, thiếu thì NaN). breakout_B = lvpd - ch_med_loo >= log10(2). | Chỉ Quỳnh cần (Q5). | Chỉ Quỳnh cần (Q5).
+Nhãn C viral_C | max_run = ngày lớn nhất của run_date trong trending_clean.csv. in_window_C = pub_date_vn từ 2026-10-19 đến max_run trừ 8 ngày, và is_short_60 = FALSE. viral_C = ever_trending (xét trong H và in_window_C). | Quỳnh (Q5, Q2c) tự tính. | Quỳnh (Q5, Q2c) tự tính.
+Giờ, thứ, tháng | Dùng các cột pub_* (đã là giờ Việt Nam; pub_dow = 0 là Thứ Hai). Không tự tính lại từ published_ts vì cột đó là UTC. | — | —
+Likes, comments rỗng | Giữ NaN. like_rate, comment_rate chỉ tính khi không rỗng. | — | —
+Video ngắn is_short_60 | Phải có trong mô hình hoặc được tách riêng; Trending không có video nào <= 60 giây. Các kiểm định Q2 chạy thêm một bản bỏ video ngắn để kiểm tra độ vững. | — | —
+Chuỗi theo thời gian | Lấy từ measurements.csv với is_last_of_day = TRUE; không dùng các lần đo trùng trong ngày. | — | —
+Số ngẫu nhiên | Python: random_state=42. R: set.seed(42). Ghi phiên bản thư viện vào outputs/<phần>/env_python.txt và env_R.txt (pip freeze, sessionInfo). | — | —
+</TABLE 4>
+
+[Heading 2] 0.3 Biến đầu vào của mô hình dự báo viral và hồi quy Logistic («X_PRE»)
+[] Chỉ dùng biến biết lúc đăng: pub_hour, pub_dow, pub_is_weekend, pub_month, duration_sec, is_short_60, tags_count, category_id, title_len, title_words, title_upper_ratio, title_has_question, title_has_exclaim, title_has_digit, title_has_emoji, title_has_bracket, title_has_pipe, title_n_hashtag, log_subs, channel_age_days, total_videos. Lưu ý: số người đăng ký đo lúc thu thập chứ không phải lúc đăng, phải ghi trong báo cáo.
+[] Cấm đưa vào X: views, likes, comments, like_rate, comment_rate, views_per_day, age_days_last, n_obs, ever_trending, log_views, lv_adj, pct_in_age, và mọi cột bắt đầu bằng trend_. Trong code có lệnh assert dừng chương trình nếu có cột cấm trong X.
+[Heading 2] 0.4 Bộ 6 số kiểm tra chung (mọi người tính, điền vào sheet «so_kiem_tra»)
+
+<TABLE 5>
+# | Số cần in ra | Lưu ý
+1 | n_H: số video trong quần thể H | Số nguyên.
+2 | Số kênh khác nhau trong H | Theo channel_id.
+3 | Số video trong H thuộc nhóm tuổi 7–10 | Kiểm tra cách chia nhóm tuổi.
+4 | Tổng viral_A (số video dương) | Kiểm tra cách xếp hạng; phải 9–11% của n_H.
+5 | Trung vị lv_adj trên H, làm tròn 4 chữ số | Kiểm tra lv_adj.
+6 | Số video trong H có ever_trending = TRUE | Kiểm tra bộ lọc.
+</TABLE 5>
+
+[] Cột trong sheet: người, thời điểm, nguồn dữ liệu (data_clean hay data_final), 6 số. Hạn điền: 06/11 22:00 (so trên «data_clean») và 13/11 20:00 (so trên «data_final»). Cả 4 dòng phải giống hệt nhau. Nếu lệch: người có số khác đa số dừng việc đang làm, đối chiếu từng bước lọc với văn bản mục 0.2; nếu hai bên đều cho là đúng, Kiên đọc văn bản và quyết định; sửa xong báo lại vào sheet. Việc này tốn khoảng 15 phút nhưng tránh 4 người ra 4 kết quả.
+[Heading 2] 0.5 Quy tắc code, đầu ra và hợp đồng cho Power BI
+[List Paragraph] Mỗi phần có cả Python và R (trừ ngoại lệ SVM, XGBoost). Nếu hai bên lệch quá ngưỡng ở trên thì ghi nguyên nhân vào outputs/<phần>/note_python_vs_R.md, không giấu.
+[List Paragraph] Tên thư mục kết quả: outputs/q1, q2a, q2b, q2c, q2d, q3a, q3b, q4, q5, q6. Bảng lưu CSV (utf-8-sig); hình PNG 300 dpi, tiêu đề và nhãn trục tiếng Việt, có ghi nguồn; mỗi thư mục có figure_notes.md ghi 3 dòng mô tả cho mỗi hình.
+[List Paragraph] Mỗi người nộp README_<Tên>.md (hạn 15/11): thứ tự chạy file, phiên bản Python/R và thư viện, thời gian chạy, file đầu vào đầu ra. Kiên gộp thành README.md chung.
+[List Paragraph] Trễ hơn 1 ngày so với hạn trong bảng: báo ngay trong nhóm; từ 15/11 không còn ngày đệm. Mỗi tối gửi 1 dòng vào nhóm: Hôm nay xong …, mai làm …, vướng ….
+[] CSV bắt buộc cho Power BI (đặt trong 05_Code_Output/outputs/; thiếu file nào Bảo bỏ biểu đồ đó, không chờ):
+
+<TABLE 6>
+Người | File | Cột
+Bảo | q1/q1_by_hour.csv; q1/q1_heatmap.csv; q1/q1_by_category.csv | pub_hour, n, median_lv_adj, median_like_rate; pub_dow, pub_hour, n, median_lv_adj; category_name, n, median_lv_adj
+Kiên | q2b/q2b_group_means.csv | factor, group, n, mean_lv_adj, ci_low, ci_high
+Khôi | q4/q4_forecast_S1.csv; q4/q4_forecast_S2.csv | date, actual, forecast, lo95, hi95, split (train, test, forecast)
+Quỳnh | q5/q5_model_comparison.csv; q5/q5_importance.csv; q6/q6_cluster_profile.csv; q6/q6_pca_points.csv | theo mục 3 và 4 của người phụ trách; feature, importance; cluster, n, pct, trung vị 6 biến, ever_trending_rate; video_id, cluster, pc1, pc2
+</TABLE 6>
+
+[Heading 2] 0.6 Thư mục chung trên Drive và quyền ghi
+
+<TABLE 7>
+Thư mục | Nội dung | Ai ghi
+00_Chung | so_kiem_tra, bang_tien_do, references_log, quyet_dinh_hop.md, cau_hoi_tap_cheo.md | Mọi người ghi dòng của mình.
+01_Presentation | template.pptx (Quỳnh), parts/slides_<Tên>.pptx, presentation.pptx và .pdf | Mỗi người ghi file của mình; Quỳnh ghép.
+02_Report | template_report.docx, sections/Muc_<Tên>.docx, report_final.docx và .pdf | Mỗi người ghi Muc_<Tên>; Kiên ghép.
+03_Dataset | data_final_20261113/, checksums.txt, sample_1000.csv, link | Chỉ Bảo.
+04_Video | raw/raw_<Tên>.mp4, video_final.mp4 hoặc link | Mỗi người ghi file thô; Bảo dựng.
+05_Code_Output | python/, R/, outputs/q1 … q6, README_<Tên>.md | Mỗi người chép sản phẩm cuối của mình vào đây trước 15/11 23:59.
+WORK_<Tên> | Nháp riêng, không đóng gói. | Chỉ chủ nhân; người khác chỉ đọc.
+</TABLE 7>
+
+[Heading 1] 1. Lịch tổng thể: mỗi ngày mỗi người làm gì
+[] Mã việc (B1, K2, Q3, N4 …) khớp với bảng chi tiết của từng người ở mục 2 đến 5. Hàng in đậm là mốc chung. Không ô nào trong bảng có nghĩa chờ người khác giao. Ngày tháng đã đối chiếu lịch 2026: 03/11 là Thứ Ba, 15/11 là Chủ nhật, 24/11 là Thứ Ba.
+
+<TABLE 8>
+Ngày | Bảo | Khôi | Quỳnh | Kiên
+03/11 (T3) | B1: sao lưu dữ liệu gốc, đổi script v2, dán part1, chạy thử, lập lịch thu. | K1: chốt 3–5 từ khóa Trends. Bắt đầu K2. | Q1: chạy lại 2 file baseline để nắm luồng. | N1: dựng Drive, mẫu báo cáo, 3 sheet; gửi email hỏi thầy giờ chốt.
+04/11 (T4) | B1: dán part2, chạy all. B2: ghi nhật ký. Họp 30 phút. | K2: lịch lễ (từ văn bản chính thức). Họp 30 phút. | Q1: dựng khung slide. Họp 30 phút. | N2: chủ trì họp, chốt mục 0 và các quy ước mới. Ghi quyết định.
+05/11 (T5) | B3: viết prep (H, age_b, lv_adj, viral_A). | K3: viết prep. K2 tiếp tục. | Q1: đưa «template.pptx» lên Drive cuối ngày. Q2: viết nhãn A, B, C. | N3: viết prep.
+06/11 (T6) | B3 xong. B4 bắt đầu (Q1 nháp). B5 bắt đầu (Logistic). | K2 xong lịch lễ. K4: dựng S1, S2. | Q2 xong nhãn. Q3: pipeline chống rò rỉ, chia dữ liệu. | N3 xong. N4 bắt đầu (Q2a). Gửi email thầy nếu chưa gửi.
+06/11 22:00 | Mốc chung: điền bộ 6 số (data_clean) vào «so_kiem_tra». | Mốc chung: như Bảo. | Mốc chung: như Bảo. | Mốc chung: như Bảo.
+07/11 (T7) | 08:00 so 6 số, lệch thì sửa. B4, B5. | K5: Trends (chạy từng từ khóa). | Q3 xong. Q4: huấn luyện nháp. | N4, N5 (Q2b bắt đầu).
+08/11 (CN) | B4, B5. | K4: dựng N1, N2. K5. K6: bắt đầu Q4. | Q4. Q7: chuẩn bị dữ liệu Q6. | N4 nháp xong. N5. N6 (Q3a bắt đầu).
+09/11 (T2) | B2: chạy clean_data.py xem dq_report. B4 nháp Python xong. Họp giữa kỳ tối: mỗi người 5 phút. | K5 xong trends_raw.csv. K6. K7 bắt đầu (Q2d). Họp giữa kỳ. | Q4. Q7. Họp giữa kỳ. | N5, N6. Họp giữa kỳ (Kiên chủ trì).
+10/11 (T3) | B5, B6: bảng độ tin cậy nháp. | K6, K7. | Q4. Q5: Q2c Chi-square. Q7. | N5 xong. N6. N7: chạy ngôn ngữ còn lại.
+11/11 (T4) | Mốc chung: 22:00 bản nháp ngôn ngữ chính của mọi phần xong. B4 (R), B5 xong, B7 chuẩn bị đối chiếu 30 video. | K6, K7 xong nháp. K8: chuỗi ngắn nháp. | Q6: ablation, importance. Q7 xong nháp. | N6 xong nháp. N7: khung Mục 1 và Mục 4.
+12/11 (T5) | 20:00 lần thu cuối, tắt lịch ngay. 20:05–21:35 đối chiếu 30 video (B7). Chạy clean_data.py bản cuối. | K8: đối chiếu Python cho Q4 và Q2d; hoàn tất bản R còn dở. | Q8: đối chiếu bằng R (Random Forest, K-means). | N7: hoàn thiện Mục 4, đối chiếu ngôn ngữ cho Q2a, Q2b, Q3a.
+13/11 (T6) | B8: 12:00 hạn cứng: «data_final_20261113» trên Drive, SHA-256 khớp. B9: 6 số mới trước 20:00. | K9: đổi DATA_DIR, tải lại Trends, dựng lại S1, S2, N1, N2. 6 số trước 20:00. K10 bắt đầu. | Q9: đổi DATA_DIR, 6 số trước 20:00. Q10 bắt đầu. | N8: đổi DATA_DIR, 6 số trước 20:00. N9 bắt đầu.
+14/11 (T7) | B10: chạy chính thức Q1, Q3b, độ tin cậy; viết data_dictionary.md. | K10: chạy chính thức Q4, Q2d. | Q10: chạy chính thức Q5, Q6, Q2c. | N9: chạy chính thức Q2a, Q2b, Q3a. Kiểm bang_tien_do.
+15/11 (CN) | B10 xong. Chép sản phẩm vào 05_Code_Output. README_Bao.md. 23:59 hạn cứng. | K10: đối chiếu Trends, README_Khoi.md. 23:59 hạn cứng. | Q10: README_Quynh.md. 23:59 hạn cứng. | N9: README_Kien.md. 23:59 hạn cứng.
+16/11 (T2) | B11: Power BI (đọc outputs/). B12: viết mục. | K11: dự báo 4 tuần, viết mục; K12: gom tài liệu tham khảo. | Q11: viết mục. | N10: viết mục.
+17/11 (T3) | B11 xong 17:00 (dừng dù chưa trọn). 18:00 nộp «Muc_Bao.docx». | 18:00 nộp «Muc_Khoi.docx» và «references.docx». | 18:00 nộp «Muc_Quynh.docx». | 18:00 nộp «Muc_Kien.docx». 18:00–21:30 đọc 3 mục kia, viết đoạn tổng hợp Q2, Q3, Mục 6. 22:00 ghép bản nháp và khóa số liệu (N11).
+18/11 (T4) | 10:00 nộp slide phần mình. 13:30–15:30 tập chéo. 19:00–21:30 quay thô (B13). | 10:00 nộp slide. 13:30–15:30 tập chéo. 19:00–21:30 quay thô. | 10:00 nộp slide; 10:00–12:00 ghép bộ slide chung. 13:30–15:30 tập chéo. 19:00–21:30 quay thô. | 10:00 nộp slide. 13:30–15:30 chủ trì tập chéo. 19:00–21:30 quay thô (mở đầu, phần mình, kết luận).
+19/11 (T5) | 08:00–10:00 quay lại nếu cần. 10:00 hạn nhận file thô. 10:00–18:00 dựng video (B14). Chạy thử code của Kiên. | 08:00–10:00 quay lại nếu cần. 10:00–14:00 kiểm tài liệu tham khảo. Chạy thử code của Quỳnh. | 08:00–10:00 quay lại nếu cần. Sửa slide theo câu hỏi tập chéo (đến 14:00). Chạy thử code của Khôi. | Chốt báo cáo và PDF trước 16:00. Chạy thử code của Bảo. 16:00–21:00 đóng gói. Nộp 22:00 nếu xong.
+20/11 (T6) | Đệm: sửa lỗi video nếu có. | Đệm. | Đệm. | Nộp bài buổi sáng nếu chưa nộp (đệm). Chụp ảnh xác nhận gửi vào nhóm.
+21/11 (T7) | Tập dượt lần 1: trình bày đủ 20 phút, bấm giờ. | Tập dượt lần 1. | Tập dượt lần 1. | Tập dượt lần 1 (chủ trì).
+22/11 (CN) | Tập dượt lần 2 có Q&A: mỗi người bị hỏi về phần của người khác. | Tập dượt lần 2. | Tập dượt lần 2. | Tập dượt lần 2.
+23/11 (T2) | Kiểm tra thiết bị, bản slide dự phòng (USB và email). | Như Bảo. | Như Bảo. | Như Bảo.
+24/11 (T3) | Thuyết trình Nhóm 4: có mặt trước 15 phút. | Như Bảo. | Như Bảo. | Như Bảo.
+</TABLE 8>
+
+[Heading 1] 2. Nguyễn Gia Bảo (24520166): dữ liệu, độ tin cậy, Q1, Logistic, Power BI, dựng video
+
+<TABLE 9>
+Tóm tắt phần của Bảo / Phụ trách: thu thập và chốt dữ liệu cho cả nhóm; độ tin cậy dữ liệu; Q1 thống kê mô tả; Q3b hồi quy Logistic; Power BI; dựng video chung. Ngôn ngữ: Python làm sạch, kiểm tra, Logistic; R vẽ Q1 và hồi quy Logistic (glm); mỗi phần đối chiếu bằng ngôn ngữ còn lại. / Bạn không phải chờ ai: nhãn viral_A tự tính theo 0.2; Google Trends do Khôi làm trọn. Việc duy nhất người khác chờ bạn là dữ liệu chốt 13/11 12:00, nên đây là việc ưu tiên số 1 từ 12/11. / Phần báo cáo: Mục 3.1–3.5, Mục 5.1 (Q1), Mục 5.3b (Logistic), Phụ lục C và D. Slide: 4–5 trang (dữ liệu và độ tin cậy; Q1; Logistic). Video: 4,5 phút.
+</TABLE 9>
+
+
+<TABLE 10>
+Mã | Hạn | Việc cần làm (cụ thể) | Sản phẩm (tên file) | Xong khi
+B1 | 03–04/11 | Thiết lập thu thập. / Sao lưu data/ sang data_raw_20261103/, đặt chỉ đọc, tính SHA-256 từng file lưu vào checksums_raw.txt. / Đổi tên script thành collect_youtube_v2.py. / Dán channels_to_add_part1.txt vào channels.txt (03/11) và part2 (04/11); chạy channels rồi all một lần thử. / Lập lịch run_all.bat 4 lần/ngày; chụp ảnh màn hình lịch. | data_raw_20261103/, checksums_raw.txt, logs/run.log, ảnh lịch | Log mỗi lượt có đủ [A], [C], [B], [backup]; SHA-256 của data_raw_20261103/ không đổi.
+B2 | 04–12/11, mỗi ngày trước 09:00 | Nhật ký thu thập. Mỗi sáng thêm 1 dòng cho ngày hôm trước vào collection_log.csv: ngày, số lượt chạy, số dòng mới của trending / tracking / history, lỗi, cách xử lý. / Máy thu luôn bật, cắm sạc, tắt chế độ ngủ. Thiếu lượt: chạy tay ngay khi phát hiện. / 09/11: chạy clean_data.py để có dq_report_0911.txt cho buổi họp giữa kỳ. | collection_log.csv, dq_report_0911.txt | Không ngày nào trống; ngày thiếu lượt có lý do; video đăng từ 04/11 có từ 4 lần đo mỗi ngày.
+B3 | 05–06/11 | Tiền xử lý chuẩn. Viết hàm prep (Python và R) tạo H, age_b, lv_adj, viral_A đúng mục 0.2, đọc từ DATA_DIR (đang là data_clean). / In bộ 6 số (mục 0.4), điền vào so_kiem_tra trước 06/11 22:00. | prep.py, prep.R | 07/11 08:00 số của bạn giống 3 người còn lại.
+B4 | 06–11/11 | Q1 thống kê mô tả (Python nháp 09/11, R vẽ hình 11/11). / (a) Bảng n, trung bình, trung vị, độ lệch chuẩn, hệ số biến thiên, độ lệch, độ nhọn của views, likes, comments (gốc và log10), tách video ngắn và dài. / (b) Trung vị lv_adj và like_rate theo pub_hour, pub_dow, năm-tháng của pub_date_vn. / (c) Heatmap giờ × thứ của trung vị lv_adj, ô có n < 30 để trống. / (d) Boxplot lv_adj theo 10 thể loại nhiều video nhất. / Không dùng số video theo tháng để nói về xu hướng (mỗi kênh chỉ lấy tối đa 500 video mới nhất). Xuất 3 CSV cho Power BI (mục 0.5). | q1_descriptive.py, q1_descriptive.R, outputs/q1/ (CSV, PNG), figure_notes.md | Tổng n theo giờ bằng n_H; trung bình và trung vị từ R và Python khớp 3 chữ số; mọi so sánh dùng lv_adj, không dùng views thô.
+B5 | 06–11/11 | Q3b hồi quy Logistic. Y = viral_A (tự tính). X = X_PRE (0.3); biến số chuẩn hóa z-score để odds ratio hiểu là mỗi tăng 1 độ lệch chuẩn; category_id làm biến nhóm, bỏ nhóm gốc. / Hai mô hình: M1 đủ biến; M2 bỏ nhóm biến kênh (log_subs, channel_age_days, total_videos). / Python: statsmodels Logit với cov_type="cluster" theo channel_id. R: glm(family = binomial) và sandwich::vcovCL(cluster = ~channel_id), lmtest::coeftest. / Báo odds ratio, khoảng tin cậy 95%, AIC, McFadden R², VIF. | q3b_logistic.py, q3b_logistic.R, outputs/q3b/ | Odds ratio R và Python giống nhau đến 3 chữ số thập phân; CI lệch <= 0,01 (nếu hơn, ghi nguyên nhân: cách hiệu chỉnh cỡ mẫu của sai số cụm); kết luận dùng có liên quan, không dùng gây ra.
+B6 | 11/11 | Độ tin cậy (a): bản nháp. Lập bảng reliability_table.csv: tỷ lệ rỗng (ẩn like, tắt bình luận), trùng lặp (video, lần đo), ngoại lai (IQR trên log_views), likes > views, comments > views, views giảm giữa 2 lần đo, likes giảm. Mỗi dòng có số đếm, tỷ lệ %, cách xử lý. / Các số của bản trước (ẩn like 2,8%; tắt bình luận 2,1%; likes > views 167 dòng; comments > views 13 dòng; views giảm 1,24% cặp) chỉ để đối chiếu; số trong báo cáo lấy từ bản cuối. | outputs/reliability/reliability_table.csv | Số khớp dq_report.txt.
+B7 | 11–12/11 | Độ tin cậy (b): đối chiếu 30 video. / 11/11: viết pick30.py chọn phân tầng 10 video views < 10 nghìn, 10 video từ 10 nghìn đến 1 triệu, 10 video > 1 triệu, random_state = 42, từ lần đo gần nhất; làm sẵn bảng mẫu (video_id, views/likes/comments API, giờ đo, views/likes/comments YouTube, giờ xem, tên ảnh). / 12/11 20:00: lần thu cuối. Tắt lịch ngay sau lần đó (chụp ảnh màn hình). / 20:05–21:35: mở từng video trên YouTube, ghi số và giờ xem, chụp màn hình (mục tiêu 30 video trong 90 phút, ghi giờ chênh từng dòng). / Sai lệch tương đối = (YouTube − API) / API. | pick30.py, reliability_check_30videos.csv, thư mục ảnh | 30 dòng đủ số hai bên; báo trung vị sai lệch và nêu rõ chênh lệch dương do thời gian trôi; lịch thu đã tắt.
+B8 | 12/11 tối – 13/11 12:00 (hạn cứng) | Chốt dữ liệu cho cả nhóm. / Chạy clean_data.py bản cuối; sao chép sang data_final_20261113/ (chỉ đọc); tính SHA-256 từng file vào checksums.txt; tạo sample_1000.csv; đưa lên Drive 03_Dataset/. / Tải thử bằng tài khoản khác, so SHA-256, nhắn link vào nhóm. / Phương án dự phòng: nếu 13/11 14:00 chưa xong, đưa ngay bản data_clean đang có và ghi rõ giờ chạy; chậm nhất 18:00 phải có bản cuối. | data_final_20261113/, checksums.txt, sample_1000.csv, link Drive | Link mở được bằng tài khoản khác; SHA-256 trên Drive khớp; cả 3 người còn lại xác nhận đã tải (ghi vào bang_tien_do).
+B9 | 13/11 | Đổi DATA_DIR sang data_final_20261113, chạy lại prep, điền bộ 6 số mới vào so_kiem_tra trước 20:00. | dòng mới trong so_kiem_tra | 4 dòng giống nhau.
+B10 | 13–15/11 (15/11 23:59) | Chạy chính thức trên dữ liệu chốt: Q1, Q3b, độ tin cậy (a) và (b); mọi số cũ trong bản nháp được thay bằng số mới. / data_dictionary.md: mỗi cột của videos_master.csv (55 cột) và 4 file còn lại gồm ý nghĩa, đơn vị, cách tính, cột nào có thể rỗng và vì sao (có thể sinh khung bằng script rồi điền tay). / README_Bao.md (mục 0.5). Chép sản phẩm cuối vào 05_Code_Output/. | outputs/q1, q3b, reliability, data_dictionary.md, README_Bao.md | Không cột nào thiếu mô tả; một người ngoài nhóm đọc hiểu; code chạy lại từ đầu trên data_final.
+B11 | 16–17/11 (dừng 17:00) | Power BI. Chỉ đọc CSV trong 05_Code_Output/outputs/ (danh sách ở 0.5). 3 trang: (1) tổng quan: cỡ mẫu, độ tin cậy, Q1; (2) giờ đăng và thể loại: heatmap, nhóm trung bình Q2b; (3) viral và cụm: so sánh mô hình Q5, importance, hồ sơ cụm Q6, dự báo Q4 nếu đủ chỗ. / File nào chưa có thì bỏ biểu đồ đó, không chờ. 17:00 dừng, xuất ảnh dù chưa trọn. | dashboard.pbix, 3 ảnh PNG | Số trên dashboard khớp bảng trong báo cáo.
+B12 | 16–17/11 (18:00 ngày 17/11) | Viết báo cáo vào Muc_Bao.docx (dùng mẫu): Mục 3.1–3.5 (nguồn và thu thập; làm sạch; chất lượng và logic; đối chiếu 30 video; hạn chế và điều chỉnh: 22 ngày quan sát thay vì tối thiểu 8 tuần, số kênh thực tế, giới hạn 500 video/kênh), Mục 5.1 (Q1), Mục 5.3b (Logistic). / Mỗi phần theo bốn nhịp: (1) kết quả và mức ý nghĩa; (2) giải thích thực tiễn có trích dẫn; (3) khuyến nghị cho nhà sáng tạo hoặc nhãn hàng; (4) hạn chế. Từ 5 nguồn; nguồn ghi vào references_log (APA 7). / Mỗi hình và bảng có chú thích và tên file nguồn trong outputs/. | 02_Report/sections/Muc_Bao.docx | Mỗi con số truy được về 1 file trong outputs/; nội dung khớp code.
+B13 | 18/11 | 10:00 nộp slides_Bao.pptx (4–5 slide theo mẫu của Quỳnh; mỗi slide ghi nguồn số liệu). / 13:30–15:30 tập chéo: trình bày 15 phút (bài toán, dữ liệu đầu vào, kết quả chính, hạn chế); hỏi mỗi người khác ít nhất 2 câu. / 19:00–21:30 quay thô 4,5 phút bằng OBS (khuôn ở mục 6.3). | 01_Presentation/parts/slides_Bao.pptx, 04_Video/raw/raw_Bao.mp4 | Trả lời được ít nhất 3 câu về phần của người khác.
+B14 | 19/11 | 08:00–10:00 quay lại nếu cần; 10:00 hạn nhận file thô của cả nhóm. / 10:00–18:00 dựng video chung (mục 6.3), upload, kiểm tra bằng cửa sổ ẩn danh. / Chạy thử code của Kiên trên môi trường sạch theo mục 7.3; ghi test_log_Bao.md. | video_final.mp4 hoặc link, test_log_Bao.md | Video 15–20 phút, âm thanh rõ; log nêu rõ số nào khớp, số nào lệch.
+B15 | 21–23/11 | Tập dượt hai lần (mục 6.4); mang máy và dây nối; bản slide dự phòng; có mặt trước 15 phút ngày 24/11. | — | Nói đúng giờ; trả lời được câu hỏi về phần của Kiên (người dự phòng của Bảo).
+</TABLE 10>
+
+[Heading 1] 3. Đinh Vũ Minh Khôi (24520857): chuỗi thời gian Q4, lễ/Tết Q2d, Google Trends, tài liệu tham khảo
+
+<TABLE 11>
+Tóm tắt phần của Khôi / Phụ trách: lịch lễ; bốn chuỗi S1, S2, N1, N2; Google Trends (tải và đối chiếu độ tin cậy); Q4 mô hình hóa và dự báo; Q2d hiệu ứng lễ và Tết; Mục 2 (tổng quan tài liệu) và danh sách tài liệu tham khảo chung. Ngôn ngữ: R (gói forecast) làm chính, Python (statsmodels) đối chiếu; dựng chuỗi bằng Python. / Bạn không phải chờ ai: lịch lễ, từ khóa Trends, chuỗi S1 và S2 đều do bạn tự làm; lv_adj tự tính theo 0.2. Q4 không dự báo số video thịnh hành vì mỗi ngày Trending luôn khoảng 197 video; bốn chuỗi S1, S2, N1, N2 là thứ thay thế. / Phần báo cáo: Mục 2, Mục 3.6 (đối chiếu Trends), Mục 5.2d (Q2d), Mục 5.4 (Q4), Mục 7 (tài liệu tham khảo). Slide: 4–5 trang (Q2d, Q4). Video: 4 phút.
+</TABLE 11>
+
+
+<TABLE 12>
+Mã | Hạn | Việc cần làm (cụ thể) | Sản phẩm (tên file) | Xong khi
+K1 | 03–05/11 | Chốt 3–5 từ khóa Google Trends (tự chọn, không cần hỏi ai). Mỗi từ khóa ghi 1 dòng lý do. Tiêu chí: liên quan nội dung YouTube Việt Nam và đủ lượng tìm kiếm để Trends trả số theo tuần (ví dụ nhóm nền tảng, giải trí, âm nhạc, game). | trends_keywords.csv | Mỗi từ khóa có lý do.
+K2 | 04–06/11 | Lịch nghỉ lễ holidays_vn.csv (date, name, type, tet, period_id, source_url). / Mỗi dòng là 1 ngày nghỉ (gồm nghỉ bù và kỳ Tết) của 2024, 2025, 2026; lấy ngày từ văn bản hoặc thông báo nghỉ lễ chính thức của cơ quan nhà nước, không tự nhớ ngày. / tet = 1 nếu thuộc kỳ Tết; period_id gom các ngày nghỉ liên tiếp thành 1 kỳ (dùng cho Q2d và biến ARIMAX). | holidays_vn.csv | Đủ 3 năm; mỗi dòng có nguồn mở được; số ngày nghỉ mỗi năm khớp văn bản.
+K3 | 05–06/11 | Tiền xử lý chuẩn (H, age_b, lv_adj) đúng mục 0.2; in bộ 6 số và điền vào so_kiem_tra trước 06/11 22:00. | prep.py, prep.R | 07/11 08:00 số của bạn giống 3 người còn lại.
+K4 | 06–08/11 | Dựng bốn chuỗi (Python build_series.py). / Lọc kênh đủ lịch sử: đếm số video có in_history = TRUE của mỗi kênh, giữ kênh có dưới 500 video (chưa chạm trần 500 của script). / S1 = số video đăng mỗi ngày (pub_date_vn), ngày không có video = 0. S2 = trung bình lv_adj theo ngày đăng, bỏ video đăng trong 7 ngày cuối. Khoảng: 01/01/2024 đến ngày thu cuối trừ ngày cuối. / N1 = số video mới vào Trending mỗi ngày (lần đầu video xuất hiện), bỏ ngày 22/10 (lần chụp đầu) và đặt NaN cho ngày ngay sau ngày thiếu chụp. N2 = trung vị views của video hạng 1–50 ở lần chụp 20:00 giờ VN (trước khi có lịch: lần chụp duy nhất của ngày). / Ghi danh sách ngày NaN và số kênh đủ lịch sử vào series_notes.md. | build_series.py, series_daily.csv (date, S1, S2, n_videos, n_channels), series_trending.csv, series_notes.md | Không thiếu ngày nào trong khoảng; số kênh và số video khớp lọc từ videos_master; N1, N2 chỉ khoảng 20–23 điểm.
+K5 | 07–09/11 | Google Trends. pytrends, geo VN, từ 01/01/2024 đến hôm nay, theo tuần; chạy từng từ khóa, nghỉ 5–10 giây giữa các lần gọi, lưu CSV gốc ngay. Nếu lỗi 429: tải thủ công từ trends.google.com (Explore, Download). | trends_raw.csv | Mỗi từ khóa có đủ các tuần trong khoảng.
+K6 | 08–11/11 | Q4 chuỗi dài S1, S2 (R chính). / ADF và KPSS; ACF/PACF; log và sai phân khi cần; ARIMA, SARIMA (mùa vụ 7 ngày), ARIMAX (biến lễ và Tết từ holidays_vn.csv; với Trends thì chuyển chuỗi sang theo tuần). / Giữ 28 ngày cuối làm test; chọn mô hình theo AIC và sai số test; luôn so với lặp lại tuần trước (seasonal naive). S1 có ngày bằng 0 nên dùng MAE và sMAPE, không dùng MAPE. Ljung-Box trên phần dư. / Xuất q4_forecast_S1.csv và q4_forecast_S2.csv cho Power BI (mục 0.5). | q4_timeseries.R, q4_timeseries.py, outputs/q4/ (bảng ADF, bảng so sánh mô hình, hình dự báo) | Mô hình chọn có sai số test thấp hơn seasonal naive, nếu không thì ghi trung thực; Ljung-Box p > 0,05; R và Python cùng bậc (p,d,q) cho hệ số gần nhau.
+K7 | 09–11/11 | Q2d hiệu ứng lễ và Tết. / Mỗi period_id là 1 kỳ. Với mỗi kỳ, so lv_adj của video có pub_date_vn trong kỳ với video đăng ở các ngày không nghỉ lễ trong cùng (các) tháng dương lịch mà kỳ đó chạm tới. / Welch t-test, Cohen's d, khoảng tin cậy 95% của chênh lệch; chạy từng kỳ và gộp chung; điều chỉnh đa so sánh bằng Holm; kỳ có dưới 100 video thì gộp lại. / Chạy thêm bản bỏ video ngắn (is_short_60) để kiểm tra độ vững. R: t.test, p.adjust(method = "holm"); Python: scipy.stats.ttest_ind(equal_var=False), statsmodels.stats.multitest. | q2d_holiday.R, q2d_holiday.py, outputs/q2d/ | t, p, d khớp hai ngôn ngữ đến 3 chữ số; bảng từng kỳ gồm n, chênh lệch, CI, p đã hiệu chỉnh.
+K8 | 11–12/11 | Q4 chuỗi ngắn N1, N2: chỉ ARIMA bậc nhỏ (p, q tối đa 1), test 5 ngày cuối, không SARIMA; gắn nhãn ngắn hạn, chỉ mang tính minh họa. Chạy bản Python của Q4 dài và Q2d để đối chiếu với bản R. | bảng kết quả phụ trong outputs/q4/ | Nhãn rõ; hai ngôn ngữ khớp theo ngưỡng ở mục 0.5 hoặc có ghi chú nguyên nhân.
+K9 | 13/11 | Đổi DATA_DIR sang data_final_20261113; tải lại Trends (phủ đến 12/11); dựng lại S1, S2, N1, N2; điền bộ 6 số mới trước 20:00. | series_daily.csv, series_trending.csv, trends_raw.csv mới | 4 dòng trong so_kiem_tra giống nhau.
+K10 | 13–15/11 (15/11 23:59) | Chạy chính thức Q4, Q2d trên dữ liệu chốt. / Đối chiếu Google Trends (độ tin cậy): tương quan Spearman theo tuần giữa chỉ số Trends và chuỗi S2 trung bình theo tuần; báo hệ số và p; nêu rõ đây chỉ là đối chiếu xu hướng, không phải quan hệ nhân quả; 1 hình hai trục. / README_Khoi.md; chép sản phẩm cuối vào 05_Code_Output/. | outputs/q4, q2d, trends_check/, README_Khoi.md | Hai chuỗi cùng độ phân giải tuần, cùng khoảng thời gian; mọi số cũ được thay.
+K11 | 15–17/11 (18:00 ngày 17/11) | Dự báo 4 tuần tới của S1, S2 kèm khoảng tin cậy 95% và viết Muc_Khoi.docx: Mục 2 (tổng quan tài liệu, khoảng 1,5–2 trang, ba nhóm: yếu tố ảnh hưởng lượt xem video, dự báo chuỗi thời gian, dự đoán viral; kết bằng khoảng trống nghiên cứu), Mục 3.6, Mục 5.2d, Mục 5.4. / Bốn nhịp mỗi phần; Mục 5.4 giải thích mùa vụ theo tuần, hiệu ứng lễ và Tết, hạn chế dữ liệu (22 ngày, chuỗi ngắn), vì sao không dự báo số video thịnh hành. Từ 5 nguồn ngoài Mục 2. | 02_Report/sections/Muc_Khoi.docx | Mỗi con số truy được về 1 file trong outputs/; có nhãn ngắn hạn, minh họa cho chuỗi N.
+K12 | 05/11 → 19/11 | Tài liệu tham khảo chung. Mỗi người ghi nguồn của mình vào references_log ngay khi dùng (từ 05/11), bạn không cần nhắc. / 17/11 18:00: gom thành references.docx chuẩn APA 7; chỉ dùng nguồn tin cậy (bài báo khoa học, tài liệu chính thức Google/YouTube, báo cáo như DataReportal hoặc Statista); mỗi nguồn phải đã mở ra đọc. / 19/11 10:00–14:00: kiểm tra mọi trích dẫn trong báo cáo có trong danh sách và ngược lại; không nguồn nào hỏng liên kết; từ 20 nguồn. | references.docx (Mục 7) | Trích dẫn và danh sách khớp hai chiều; liên kết mở được.
+K13 | 18/11 | 10:00 nộp slides_Khoi.pptx (4–5 slide: Q2d và Q4); 13:30–15:30 tập chéo; 19:00–21:30 quay thô 4 phút (khuôn mục 6.3). | slides_Khoi.pptx, raw_Khoi.mp4 | Giải thích được vì sao không dự báo số video thịnh hành.
+K14 | 19/11 | 08:00–10:00 quay lại nếu cần. Chạy thử code của Quỳnh trên môi trường sạch (mục 7.3), ghi test_log_Khoi.md. | test_log_Khoi.md | Log nêu rõ số nào khớp, số nào lệch.
+K15 | 21–23/11 | Tập dượt hai lần; thiết bị; có mặt trước 15 phút ngày 24/11. | — | Trả lời được câu hỏi về phần của Quỳnh (người dự phòng của Khôi).
+</TABLE 12>
+
+[Heading 1] 4. Vũ Thị Như Quỳnh (24521515): Q5 viral, Q6 phân cụm, Q2c Chi-square, ghép slide
+
+<TABLE 13>
+Tóm tắt phần của Quỳnh / Phụ trách: ba nhãn viral A, B, C; mô hình dự báo viral (Decision Tree, Random Forest, SVM, XGBoost và mô hình nền); phân cụm K-means; Q2c Chi-square thể loại × viral; khung slide và ghép bộ slide chung. Ngôn ngữ: Python chính (scikit-learn, xgboost); R đối chiếu Random Forest và K-means. / Bạn không phải chờ ai: nhãn nằm ngay trong code của bạn; Kiên không còn cần labels.csv của bạn, Bảo tự tính viral_A cho Logistic. Việc duy nhất người khác chờ bạn là template.pptx (05/11), và nếu chậm thì mọi người dùng mẫu Office mặc định. / Phần báo cáo: Mục 5.2c (Q2c), Mục 5.5 (Q5), Mục 5.6 (Q6). Slide: 4–5 trang (Q2c, Q5, Q6) và ghép cả bộ. Video: 4,5 phút. Điểm xuất phát: q5_viral_baseline.py và q6_kmeans_baseline.py (chạy thử sáng 03/11, phải chạy lại).
+</TABLE 13>
+
+
+<TABLE 14>
+Mã | Hạn | Việc cần làm (cụ thể) | Sản phẩm (tên file) | Xong khi
+Q1 | 03–05/11 | Chạy lại hai file baseline trên data_clean hiện có để nắm luồng; đọc lại mục 5.2 của tài liệu hướng dẫn trước, chép 6 biến của Q6 và công thức vào đầu q6_features.py. / Khung slide: template.pptx gồm mục lục, 3 layout (tiêu đề; nội dung và hình; số liệu chính), font, màu, chỗ ghi nguồn số liệu ở chân slide. Đưa lên Drive cuối ngày 05/11. | 01_Presentation/template.pptx | Cả 4 người mở được; nếu chậm, báo nhóm dùng mẫu Office mặc định.
+Q2 | 05–06/11 | Tiền xử lý và nhãn (labels.py; mục 0.2). / A: pct_in_age và viral_A (>= 0,90). / B: lvpd = log10(max(views_per_day, 1)); ch_med_loo = trung vị lvpd của các video KHÁC cùng kênh cùng age_b (loại chính nó, cần >= 5 video khác); breakout_B = lvpd − ch_med_loo >= log10(2). Bản chạy thử sáng 03/11 tính trung vị gồm cả chính video, bản chính thức phải sửa. / C: in_window_C và viral_C theo công thức (cửa sổ tính từ dữ liệu). / In bộ 6 số, điền so_kiem_tra trước 06/11 22:00. | prep.py, prep.R, labels.py, labels.csv (video_id, age_b, pct_in_age, viral_A, lvpd, ch_med_loo, breakout_B, in_window_C, viral_C) | viral_A chiếm 9–11% H; số dương của từng nhãn ghi vào báo cáo; 07/11 08:00 bộ 6 số khớp 3 người còn lại.
+Q3 | 06–07/11 | Biến đầu vào và chia dữ liệu (q5_pipeline.py). / X chỉ gồm X_PRE (0.3); lệnh assert dừng nếu có cột cấm và in không có cột rò rỉ. / Chia GroupKFold 5 phần theo channel_id; mỗi fold assert tập kênh của train và test không giao nhau. / Kiểm tra theo thời gian: huấn luyện trên video đăng trước 01/07/2026, kiểm tra trên video đăng từ đó. | q5_pipeline.py | Cả hai lệnh assert chạy qua; ghi rõ subscriber đo lúc thu thập, không phải lúc đăng.
+Q4 | 08–11/11 | Huấn luyện 4 mô hình + mô hình nền cho nhãn A và B (nhãn C chỉ khi có >= 100 video dương, nếu không thì chỉ mô tả). / Decision Tree (max_depth 6, min_samples_leaf 50, class_weight balanced); Random Forest (300 cây, min_samples_leaf 5, class_weight balanced_subsample); SVM nhân RBF có StandardScaler trên mẫu phân tầng 15–20 nghìn dòng; XGBoost (scale_pos_weight = số âm / số dương, max_depth 4, 250–300 cây, learning_rate 0,05–0,07); mô hình nền chỉ dùng log_subs. / Ngưỡng quyết định chọn trên tập validation (tách 20% kênh của train bằng GroupShuffleSplit(random_state=42)) để tối đa F1. Tất cả random_state = 42. / Báo ROC-AUC, PR-AUC, Precision, Recall, F1, Recall trong top 10% điểm cao nhất, theo trung bình ± độ lệch chuẩn qua 5 fold và riêng kiểm tra theo thời gian. | q5_model_comparison.csv, q5_models.py | Đủ 4 mô hình cộng mô hình nền cho từng nhãn; nếu mô hình tốt nhất không hơn mô hình nền về PR-AUC thì ghi trung thực.
+Q5 | 10–11/11 | Q2c Chi-square thể loại × lọt Trending. / Chỉ dùng video trong in_window_C (không ngắn); bảng chéo category_name × viral_C; gộp thể loại có tần số kỳ vọng dưới 5 vào Khác; Cramér's V; phần dư chuẩn hóa cho biết thể loại nào lọt Trending nhiều hơn kỳ vọng. / Làm thêm category_name × viral_A trên cả H. Python scipy.stats.chi2_contingency; R chisq.test. | q2c_chisq.py, q2c_chisq.R, outputs/q2c/ (bảng chéo, hình residual) | χ², df, p, V khớp hai ngôn ngữ đến 3 chữ số; kết luận về độ lớn dựa vào V, không chỉ p.
+Q6 | 11/11 | Phân tích mô hình tốt nhất. / Bỏ nhóm biến kênh (log_subs, channel_age_days, total_videos) rồi so sánh. / Permutation importance trên tập kiểm tra (hoặc SHAP). / Độ nhạy ngưỡng nhãn A: 5%, 10%, 20%. / Xuất q5_importance.csv cho Power BI. | hình importance, bảng ablation, bảng độ nhạy, q5_importance.csv | Importance tính trên tập kiểm tra chứ không phải tập huấn luyện.
+Q7 | 08–11/11 | Q6 phân cụm (q6_features.py, q6_cluster.py). / Dữ liệu: measurements.csv với is_last_of_day = TRUE; giữ video có >= 5 ngày đo, khoảng cách lần đo đầu và cuối >= 5 ngày, đủ likes và comments, views cuối > 0; 6 biến theo mục 5.2 của tài liệu trước; cắt like_rate ở phân vị 99; StandardScaler. Ghi số video trước và sau lọc. / K-means k = 2–8, n_init = 10, random_state = 42; Silhouette, elbow, Davies-Bouldin; độ ổn định: 20 mẫu bootstrap, ARI trung bình; PCA 2 chiều. / Hồ sơ cụm: trung vị 6 biến, subscribers, tuổi video, tỷ lệ từng lọt Trending, thể loại nổi bật. Chi-square cụm × thể loại và cụm × viral_A (tự tính). / Xuất q6_cluster_profile.csv và q6_pca_points.csv. | q6_features.csv, q6_cluster.py, outputs/q6/ | Mỗi cụm >= 5% số video (nếu không thì chọn k nhỏ hơn); báo ARI trung bình, dưới 0,6 thì ghi cảnh báo cụm không ổn định; ô Chi-square có kỳ vọng >= 5; không biến nào có NaN hay vô cực.
+Q8 | 12–13/11 | Đối chiếu bằng R (q5_q6_check.R): randomForest cho nhãn A; kmeans và cluster::silhouette cho Q6. SVM và XGBoost chỉ chạy Python (ghi vào báo cáo như một ngoại lệ). | q5_q6_check.R, bảng so sánh | AUC Random Forest hai ngôn ngữ chênh <= 0,03; ARI giữa cụm R và Python >= 0,8, thấp hơn thì ghi nguyên nhân.
+Q9 | 13/11 | Đổi DATA_DIR sang data_final_20261113, chạy lại prep và labels, điền bộ 6 số mới trước 20:00. | dòng mới trong so_kiem_tra | 4 dòng giống nhau.
+Q10 | 13–15/11 (15/11 23:59) | Chạy chính thức Q5, Q6, Q2c trên dữ liệu chốt; mọi số cũ thay bằng số mới. README_Quynh.md; chép sản phẩm cuối vào 05_Code_Output/. / Q6 nâng cao mặc định không làm. Chỉ làm khi mọi việc trên xong trước 14/11 và có >= 3.000 video đăng từ 04/11 có đo phủ 3 mốc 24 giờ, 72 giờ, 7 ngày (nội suy tuyến tính giữa log(views) và log(tuổi) của hai lần đo kề nhau); số video đủ điều kiện ghi vào báo cáo. | outputs/q5, q6, q2c, README_Quynh.md | Code chạy lại từ đầu trên data_final; số trong báo cáo truy được về file.
+Q11 | 16–17/11 (18:00 ngày 17/11) | Viết báo cáo Muc_Quynh.docx: Mục 5.2c, 5.5, 5.6; bốn nhịp mỗi phần; nêu hạn chế (nhãn C ít dương, Silhouette trung bình, subscriber đo lúc thu thập); kết luận không nói quá sức bằng chứng. Từ 5 nguồn, ghi vào references_log. | 02_Report/sections/Muc_Quynh.docx | Mỗi số truy được về 1 file; nêu số dương của từng nhãn.
+Q12 | 18/11 | 10:00 nộp slides_Quynh.pptx (4–5 slide). / 10:00–12:00 ghép bộ slide chung từ 01_Presentation/parts/: thống nhất phong cách, mỗi slide ghi nguồn số liệu (tên file trong outputs/), thứ tự và thời lượng theo mục 6.2, tổng 19–20 phút; xuất presentation.pptx và .pdf. / 13:30–15:30 tập chéo; 19:00–21:30 quay thô 4,5 phút. | presentation.pptx, presentation.pdf, raw_Quynh.mp4 | Mỗi slide có nguồn số liệu; tổng thời lượng khớp 20 phút.
+Q13 | 19/11 | Quay lại nếu cần (08:00–10:00); sửa slide theo câu hỏi tập chéo (đến 14:00). / Chạy thử code của Khôi trên môi trường sạch (mục 7.3); ghi test_log_Quynh.md. | presentation.pptx/pdf bản cuối, test_log_Quynh.md | Log nêu rõ số nào khớp, số nào lệch.
+Q14 | 21–23/11 | Tập dượt hai lần; thiết bị; có mặt trước 15 phút ngày 24/11. | — | Trả lời được câu hỏi về phần của Khôi (người dự phòng của Quỳnh).
+</TABLE 14>
+
+[Heading 1] 5. Nguyễn Trung Kiên (24520886, trưởng nhóm): Q2a–b, Q3a, ghép báo cáo, nộp bài
+
+<TABLE 15>
+Tóm tắt phần của Kiên / Phụ trách: hạ tầng nhóm; Q2a (t-test cuối tuần), Q2b (ANOVA khung giờ và thể loại), Q3a (hồi quy tuyến tính bội); viết Mục 1, 4, 6; ghép báo cáo; đóng gói và nộp. Ngôn ngữ: R (lm, car, sandwich, rstatix) làm chính, Python (statsmodels, scipy, pingouin) đối chiếu. / Bạn không phải chờ ai: Q2c và Q2d đã chuyển cho Quỳnh và Khôi nên bạn không cần nhãn hay lịch lễ; Q3a chỉ cần H và lv_adj tự tính. Với hơn 90 nghìn video, p-value gần như luôn rất nhỏ, nên kết luận dựa trên kích thước hiệu ứng. / Phần báo cáo: Mục 1, Mục 4, Mục 5.2a–b, Mục 5.3a, đoạn mở và tổng hợp cho 5.2 và 5.3, Mục 6, Phụ lục A, B. Slide: mở đầu, Q2a–b, Q3a, kết luận. Video: 6 phút (mở đầu 1, phần mình 4, kết luận 1).
+</TABLE 15>
+
+
+<TABLE 16>
+Mã | Hạn | Việc cần làm (cụ thể) | Sản phẩm (tên file) | Xong khi
+N1 | 03–04/11 | Hạ tầng nhóm. / Drive theo cấu trúc mục 0.6; template_report.docx (APA 7, kiểu tiêu đề, kiểu chú thích hình và bảng, khổ giấy, mục lục tự động) và 4 file Muc_<Tên>.docx dùng chung mẫu. / 3 sheet: bang_tien_do (mỗi việc: người, hạn, trạng thái; thêm cột ngày bận cá nhân và có mặt 24/11), so_kiem_tra (mục 0.4), references_log (người, nguồn APA 7, link, ngày truy cập, dùng ở mục nào, đã mở đọc: Y/N). / Gửi email cho thầy hỏi: giờ chốt cụ thể của 20/11 và nơi nộp (LMS hay email). | Thư mục Drive, template_report.docx, 3 sheet | Cả 4 người mở được và ghi được; email đã gửi.
+N2 | 04/11 | Chủ trì họp 30 phút: đọc mục 0 và các quy ước mới ở đầu file; mỗi người xác nhận đã hiểu việc của mình và có mặt ngày 24/11; ghi quyết định vào 00_Chung/quyet_dinh_hop.md. Họp tiếp 09/11 (30 phút, mỗi người báo cáo tiến độ 5 phút). | quyet_dinh_hop.md | Mục 0 được chốt; sửa mục 0 (nếu có) báo ngay cho cả nhóm.
+N3 | 05–06/11 | Tiền xử lý chuẩn (H, age_b, lv_adj) đúng mục 0.2; in bộ 6 số, điền so_kiem_tra trước 06/11 22:00. | prep.R, prep.py | 07/11 08:00 số của bạn giống 3 người còn lại.
+N4 | 06–09/11 | Q2a: t-test cuối tuần và ngày thường. Biến kết quả lv_adj, nhóm pub_is_weekend. / Welch t-test; Cohen's d; khoảng tin cậy 95% của chênh lệch; Levene; QQ-plot (không dùng Shapiro làm căn cứ duy nhất vì cỡ mẫu lớn luôn bác bỏ); Mann-Whitney kiểm tra độ vững; chạy thêm bản bỏ video ngắn. / R: t.test, effectsize::cohens_d, car::leveneTest. Python: scipy.stats. | q2a_tests.R, q2a_tests.py, outputs/q2a/ (n, thống kê, df, p, kích thước hiệu ứng, CI) | t và p từ R và Python giống nhau đến 3 chữ số thập phân; có Cohen's d; kết luận nêu khác biệt nhỏ nếu d dưới 0,2.
+N5 | 07–10/11 | Q2b: ANOVA khung giờ và thể loại. ANOVA một yếu tố theo pub_slot (5 nhóm) và theo category_name. / Levene; nếu phương sai không đều thì Welch ANOVA và Games-Howell (Tukey HSD chỉ đúng khi phương sai đều); Kruskal-Wallis kiểm tra độ vững; eta bình phương; bảng các cặp khác biệt có ý nghĩa; hình trung bình lv_adj theo nhóm kèm khoảng tin cậy. / Xuất q2b_group_means.csv cho Power BI (mục 0.5). R: oneway.test, rstatix::games_howell_test; Python: pingouin. | q2b_anova.R, q2b_anova.py, outputs/q2b/ | F, df, p, eta bình phương khớp hai ngôn ngữ đến 3 chữ số; có bảng cặp và hình.
+N6 | 08–11/11 | Q3a: hồi quy tuyến tính bội. Mô hình: log_views ~ log10(age_days_last) + log_subs + log10(duration_sec) + tags_count + title_len + title_upper_ratio + title_has_question + title_has_exclaim + title_has_digit + title_has_emoji + pub_is_weekend + pub_slot + category_name + is_short_60. / VIF: báo biến vượt 5, loại biến vượt 10 (duration_sec và is_short_60 dễ trùng thông tin). / Sai số chuẩn bền vững theo kênh (cluster-robust, R sandwich::vcovCL(cluster = ~channel_id), Python cov_type = "cluster"). Đề cương ghi HAC; báo cáo phải sửa thành sai số chuẩn bền vững theo kênh và giải thích: các video cùng kênh tương quan nhau. / Nhân tố nào mạnh nhất: hệ số chuẩn hóa và mức giảm R² khi bỏ từng nhóm: kênh = log_subs; nội dung = log10(duration_sec), tags_count, title_*, is_short_60; thời gian = pub_is_weekend, pub_slot; thể loại = category_name. log10(age_days_last) luôn giữ trong mô hình. / Chẩn đoán phần dư (QQ, phần dư theo giá trị dự đoán). | q3a_regression.R, q3a_regression.py, outputs/q3a/ | Hệ số từ lm và statsmodels giống nhau đến 3 chữ số thập phân; có bảng VIF, R², bảng đóng góp theo nhóm; kết luận dùng có liên quan, không dùng gây ra.
+N7 | 10–12/11 | Chạy ngôn ngữ còn lại cho N4, N5, N6 và ghi note_python_vs_R.md nếu có lệch. / Viết khung Mục 1 (bối cảnh, câu hỏi, mục tiêu, phạm vi) và Mục 4: quy ước chung chép từ 0.2, công cụ, và bảng Điều chỉnh so với đề cương: theo dõi tối thiểu 8 tuần thành 22 ngày; số kênh 150–200 (bảng nguồn dữ liệu ghi 50–100) thành số kênh thực tế từ data_final; Q4 không dự báo số video thịnh hành mà dùng 4 chuỗi; HAC thành sai số bền vững theo kênh; Tukey thành Games-Howell khi phương sai không đều; lịch tuần 1–8 thành lịch thực tế. | Muc_Kien.docx (bản khung) | Mục 4 khớp code của cả 4 người (đọc lại sau khi họ nộp).
+N8 | 13/11 | Đổi DATA_DIR sang data_final_20261113, chạy lại prep, điền bộ 6 số mới trước 20:00. Nếu 4 dòng không khớp, chủ trì xử lý theo mục 0.4. | dòng mới trong so_kiem_tra | 4 dòng giống nhau.
+N9 | 13–15/11 (15/11 23:59) | Chạy chính thức Q2a, Q2b, Q3a trên dữ liệu chốt; mọi số cũ thay bằng số mới. README_Kien.md; chép sản phẩm cuối vào 05_Code_Output/. 14/11: rà bang_tien_do, nhắc ai còn đỏ. | outputs/q2a, q2b, q3a, README_Kien.md | Code chạy lại từ đầu trên data_final.
+N10 | 16–17/11 (18:00 ngày 17/11) | Viết Muc_Kien.docx: Mục 1 (hoàn tất), Mục 5.2a–b, Mục 5.3a; bốn nhịp mỗi phần; từ 5 nguồn, ghi references_log. / 17/11 18:00–21:30: đọc Muc_Bao, Muc_Khoi, Muc_Quynh; viết đoạn mở và đoạn tổng hợp cho Mục 5.2 và 5.3 (các phần do nhiều người viết), Mục 6 (kết luận, khuyến nghị, hạn chế, hướng mở rộng; lấy từ bốn nhịp của mọi người) và Phụ lục A, B. | Muc_Kien.docx hoàn chỉnh | Mục 6 không chứa con số nào không có trong các mục khác.
+N11 | 17/11 22:00 | Ghép bản nháp báo cáo từ 4 file Muc_*.docx: dùng chung mẫu; đánh số hình và bảng; mục lục tự động; mỗi hình và bảng có chú thích và nguồn (tên file trong outputs/); phụ lục bảng phân công (mục 6.5); link Drive dataset và video. Khóa số liệu: từ giờ này không đổi số; nếu phát hiện sai, chủ phần sửa code, outputs và thông báo cả nhóm để cập nhật báo cáo, slide, video. | report_draft.docx | Qua checklist mục 7.1.
+N12 | 18/11 | 10:00 nộp slides_Kien.pptx (mở đầu, Q2a–b, Q3a, kết luận). / 13:30–15:30 chủ trì tập chéo: giữ giờ (mỗi người 15 phút); mỗi người hỏi ba người còn lại ít nhất 2 câu; ghi câu hỏi khó vào 00_Chung/cau_hoi_tap_cheo.md. / 19:00–21:30 quay thô: mở đầu 1 phút, phần mình 4 phút, kết luận 1 phút (3 clip, đặt tên raw_Kien_mo.mp4, raw_Kien_phan.mp4, raw_Kien_ket.mp4). | slides_Kien.pptx, 3 clip thô, cau_hoi_tap_cheo.md | Mỗi người trả lời được ít nhất 3 câu về phần của người khác.
+N13 | 19/11 | Sửa báo cáo theo góp ý tập chéo và phản hồi của Khôi về tài liệu tham khảo (14:00); xuất report_final.docx và .pdf trước 16:00; mở PDF trên máy khác. / Chạy thử code của Bảo trên môi trường sạch (mục 7.3); ghi test_log_Kien.md. / Gộp 4 file README thành README.md chung (phiên bản Python và R, danh sách gói, thứ tự chạy). / 16:00–21:00 đóng gói Nhom4_FullProject_NguyenTrungKien.zip theo mục 7.2; giải nén thử; kiểm tra link Drive trong cửa sổ ẩn danh. | report_final.docx/.pdf, README.md, Nhom4_FullProject_NguyenTrungKien.zip | Hình trong báo cáo giống hình sinh ra khi chạy lại; zip giải nén không lỗi và đủ 5 thư mục.
+N14 | 19/11 tối – 20/11 sáng | Nộp bài. Mục tiêu nộp 19/11 trước 22:00 nếu gói đã qua kiểm tra; sáng 20/11 chỉ là đệm. Chụp ảnh màn hình xác nhận đã nộp, gửi vào nhóm; ba người còn lại xác nhận. Làm theo giờ chốt và nơi nộp thầy trả lời (email N1). | ảnh xác nhận nộp | Cả nhóm thấy ảnh xác nhận.
+N15 | 21–23/11 | Tổ chức tập dượt hai lần (mục 6.4); kiểm tra thiết bị; bản slide dự phòng (USB và email); 24/11 có mặt trước 15 phút. | — | Trả lời được câu hỏi về phần của Bảo (người dự phòng của Kiên).
+</TABLE 16>
+
+[Heading 1] 6. Sản phẩm chung: báo cáo, slide, video, tập dượt, bảng phân công
+[Heading 2] 6.1 Dàn ý báo cáo và người viết
+[] Mỗi người viết trọn phần của mình (phương pháp riêng của phần đó, kết quả, bốn nhịp insight, trích dẫn) vào Muc_<Tên>.docx theo mẫu chung. Kiên chỉ ghép và viết các mục chung. Trích dẫn theo APA 7; từ 20 nguồn cho cả báo cáo (mỗi người từ 5 nguồn cho phần mình).
+
+<TABLE 17>
+Mục | Nội dung | Người viết | Hạn nộp bản nháp
+Bìa, mục lục | Cập nhật ngày (bản đề cương ghi 02/10/2026), danh sách thành viên, mục lục tự động. | Kiên | 17/11 22:00
+1 | Giới thiệu: bối cảnh, câu hỏi nghiên cứu, mục tiêu, phạm vi. | Kiên | 17/11 18:00
+2 | Tổng quan tài liệu (ba nhóm, kết bằng khoảng trống nghiên cứu). | Khôi | 17/11 18:00
+3 | Dữ liệu và độ tin cậy: 3.1 nguồn và thu thập; 3.2 làm sạch; 3.3 chất lượng và tính nhất quán logic; 3.4 đối chiếu 30 video; 3.5 hạn chế và điều chỉnh (Bảo); 3.6 đối chiếu Google Trends (Khôi). | Bảo; Khôi (3.6) | 17/11 18:00
+4 | Phương pháp chung: quần thể H, lv_adj, các nhãn viral, công cụ; bảng Điều chỉnh so với đề cương. Phương pháp riêng của từng phần nằm ở đầu phần kết quả tương ứng. | Kiên | 17/11 18:00
+5.1 | Q1 thống kê mô tả. | Bảo | 17/11 18:00
+5.2 | Q2: 5.2a–b (t-test, ANOVA) Kiên; 5.2c (Chi-square) Quỳnh; 5.2d (lễ và Tết) Khôi; đoạn mở và tổng hợp Kiên. | Kiên, Quỳnh, Khôi | 17/11 18:00 (đoạn tổng hợp 21:30)
+5.3 | Q3: 5.3a (hồi quy tuyến tính) Kiên; 5.3b (Logistic) Bảo; đoạn mở và tổng hợp Kiên. | Kiên, Bảo | 17/11 18:00 (đoạn tổng hợp 21:30)
+5.4 | Q4 chuỗi thời gian và dự báo. | Khôi | 17/11 18:00
+5.5 | Q5 dự báo viral. | Quỳnh | 17/11 18:00
+5.6 | Q6 phân cụm. | Quỳnh | 17/11 18:00
+6 | Kết luận, khuyến nghị, hạn chế, hướng mở rộng (tổng hợp từ bốn nhịp của mọi người). | Kiên | 17/11 21:30
+7 | Tài liệu tham khảo (APA 7). | Khôi | 17/11 18:00; kiểm 19/11 14:00
+Phụ lục | A: bảng phân công chi tiết (6.5); B: link dataset, video, code, README; C: bảng độ tin cậy và từ điển dữ liệu (Bảo); D: ảnh Power BI (Bảo). | Kiên; Bảo | 17/11 21:30
+</TABLE 17>
+
+[Heading 2] 6.2 Slide và thứ tự trình bày 20 phút
+[] Mỗi người làm 4–5 slide phần mình trong 01_Presentation/parts/slides_<Tên>.pptx, dùng template.pptx của Quỳnh, mỗi slide ghi nguồn số liệu (tên file trong outputs/) ở chân slide, mỗi slide một thông điệp. Quỳnh ghép ngày 18/11 (10:00–12:00).
+
+<TABLE 18>
+Thứ tự | Người | Nội dung | Thời gian
+1 | Kiên | Mở đầu: bối cảnh, câu hỏi, dữ liệu, cách nhóm làm việc. | 1 phút
+2 | Bảo | Dữ liệu và độ tin cậy; Q1; Logistic (Q3b). | 4 phút
+3 | Kiên | Q2a–b; Q3a. | 4 phút
+4 | Khôi | Q2d; Q4. | 4 phút
+5 | Quỳnh | Q2c; Q5; Q6. | 4 phút
+6 | Kiên | Kết luận và khuyến nghị. | 2 phút
+— | Cả nhóm | Dự phòng cho chuyển slide và nói chậm. | 1 phút
+</TABLE 18>
+
+[] Q&A 15 phút: mọi thành viên có thể bị hỏi bất kỳ phần nào. Người dự phòng đọc kỹ phần của nhau: Bảo ↔ Kiên, Khôi ↔ Quỳnh.
+[Heading 2] 6.3 Video 15–20 phút: mỗi người quay thô, Bảo dựng
+
+<TABLE 19>
+Đoạn | Người quay | Thời lượng | File | Nội dung
+Mở đầu | Kiên | 1 phút | raw_Kien_mo.mp4 | Đề tài, câu hỏi, dữ liệu, cấu trúc video.
+Phần 1 | Bảo | 4,5 phút | raw_Bao.mp4 | Thu thập và làm sạch; độ tin cậy; Q1; Logistic.
+Phần 2 | Kiên | 4 phút | raw_Kien_phan.mp4 | Q2a–b; Q3a.
+Phần 3 | Khôi | 4 phút | raw_Khoi.mp4 | Q2d; Q4.
+Phần 4 | Quỳnh | 4,5 phút | raw_Quynh.mp4 | Q2c; Q5; Q6.
+Kết luận | Kiên | 1 phút | raw_Kien_ket.mp4 | Kết luận, khuyến nghị, hạn chế.
+</TABLE 19>
+
+[] Tổng mục tiêu 19 phút; chặn trên 20 phút; không dưới 15 phút. Mỗi đoạn lệch quá 15 giây phải quay lại trước 19/11 10:00.
+[List Paragraph] Khuôn một đoạn 4 phút: 0:00–0:20 phần này trả lời câu hỏi nào; 0:20–2:10 chiếu code Python và giải thích từng bước; 2:10–3:10 chiếu code R và nói chỗ khác Python; 3:10–4:00 kết quả chính và hạn chế.
+[List Paragraph] Quay: OBS, độ phân giải 1080p, quay màn hình kèm tiếng mic; phòng yên tĩnh; thử 30 giây trước khi quay thật; font code đủ lớn để đọc trên màn hình điện thoại; đặt tên file đúng bảng trên; tải lên 04_Video/raw/ trong đêm 18/11 hoặc trước 10:00 ngày 19/11.
+[List Paragraph] Dựng (Bảo, 19/11 10:00–18:00): ghép theo thứ tự bảng; thêm tiêu đề từng phần; cân âm lượng; xuất MP4 H.264; tải lên Drive hoặc YouTube không công khai; mở bằng cửa sổ ẩn danh để kiểm tra; ghi link vào Phụ lục B; xác nhận độ dài 15–20 phút.
+[Heading 2] 6.4 Tập dượt cho buổi thuyết trình 24/11
+[List Paragraph] 21/11 (lần 1): trình bày đủ 20 phút có bấm giờ; ghi chỗ quá giờ; sửa slide.
+[List Paragraph] 22/11 (lần 2): thêm 15 phút Q&A: mỗi người phải trả lời một câu hỏi về phần của người dự phòng và một câu về phần bất kỳ; dùng danh sách trong cau_hoi_tap_cheo.md.
+[List Paragraph] 23/11: kiểm tra máy chiếu, dây nối, bản slide dự phòng (USB và email), file PDF; xác nhận cả 4 người có mặt trước 15 phút. Thành viên vắng buổi trình bày bị 0 điểm quá trình, nên mọi xung đột lịch phải báo ngay từ 04/11.
+[Heading 2] 6.5 Bảng phân công chi tiết (đưa nguyên vào Phụ lục A của báo cáo)
+[] Cột tỷ lệ đóng góp để trống đến khi cả nhóm thống nhất (19/11).
+
+<TABLE 20>
+Thành viên (MSSV) | Nhiệm vụ cụ thể | Sản phẩm | Phần trong báo cáo | Ngôn ngữ chính / đối chiếu | Đóng góp
+Nguyễn Gia Bảo (24520166) | Thu thập dữ liệu, nhật ký thu thập, chốt dữ liệu và đóng gói dataset / Độ tin cậy: bảng chất lượng, đối chiếu 30 video / Q1 thống kê mô tả; Q3b hồi quy Logistic / Power BI; dựng video | data_final_20261113, checksums.txt, q1, q3b, reliability, data_dictionary.md, dashboard.pbix, video_final | Mục 3.1–3.5, 5.1, 5.3b; Phụ lục C, D | Python (làm sạch, Logistic) / R (vẽ Q1, glm) | ___ %
+Đinh Vũ Minh Khôi (24520857) | Lịch lễ; bốn chuỗi S1, S2, N1, N2 / Google Trends: tải và đối chiếu độ tin cậy / Q4 ARIMA, SARIMA, ARIMAX và dự báo 4 tuần; Q2d hiệu ứng lễ và Tết / Tổng quan tài liệu; tài liệu tham khảo chung | holidays_vn.csv, series_daily.csv, trends_raw.csv, q4, q2d, trends_check, references.docx | Mục 2, 3.6, 5.2d, 5.4, 7 | R (forecast) / Python (statsmodels) | ___ %
+Vũ Thị Như Quỳnh (24521515) | Nhãn viral A, B, C; Q5 bốn mô hình và phân tích mô hình / Q6 phân cụm K-means / Q2c Chi-square thể loại × viral / Khung và ghép bộ slide | labels.csv, q5, q6, q2c, presentation.pptx/pdf | Mục 5.2c, 5.5, 5.6 | Python / R (Random Forest, K-means) | ___ %
+Nguyễn Trung Kiên, trưởng nhóm (24520886) | Hạ tầng nhóm, điều phối, họp và tập chéo / Q2a t-test, Q2b ANOVA, Q3a hồi quy tuyến tính bội / Viết Mục 1, 4, 6 và ghép báo cáo / Đóng gói và nộp bài | q2a, q2b, q3a, report_final.docx/.pdf, README.md, Nhom4_FullProject_NguyenTrungKien.zip | Mục 1, 4, 5.2a–b, 5.3a, 6; Phụ lục A, B | R / Python (statsmodels, scipy) | ___ %
+</TABLE 20>
+
+[Heading 1] 7. Ghép, đóng gói và kiểm tra chéo (17–20/11)
+[Heading 2] 7.1 Checklist của Kiên khi ghép báo cáo (17/11 22:00 và 19/11)
+[List Paragraph] Mọi hình và bảng được đánh số liên tục, có chú thích và tên file nguồn trong outputs/.
+[List Paragraph] Mỗi con số trong báo cáo truy được về một file; các mục nói về cùng một đại lượng (ví dụ n_H) dùng cùng một con số.
+[List Paragraph] Mục 4 mô tả đúng cách làm của cả 4 người (so với code và 0.2); bảng Điều chỉnh so với đề cương đầy đủ.
+[List Paragraph] Mọi trích dẫn có trong danh sách APA 7 và ngược lại (Khôi kiểm lần cuối 19/11 14:00); từ 20 nguồn; không liên kết hỏng.
+[List Paragraph] Mỗi kết luận dùng có liên quan, không dùng gây ra; dựa trên kích thước hiệu ứng chứ không chỉ p-value.
+[List Paragraph] Phụ lục A có bảng phân công chi tiết (6.5); Phụ lục B có link Drive của dataset và video; mục lục tự động cập nhật; PDF đọc được trên máy khác.
+[Heading 2] 7.2 Cấu trúc gói nộp «Nhom4_FullProject_NguyenTrungKien.zip»
+
+<TABLE 21>
+Thư mục | Nội dung
+01_Presentation | presentation.pptx và presentation.pdf.
+02_Report | report_final.docx và report_final.pdf (APA 7; có bảng phân công chi tiết).
+03_Dataset | sample_1000.csv, checksums.txt, data_dictionary.md, link_dataset.txt (link Google Drive đến data_final_20261113; nếu dung lượng cho phép thì kèm file).
+04_Video | link_video.txt (link Drive hoặc YouTube không công khai) hoặc video_final.mp4.
+05_Code_Output | python/, R/, outputs/q1 … q6, dashboard.pbix, README.md, requirements.txt, renv.lock hoặc danh sách gói R.
+</TABLE 21>
+
+[Heading 2] 7.3 Chạy thử chéo (19/11, mỗi người một lượt)
+[] Cặp chạy thử: Bảo chạy code của Kiên; Kiên chạy code của Bảo; Khôi chạy code của Quỳnh; Quỳnh chạy code của Khôi. Mỗi người chạy theo đúng README_<Tên>.md của người kia, trên môi trường mới (Python virtualenv mới; R thư viện mới hoặc renv), chỉ dùng data_final_20261113 tải từ Drive. Ghi test_log_<Tên>.md: lệnh đã chạy, thời gian chạy, các con số chính so với báo cáo (khớp 3 chữ số hay lệch), lỗi gặp phải. Lỗi hoặc số lệch báo ngay cho chủ code sửa trước 14:00; chủ code ghi lại kết quả sau khi sửa.
+[Heading 1] 8. Nếu có sự cố thì làm gì
+
+<TABLE 22>
+Tình huống | Cách xử lý | Ai
+Bộ 6 số không khớp (06/11 hoặc 13/11) | Người lệch đối chiếu từng bước lọc với 0.2; nếu hai bên đều cho là đúng, Kiên đọc văn bản và quyết định; sửa xong báo lại vào so_kiem_tra trước khi làm tiếp. | Người lệch; Kiên
+Máy thu dữ liệu tắt hoặc mất mạng | Chạy tay ngay khi phát hiện; ghi lý do vào collection_log.csv; ngày thiếu lượt nêu trong Mục 3.5. | Bảo
+data_final chưa có lúc 13/11 12:00 | Bảo đưa bản data_clean đang có và ghi giờ chạy (chậm nhất 14:00); chậm nhất 18:00 phải có bản cuối. Mọi người chỉ cần đổi DATA_DIR và chạy lại; hạn 15/11 23:59 không dời. | Bảo; cả nhóm
+Google Trends báo lỗi 429 | Tải CSV thủ công từ trends.google.com (Explore, Download); ghi nguồn vào Mục 3.6. | Khôi
+Mô hình Q4 không thắng seasonal naive | Ghi trung thực kết quả; không đổi cách đánh giá để thắng. | Khôi
+Mô hình tốt nhất Q5 không hơn mô hình nền về PR-AUC; nhãn C quá ít dương | Ghi trung thực; nhãn C có dưới 100 video dương thì chỉ mô tả. | Quỳnh
+Ai đó trễ hơn 1 ngày so với hạn | Báo ngay trong nhóm; người dự phòng (Bảo ↔ Kiên, Khôi ↔ Quỳnh) đọc code và chia lại phần còn lại; từ 15/11 không còn ngày đệm. | Người trễ; người dự phòng
+Power BI không kịp | 17/11 17:00 dừng, xuất ảnh các trang đã có; ghi rõ trong báo cáo trang nào chưa làm. | Bảo
+Video thiếu thời lượng hoặc âm thanh kém | Quay lại trước 19/11 10:00; sau mốc đó Bảo xử lý bằng dựng, không quay thêm. | Người quay; Bảo
+Sai số liệu sau khi đã khóa (17/11 22:00) | Chủ phần sửa code và outputs, báo cả nhóm; Kiên cập nhật báo cáo, Quỳnh cập nhật slide, Bảo cập nhật video nếu có nói số đó. | Chủ phần; Kiên, Quỳnh, Bảo
+Nộp bài | Nộp ngay khi gói qua kiểm tra (mục tiêu 19/11 trước 22:00); sáng 20/11 chỉ là đệm. Nộp trễ là cả nhóm 0 điểm quá trình. | Kiên; cả nhóm giám sát
+</TABLE 22>
+
+
+

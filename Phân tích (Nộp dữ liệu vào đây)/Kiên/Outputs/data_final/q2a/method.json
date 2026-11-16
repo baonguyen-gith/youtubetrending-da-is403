@@ -1,0 +1,7 @@
+{
+  "assumptions": "Welch không giả định phương sai bằng nhau; Levene median đánh giá đồng nhất phương sai. MWU không đo chênh lệch trung bình.",
+  "cohens_d": "SD gộp theo (n-1), không phải Hedges g; bản R dùng cùng định nghĩa.",
+  "contrast": "Weekend - weekday",
+  "confidence": 0.95,
+  "qq_seed": 42
+}
